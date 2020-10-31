@@ -1,0 +1,235 @@
+@media only screen and (max-width: 4000px) {
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Roboto:wght@400;700&display=swap');
+
+@import url("https://use.fontawesome.com/releases/v5.15.1/css/all.css");
+
+header {
+    background-color:rgb(253, 179, 40);
+ 
+        position:flex;
+        justify-content: space-between;
+        align-items: center;
+   
+}
+
+header img.logo{
+width: 300px;
+height: 200px;;
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 100px;
+    padding-bottom: 60px;
+   
+ 
+}
+
+img.centro{
+    left: 20px;
+    width: 70%;
+    position: relative;
+    height: 700px;
+    top: 100px;
+}
+header ul{
+    display: inline-block;
+    
+position: absolute;
+left: 450px;
+top: 120px;
+}
+
+
+header ul li {
+   
+    margin-right: 30px;
+   
+    display: inline-block;
+
+    
+
+}
+
+header ul li a{
+   
+        text-decoration: none;
+       color: black;
+        font-size: 40px;
+        font-weight: bold;
+
+    
+}
+header form{
+    display: inline-block;
+    width: 550px;
+    height: 35px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    left: 60%;
+    top: 140px;
+    
+}
+header  form button[type="submit"] {
+
+    width: 28%;
+    background: none;
+    border: none;
+    font-size: 25px;
+    color: black;
+   
+    padding: 0px;
+    text-align: right;
+    }
+header form input[type="text"] {
+    width: 70%;
+    border: none;
+    font-size: 25px;
+
+    
+   
+  
+}
+
+
+header .icons button[type="submit"]:nth-child(2){
+  margin-right: 80px;
+}
+.menu button[type="submit"]{
+    position: absolute;
+    top: 350px;
+    font-size: 80px;
+    left: 20px;
+    background: none;
+    border: none
+}
+header .icons button[type="submit"]  {
+
+
+   position: absolute;
+   border: none;
+   background: none;
+   display: inline-block;
+ 
+font-size: 60px;
+
+top: 20px;
+right: 20px;
+
+
+}
+
+button .menu[type="submit"] {
+    font-size: 60px;
+    
+    border: none;
+    background: none;
+}
+
+
+   
+
+    .caja{
+    
+    background-color: rgba(255, 145, 55, 0.7);
+display: inline-block;
+    position: relative;
+    bottom: 400px;
+    left: 10px;
+    }
+
+    .caja ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .caja ul li{
+        margin-top: 20px;
+        list-style:none;
+    }
+
+    .caja ul{
+        padding-top: 10px;
+        padding-bottom: 70px;
+        padding-left: 15px;
+        padding-right: 30px;
+    }
+
+    .imabajo img{
+        width: 340px;
+        height: 330px;
+        display: inline-block;
+        margin-right: 130px;
+        margin-top: 60px;
+    position: relative;
+    left: 250;
+    left: 18%;
+    }
+
+    body{
+        background-color:yellow
+    }
+.detalle{
+    position: relative;
+    left: 30%;
+    border: solid 4px black;
+    width: 700px;
+    height: 650px;
+   top: 100px;
+   background-color: rgba(255, 145, 55, 0.603);
+   width: 580px;
+}
+.detalle img{
+    width: 300px;
+    height: 300px;
+    position: relative;
+  
+    left: 150px;
+    top: 100px;
+}
+
+.detalle p{
+    font-weight: bold;
+    font-size: 25px;
+}
+.detalle p:nth-of-type(1){
+    position: relative;
+    top: 150px;
+    left: 25px
+}
+.detalle small{
+    font-style: italic;
+    font-size: 15px;
+    position: relative;
+    top: 130px;
+    left: 25px;
+}
+.detalle p:nth-of-type(2){
+    position: relative;
+    top: 150px;
+    left:  25px
+}
+
+ .detalle button[type="submit"] {
+    position: relative;
+    top: 80px;
+    font-size: 25px;
+    left: 450px;
+    background: none;
+    border: none;
+    font-size: 60px;
+ }
+
+
+ .detalle i.fa-tag{
+    font-size: 40px;
+    position: relative;
+    top: 100px;
+    left: 115px;
+
+}

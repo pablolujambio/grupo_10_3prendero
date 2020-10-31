@@ -10,7 +10,7 @@
 - *Santos Peters Malbran:* tengo 19 años, esoy estudiando Economia Empresarial. Me gustan los deportes, prefiero comedias a cualquier otro género y disfruto ver vídeos de animales. Me divierte aprender de culturas distintas y me gustaría aprender muchos idiomas.
 - *Pablo Lujambio:* rosarino actualmente viviendo en Barcelona, contador público apasionado por las finanzas. Esencialmente optimista, me gusta entrenar, viajar y leer un buen libro tomando unos buenos mates.
 
-### Páginas de referencia:
+### Páginas  de referencia:
 1. www.dafiti.com.ar / lo elegimos por los productos que ofrecen y por la variedad de cosas que poseen.
 2. www.monaca.com.ar / En este caso lo elegimos por el hecho de que apunta a un público femenino sobre todo de gente joven.
 3. www.nike.com / Esta página la elegimos por que es una marca conocida y ofrece ropa deportiva.
