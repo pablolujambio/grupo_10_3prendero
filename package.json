@@ -1,7 +1,7 @@
 {
   "name": "3_prendero_grupo_10",
   "version": "1.0.0",
-  "main": "views/app.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

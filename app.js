@@ -16,9 +16,11 @@ app.get('/detalle', function(req, res){
 app.get('/carrito', function(req, res){
     res.sendFile(path.join(__dirname, "./views/productCart.html"))
 })
+
 app.get('/login', function(req, res){
     res.sendFile(path.join(__dirname, "./views/login.html"))
 })
+
 app.get('/register', function(req, res){
     res.sendFile(path.join(__dirname, "./views/register.html"))
 })
