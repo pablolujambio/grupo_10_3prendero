@@ -1,4 +1,4 @@
-@media only screen and (max-width: 4000px) {
+
 
 
 
@@ -36,9 +36,9 @@ img.centro{
 header ul{
     display: inline-block;
     
-position: absolute;
-left: 450px;
-top: 120px;
+position: relative;
+left: 20px;
+    bottom: 140px
 }
 
 
@@ -68,11 +68,11 @@ header form{
     padding: 5px;
     background-color: white;
     border-radius: 10px;
-    position: absolute;
-    left: 60%;
-    top: 140px;
-    
+    position: relative;
+    left: 140px;
+    bottom: 150px;
 }
+
 header  form button[type="submit"] {
 
     width: 28%;
@@ -99,7 +99,7 @@ header .icons button[type="submit"]:nth-child(2){
   margin-right: 80px;
 }
 .menu button[type="submit"]{
-    position: absolute;
+    position: relative;
     top: 350px;
     font-size: 80px;
     left: 20px;
@@ -109,24 +109,28 @@ header .icons button[type="submit"]:nth-child(2){
 header .icons button[type="submit"]  {
 
 
-   position: absolute;
+   position: relative;
    border: none;
    background: none;
    display: inline-block;
  
 font-size: 60px;
 
-top: 20px;
-right: 20px;
+bottom: 340px;
+left:92%
 
 
 }
 
-button .menu[type="submit"] {
+body .menu button[type="submit"] {
     font-size: 60px;
     
     border: none;
     background: none;
+    position: relative;
+    left:20px;
+    top: 30px;
+  
 }
 
 
@@ -137,14 +141,15 @@ button .menu[type="submit"] {
     background-color: rgba(255, 145, 55, 0.7);
 display: inline-block;
     position: relative;
-    bottom: 400px;
-    left: 10px;
+   width: 350px;
+   height: 300px;
+   bottom: 450px
     }
 
     .caja ul li a{
         text-decoration: none;
         color: black;
-        font-size: 20px;
+        font-size: 22px;
         font-weight: bold;
     }
 
@@ -155,8 +160,8 @@ display: inline-block;
 
     .caja ul{
         padding-top: 10px;
-        padding-bottom: 70px;
-        padding-left: 15px;
+        padding-bottom: 60px;
+        padding-left: 20px;
         padding-right: 30px;
     }
 
@@ -167,8 +172,8 @@ display: inline-block;
         margin-right: 130px;
         margin-top: 60px;
     position: relative;
-    left: 250;
-    left: 18%;
+   
+    left: 20%;
     }
 
     body{
