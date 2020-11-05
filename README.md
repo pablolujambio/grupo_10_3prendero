@@ -16,3 +16,7 @@
 3. www.nike.com / Esta página la elegimos por que es una marca conocida y ofrece ropa deportiva.
 4. www.distritomoda.com.ar / La elegimos por la variedad de ropa que tiene ya sea para ambos sexos y el hecho de que es un mayorista.
 5. www.vinsonindumentaria.com.ar / A esta página la elegimos porque permite hacer compras tanto mayoristas como minoristas y apunta solo al público masculino.
+
+### Link Tablero (Trello)
+https://trello.com/b/waq9omsA/sprint-2
+
