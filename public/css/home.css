@@ -32,32 +32,33 @@ body{
     padding-right: 30px;
 }
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Roboto:wght@400;700&display=swap');
 
 @import url("https://use.fontawesome.com/releases/v5.15.1/css/all.css");
 
+/*-------------------------------------------------------------------------- 
+DISEÑO HEADER
+ ----------------------------------------------------------------------------*/
+ 
 header {
     background-color:rgb(253, 179, 40);
- 
         position:flex;
         justify-content: space-between;
         align-items: center;
-   
+        height: 150px;
+        margin-bottom: 20px;
+ }
+
+ header img.logo {
+    width: 250px;
+    height: 150px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-bottom: 10px;
 }
 
-header img.logo{
-width: 300px;
-height: 200px;;
-    padding-top: 60px;
-    padding-left: 30px;
-    padding-right: 100px;
-    padding-bottom: 60px;
-   
  
-}
-
 img.centro{
     left: 20px;
     width: 70%;
@@ -65,111 +66,92 @@ img.centro{
     height: 700px;
     top: 100px;
 }
+
 header ul{
     display: inline-block;
-    
 position: relative;
-left: 20px;
-    bottom: 140px
+left: 80px;
+    bottom: 75px;
 }
 
 
 header ul li {
-   
     margin-right: 30px;
-   
     display: inline-block;
-
-    
-
 }
 
 header ul li a{
-   
         text-decoration: none;
        color: black;
-        font-size: 40px;
+        font-size: 20px;
         font-weight: bold;
-
-    
 }
+
 header form{
     display: inline-block;
-    width: 550px;
-    height: 35px;
+    width: 410px;
+    height: 25px;
     padding: 5px;
     background-color: white;
     border-radius: 10px;
     position: relative;
-    left: 140px;
-    bottom: 150px;
+    left: 175px;
+    bottom: 75px;
 }
 
 header  form button[type="submit"] {
-
     width: 28%;
     background: none;
     border: none;
-    font-size: 25px;
+    font-size: 20px;
     color: black;
-   
     padding: 0px;
     text-align: right;
+    position: relative;
+    bottom: 3px;
     }
+
 header form input[type="text"] {
     width: 70%;
     border: none;
-    font-size: 25px;
-
-    
-   
-  
-}
-
-
-header .icons button[type="submit"]:nth-child(2){
-  margin-right: 80px;
-}
-.menu button[type="submit"]{
+    font-size: 17px;
     position: relative;
-    top: 350px;
-    font-size: 80px;
-    left: 20px;
+    bottom: 3px;
+}
+
+.menu button[type="submit"]{
+    width: 28%;
     background: none;
-    border: none
+    border: none;
+    font-size: 15px;
+    color: black;
+    padding: 0px;
+    text-align: right;
+    position: relative;
+    bottom: 3px;
 }
 header .icons button[type="submit"]  {
-
-
-   position: relative;
-   border: none;
-   background: none;
-   display: inline-block;
- 
-font-size: 60px;
-
-bottom: 340px;
-left:92%
-
-
+    position: relative;
+    border: none;
+    background: none;
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 30px;
+    bottom: 165px;
+    left: 93%;
 }
+
 
 body .menu button[type="submit"] {
     font-size: 60px;
-    
     border: none;
     background: none;
     position: relative;
     left:20px;
-    top: 30px;
-  
+    top: 30px;  
 }
 
-
-   
-
-    .caja{
-    
+.caja{
     background-color: rgba(255, 145, 55, 0.7);
 display: inline-block;
     position: relative;
@@ -208,25 +190,27 @@ display: inline-block;
     left: 20%;
     }
 
-
+ /*-------------------------------------------------------------------------- 
+DISEÑO DETALLE
+ ----------------------------------------------------------------------------*/
 .detalle{
     position: relative;
     left: 30%;
     border: solid 4px black;
     border-radius: 15px;
     width: 700px;
-    height: 650px;
-   top: 100px;
-   background-color: rgba(255, 145, 55, 0.603);
-   width: 580px;
+    height: 500px;
+    top: 20px;
+    background-color: rgba(255, 145, 55, 0.603);
+    width: 500px;
+    margin-bottom: 40px;
 }
 .detalle img{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     position: relative;
-  
-    left: 150px;
-    top: 100px;
+    left: 25%;
+    top: 60px;
 }
 
 .detalle p{
@@ -235,49 +219,43 @@ display: inline-block;
 }
 .detalle p:nth-of-type(1){
     position: relative;
-    top: 150px;
-    left: 25px
+    top: 60px;
+    left: 25px;
 }
 .detalle small{
     font-style: italic;
-    font-size: 15px;
+    font-size: 13px;
     position: relative;
-    top: 130px;
+    top: 53px;
     left: 25px;
 }
 .detalle p:nth-of-type(2){
     position: relative;
-    top: 150px;
-    left:  25px
+    top: 55px;
+    left: 25px;
 }
 
  .detalle button[type="submit"] {
     position: relative;
-    top: 80px;
-    font-size: 25px;
-    left: 450px;
+    /* top: 0px; */
+    /* font-size: 25px; */
+    left: 385px;
     background: none;
     border: none;
-    font-size: 60px;
+    font-size: 45px;
  }
 
 
  .detalle i.fa-tag{
-    font-size: 40px;
+    font-size: 30px;
     position: relative;
-    top: 100px;
-    left: 115px;
-
+    top: 6px;
+    left: 119px;
 }
 
  /*-------------------------------------------------------------------------- 
  DISEÑO CARRITO
  ----------------------------------------------------------------------------*/
-
-
-
-
-
 .carritoTop {
     display: flex;
     flex-wrap: wrap;
@@ -371,74 +349,3 @@ display: inline-block;
 /*-------------------------------------------------------------------------- 
  FIN DISEÑO CARRITO
  ----------------------------------------------------------------------------*/
-
-  /*-------------------------------------------------------------------------- 
- DISEÑO LOGIN
- ----------------------------------------------------------------------------*/
-.container_log{
-    background-color: white;
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
-    padding-left: 30px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-right: 30px;
-    display: flex;
-    
-}
-.datos_login {
-    font-family: system-ui;
-    font-weight: 300;
-    position: relative;
-} 
-.titulos_log{
-        font-family: system-ui;
-        font-weight: inherit;
-        font-size: 19px;
-        color: #F18805;
-    }
-
-    .logButton{
-        padding: 0 16px;
-        float: left;
-      border-radius: 2px;
-      background-color: #F18805;
-      box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-        0 2px 2px 0 rgba(0, 0, 0, 0.14),
-        0 1px 5px 0 rgba(0, 0, 0, 0.12);
-      color: #fff;
-      transition: background-color 15ms linear,
-        box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
-      height: 36px;
-      line-height: 2.25rem;
-      font-family: Roboto, sans-serif;
-      font-size: 0.875rem;
-      font-weight: 500;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-    
-    .logButton:hover, .botonCompra:focus {
-        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
-          0 4px 5px 0 rgba(0, 0, 0, 0.14),
-          0 1px 10px 0 rgba(0, 0, 0, 0.12);
-        background-color: #D95D39;
-      }
-      
-      .logButton:active {
-        box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
-          0 8px 10px 1px rgba(0, 0, 0, 0.14),
-          0 3px 14px 2px rgba(0, 0, 0, 0.12);
-        background-color: #e45027;
-      }
-      .wallpaper{
-          position:relative;
-          padding-left: 152px;
-          }
-          .log_a_reg{
-              color: hsl(22, 94%, 50%);
-              text-decoration: underline;
-              text-shadow: green;
-          }
