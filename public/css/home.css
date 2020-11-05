@@ -371,3 +371,62 @@ display: inline-block;
 /*-------------------------------------------------------------------------- 
  FIN DISEÑO CARRITO
  ----------------------------------------------------------------------------*/
+
+  /*-------------------------------------------------------------------------- 
+ DISEÑO LOGIN
+ ----------------------------------------------------------------------------*/
+.container_log{
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    
+}
+.datos_login {
+    font-family: system-ui;
+    font-weight: 300;
+    position: relative;
+} 
+.titulos_log{
+        font-family: system-ui;
+        font-weight: inherit;
+        font-size: 19px;
+    }
+
+    .logButton{
+        padding: 0 16px;
+        float: left;
+      border-radius: 2px;
+      background-color: #F18805;
+      box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12);
+      color: #fff;
+      transition: background-color 15ms linear,
+        box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+      height: 36px;
+      line-height: 2.25rem;
+      font-family: Roboto, sans-serif;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    
+    .logButton:hover, .botonCompra:focus {
+        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
+          0 4px 5px 0 rgba(0, 0, 0, 0.14),
+          0 1px 10px 0 rgba(0, 0, 0, 0.12);
+        background-color: #D95D39;
+      }
+      
+      .logButton:active {
+        box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+          0 8px 10px 1px rgba(0, 0, 0, 0.14),
+          0 3px 14px 2px rgba(0, 0, 0, 0.12);
+        background-color: #D95D39;
+      }

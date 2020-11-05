@@ -1,15 +1,47 @@
-<input type='checkbox' id='form-switch'>
-<form id='login-form' action="" method='post'>
-  <input type="text" placeholder="Username" required>
-  <input type="password" placeholder="Password" required>
-  <button type='submit'>Login</button>
-  <label for='form-switch'><span>Register</span></label>
-</form>
-<form id='register-form' action="" method='post'>
-  <input type="text" placeholder="Username" required>
-  <input type="email" placeholder="Email" required>
-  <input type="password" placeholder="Password" required>
-  <input type="password" placeholder="Re Password" required>
-  <button type='submit'>Register</button>
-  <label for='form-switch'>Already Member ? Sign In Now..</label>
-</form>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container_log" >
+		
+    <form  action="register" autocomplete="on"> 
+      <div class= "titulos_log"><h1>Regístrate</h1> </div>
+      <div> 
+        <label for="username" class="datos_login" data-icon="u" > Elige un Nombre de Usuario </label><br>
+        <input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
+              </div>
+  
+  
+             <div>
+               <label for="date" class="datos_login">Fecha de Nacimiento</label><br>
+               <input id="date" type="date"></div>   
+               
+        <div>
+          <label for="email" class="datos_login" data-icon="p">Email</label><br>
+           <input type="email" placeholder="Email" required></div>       
+      <div> 
+        <label for="password" class="datos_login" data-icon="p"> Contraseña </label><br>
+        <input id="password" name="password" required="required" type="password" placeholder="Escriba aquí su contraseña" /> 
+              </div>
+            
+       <div> 
+        <label for="password" class="datos_login" data-icon="p"> Confirme Contraseña </label><br>
+                <input id="password" name="password" type="password" placeholder="Re contraseña" required /> 
+                      </div>   <br>   
+                          
+                      <div><button class="logButton" type=“submit”>Registrarme</button></div><br><br><br><br><br>
+              Ya eres miembro?
+              <a href="login">Inicia sesión..</a> </label>
+      </form>
+</body>
+</html>
+
+
