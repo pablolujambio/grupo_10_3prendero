@@ -734,12 +734,10 @@ DISEÑO DETALLE
         padding-top: 100px;
 
     }
+    .opcionesItem {
+        flex-direction: column;
+        }
 }
-
-
-
-
-
 
 
  /*-------------------------------------------------------------------------- 
@@ -775,8 +773,8 @@ DISEÑO DETALLE
 
 .opcionesItem{
     display: flex;
-    flex-direction: column;
     padding: 0px;
+    margin-left: 0px;
     justify-content: space-around;
 }
 
