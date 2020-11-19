@@ -31,12 +31,13 @@ DISEÑO HEADER
  ----------------------------------------------------------------------------*/
  
 header {
-    background-color:rgb(253, 179, 40);
-        position:flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 150px;
-        margin-bottom: 20px;
+    background-color: rgb(253, 179, 40);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    margin-bottom: 20px;
+    
  }
 
  header img.logo {
@@ -46,19 +47,32 @@ header {
     padding-left: 20px;
     padding-right: 40px;
     padding-bottom: 10px;
+    margin-right: 100px;
+}
+
+header .linea {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+
+
+
+
 }
 
 header ul{
-    display: inline-block;
-position: relative;
-left: 80px;
-    bottom: 75px;
+
+justify-content: space-between;
+
+   margin-right: 100px;
+
 }
 
 
 header ul li {
-    margin-right: 30px;
+   margin-right: 50px; 
     display: inline-block;
+    
 }
 
 header ul li a{
@@ -66,6 +80,7 @@ header ul li a{
        color: black;
         font-size: 20px;
         font-weight: bold;
+        
 }
 
 header form{
@@ -75,9 +90,7 @@ header form{
     padding: 5px;
     background-color: white;
     border-radius: 10px;
-    position: relative;
-    left: 175px;
-    bottom: 75px;
+ 
 }
 
 header  form button[type="submit"] {
@@ -99,52 +112,64 @@ header form input[type="text"] {
     position: relative;
     bottom: 3px;
 }
+header .icons{
+ 
+    position: relative;
+  bottom: 30%;
+    right: 2%;
+    
+}
 
-.menu button[type="submit"]{
-    width: 28%;
-    background: none;
-    border: none;
-    font-size: 15px;
-    color: black;
-    padding: 0px;
-    text-align: right;
-    position: relative;
-    bottom: 3px;
-}
 header .icons button[type="submit"]  {
-    position: relative;
+  
     border: none;
     background: none;
-    margin-right: 10px;
-    display: inline-block;
+    margin-left:10px;
+display: inline-block;
+ 
+  
+ 
     font-size: 30px;
-    bottom: 165px;
-    left: 93%;
+
+
+
+
+ 
 }
+
+
 
 /*-------------------------------------------------------------------------- 
 DISEÑO HOME
  ----------------------------------------------------------------------------*/
-body .contenedor button[type="submit"] {
+body .menu button[type="submit"] {
     font-size: 43px;
     border: none;
     background: none;
-    position: relative;
+    display: flex;
+
+ 
     /* left: -178px; */
-    right: 10px;
-    bottom: 475px; 
+  
     
+}
+
+body .linea2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
 }
 
 .caja{
       background-color: rgba(255, 145, 55, 0.7);
     display: inline-block;
-    position: relative;
+ 
     width: 275px;
     height: 200px;
     border-radius: 6px;
-    bottom: 275px;
-    right: 50px;
+    margin-bottom: 10%;
+ 
     }
 
     .caja ul li a{
@@ -167,29 +192,331 @@ body .contenedor button[type="submit"] {
     }
      
 img.centro{
-    left: 20px;
-    width: 70%;
-    position: relative;
+    
     height: 500px;
-    top: 100px;
+    margin-right: 25%;
+    
 }
 
-    .imabajo img{
+body .imabajo{
+    margin-top: 8%;
+    margin-left: 25%;
+    
+    
+    
+}
+    body .imabajo img{
        width: 200px;
         height: 250px;
-       display: inline-block;  
-        margin-top: 100px;
-        left: 30%;
-        position: relative;
-        margin-right: 85px;
+      
+    
+      
+      
+     
+    margin-right: 10%;
+     
+        
     }
 
- /*-------------------------------------------------------------------------- 
+    @media (max-width: 600px){
+        header .linea {
+            display: flex;
+            /* flex-wrap: wrap; */
+            align-items: center;
+        }
+
+        header .icons {
+            position: relative;
+          
+            /* display: inline-block; */
+            display: flex;
+        }
+
+        header ul {
+            /* justify-content: space-between; */
+            margin-right: 5px;
+        }
+
+        header ul li {
+            margin-right: 10px;
+            /* display: flex; */
+            /* flex-direction: row; */
+            /* display: inline-block; */
+        }
+
+        header img.logo {
+         
+            margin-right: 10px;
+            width: 150px;
+            height: 100px;
+        }
+
+         header form {
+                
+              width: 330px;
+                
+            }
+            .caja {
+                
+                
+                width: 155px;
+                height: 160px;
+                /* padding-bottom: 0px; */
+                margin-right: 35px;
+                margin-bottom: 0px;
+            }
+
+            .caja ul li a {
+            
+                font-size: 8px;
+              
+            }
+            img.centro {
+                height: 150px;
+              
+                width: 200px;
+            }
+
+            header ul li a {
+             
+                font-size: 12px;
+                
+            }
+            header form {
+                width: 200px;
+                margin-left: 40%;
+            }
+            body .linea2 {
+                
+                margin-top: 20%;
+            }
+
+            .caja ul {
+               
+                padding-left: 20px;
+                padding-right: 20px;
+               
+            }
+
+            .caja ul li {
+                margin-top: 20px;
+               
+            }
+
+           
+              
+          
+
+         
+                body .imabajo img {
+                    width: 100px;
+                    height: 200px;
+                    margin-right: 2%;
+                }
+
+            body .imabajo {
+               
+                 margin-left: 0px;
+            }
+          
+            
+        }
+
+        @media (min-width: 900px) and (max-width: 1200px){
+            header img.logo {
+                width: 200px;
+                height: 130px;
+                margin-right: 10px;
+              
+            }
+
+            header ul li a {
+                text-decoration: none;
+                color: black;
+                font-size: 15px;
+                font-weight: bold;
+            }
+
+            
+            header ul {
+            
+                margin-right: 20px;
+            }
+                   
+
+                    header ul li {
+                        
+                        display: inline-block;
+                    }
+
+                    header form {
+                        
+                        width: 230px;
+                    }
+
+                    img.centro {
+                        height: 300px;
+                        margin-left: 5%;
+                    }
+
+                    body .imabajo img {
+                        width: 150px;
+                        height: 250px;
+                        margin-right: 6%;
+                    }
+                    img.centro {
+                    
+                        height: 300px;
+                            /* margin-right: 25%; */
+                           
+                            /* margin-right: 25%; */
+                            margin-left: 4%;
+                        
+                    }
+
+                    body .detalle{
+                        margin-left: 20%;
+                    }
+
+
+        }
+
+        @media (min-width: 1200px) and (max-width: 1500px){
+            header ul li {
+                margin-right: 40px;
+                
+            }
+
+            header form {
+               
+                width: 300px;
+                
+             }
+             header ul {
+           
+                margin-right: 50px;
+            }
+            img.centro {
+                height: 480px;
+                /* margin-right: 25%; */
+                margin-left: 10%;
+            }
+
+            body .imabajo img {
+              
+                margin-right: 5%;
+            }
+
+            body .detalle{
+                margin-left: 25%;
+            }
+        }
+
+            
+            @media (min-width: 700px) and (max-width: 900px){
+                header img.logo {
+                    width: 200px;
+                    height: 100px;
+                   
+                    margin-right: 10px;
+                }
+
+                header ul {
+                   
+                    margin-right: 20px;
+                }
+                header ul li a {
+                    
+                    font-size: 12px;
+                    
+                }
+
+                header form {
+                   
+                    width: 160px;
+                }
+
+                img.centro {
+                    height: 250px;
+                    margin-right: 25%;
+                }
+
+                header ul li {
+                    margin-right: 20px;
+                   
+                }
+
+                body .linea2 {
+                   
+                    margin-top: 12%;
+                }
+
+                .caja ul li a {
+                  
+                    font-size: 12px;
+                
+                }
+
+                img.centro {
+                 
+                    height: 200px;
+                    margin-left: 10%;
+                }
+
+                .caja {
+                    margin-bottom: 0%;
+                }
+
+                body .imabajo {
+                    margin-left: 0%;
+                }
+
+                body .imabajo img {
+                    width: 155px;
+                    height: 200px;
+                    margin-right: 5%;
+                }
+
+                body .detalle {
+                    
+                    height: 400px;
+            
+                    width: 400px;
+                   
+                    margin-left: 15%;
+                }
+
+                body .detalle img {
+                    width: 200px;
+                    height: 200px;
+               
+                    margin-left: 25%;
+                }
+
+                body .detalle p {
+                 
+                    font-size: 20px;
+                }
+
+                .detalle i.fa-tag {
+                    font-size: 25px;
+               
+                }
+
+                body .detalle button[type="submit"] {
+                    margin-left: 150%;
+                   
+                    font-size: 35px;
+                }
+            }
+              
+/*--------------------------------------------------------- 
 DISEÑO DETALLE
  ----------------------------------------------------------------------------*/
 .detalle{
-    position: relative;
-    left: 30%;
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
     border: solid 4px black;
     border-radius: 15px;
     width: 700px;
@@ -198,42 +525,37 @@ DISEÑO DETALLE
     background-color: rgba(255, 145, 55, 0.603);
     width: 500px;
     margin-bottom: 40px;
+    margin-left: 33%;
 }
 .detalle img{
     width: 250px;
     height: 250px;
-    position: relative;
-    left: 25%;
-    top: 60px;
+    margin-top: 8%;
+    margin-left: 27%;
+   
 }
 
 .detalle p{
     font-weight: bold;
     font-size: 25px;
 }
-.detalle p:nth-of-type(1){
-    position: relative;
-    top: 60px;
-    left: 25px;
-}
+
+ 
+
 .detalle small{
     font-style: italic;
     font-size: 13px;
-    position: relative;
-    top: 53px;
-    left: 25px;
-}
-.detalle p:nth-of-type(2){
-    position: relative;
-    top: 55px;
-    left: 25px;
+ 
 }
 
+
+
+
  .detalle button[type="submit"] {
-    position: relative;
+    margin-left: 160%;
     /* top: 0px; */
     /* font-size: 25px; */
-    left: 385px;
+ 
     background: none;
     border: none;
     font-size: 45px;
@@ -242,10 +564,77 @@ DISEÑO DETALLE
 
  .detalle i.fa-tag{
     font-size: 30px;
-    position: relative;
-    top: 6px;
-    left: 119px;
+    margin-top: 25%;
 }
+.lineaarriba{
+    margin-left: 10px;
+}
+.lineaabajo {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-left: 10px;
+}
+
+@media (max-width: 600px){
+
+    .detalle{
+        height: 350px;
+        width: 300px;
+        margin-left: 3%;
+    }
+
+    .detalle img {
+        width: 180px;
+        height: 150px;
+        margin-top: 8%;
+        margin-left: 20%;
+        /* top: 60px; */
+    }
+    .detalle p {
+      
+        font-size: 16px;
+    }
+
+    .detalle small {
+       
+        font-size: 13px;
+        
+    }
+
+    .lineaarriba{
+        margin-bottom: 10px;
+    }
+
+    .detalle i.fa-tag {
+      
+    font-size: 18px;
+    margin-top: 26%;
+    }
+    
+
+    .detalle button[type="submit"] {
+        margin-left: 140%;
+        /* top: 0px; */
+        /* font-size: 25px; */
+      
+        font-size: 27px;
+    }
+
+    .contenedor{
+        margin-right: 10px;
+        padding-bottom: 100px;
+        margin-left: 20px;
+        padding-top: 100px;
+
+    }
+}
+
+
+
+
+
+
 
  /*-------------------------------------------------------------------------- 
  DISEÑO CARRITO
