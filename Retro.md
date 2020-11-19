@@ -1,3 +1,7 @@
+---------------------------------------------
+Sprint 1
+---------------------------------------------
+
 1. Comenzar a hacer
 Utilizar más Trello (solo lo usamos en las reuiones), tal vez lo podemos utilizar más seguido.
 
@@ -12,3 +16,22 @@ Reuniones largas. Tal vez porque la periodicidad es menos frecuentes las reunion
 
 5. Dejar de hacer
 Las entregas para el último día (si es posible,je)
+
+---------------------------------------------
+Sprint 2
+---------------------------------------------
+
+1. Comenzar a hacer
+Si bien utilizamos trello, solo actualizamos el dashboard en las reuniones. No tenemos independencia del seguimiento con la herramienta.
+
+2. Hacer más
+Reuniones de seguimiento periódicas, nos proponemos hacerlas lu/mi/vi pero no siempre las logramos realizar.
+
+3. Continuar haciendo
+Nos ayudamos con los temas que otro se encuentra trabado. En eso el grupo es muy solidario.
+
+4. Hacer menos
+No siempre nos comentamos las dificultades que nos encontramos, solo vemos el resultado. Tal vez podemos tomarnos unos minutos en hablar las dificultades que nos fuimos encontrando.
+
+5. Dejar de hacer
+Las entregas para el último día (todavía no lo logramos)

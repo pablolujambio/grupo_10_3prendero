@@ -18,5 +18,11 @@
 5. www.vinsonindumentaria.com.ar / A esta página la elegimos porque permite hacer compras tanto mayoristas como minoristas y apunta solo al público masculino.
 
 ### Link Tablero (Trello)
+Sprint 1
+https://trello.com/b/vkxn3hl5/sprint-1
+
+Sprint 2:
 https://trello.com/b/waq9omsA/sprint-2
 
+Sprint 3: 
+https://trello.com/b/Rpbhq4cS/sprint-3

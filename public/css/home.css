@@ -201,6 +201,8 @@ img.centro{
 body .imabajo{
     margin-top: 8%;
     margin-left: 25%;
+ display:flex;
+ 
     
     
     
@@ -208,12 +210,11 @@ body .imabajo{
     body .imabajo img{
        width: 200px;
         height: 250px;
-      
+      margin-right: 10%;
     
       
       
-     
-    margin-right: 10%;
+
      
         
     }
@@ -309,14 +310,17 @@ body .imabajo{
 
          
                 body .imabajo img {
-                    width: 100px;
-                    height: 200px;
-                    margin-right: 2%;
+                    width: 90px;
+                    height: 150px;
+                
                 }
 
             body .imabajo {
-               
-                 margin-left: 0px;
+                display: flex;
+                justify-content: space-between;
+                margin-left: 0px;
+                
+                
             }
           
             
@@ -412,6 +416,107 @@ body .imabajo{
             }
         }
 
+        @media (min-width: 600px) and (max-width: 700px){
+            img.centro {
+                height: 200px;
+                width: 300px;
+             
+                margin-left: 5%;
+            }
+
+            header .icons {
+               
+                display: flex;
+           
+            }
+
+            header img.logo {
+                width: 200px;
+                height: 100px;
+                
+                margin-right: 15px;
+            }
+
+            header ul {
+               
+                margin-right: 30px;
+            }
+            header ul li {
+                margin-right: 20px;
+              
+            }
+            header ul li a {
+                
+              
+                font-size: 16px;
+                
+            }
+            header form {
+               
+                width: 250px;
+                margin-left: 35%;
+              
+                margin-top: 2%;
+               
+            }
+
+            body .imabajo {
+                margin-top: 8%;
+                display: flex;
+                justify-content: space-between;
+                margin-left: 0px;
+                
+            }
+
+            body .imabajo img {
+                width: 130px;
+                height: 250px;
+               
+            }
+
+            .caja ul li a {
+               
+                font-size: 12px;
+               
+             }
+
+        .caja{
+            margin-bottom: 0px;
+        }
+
+        body .detalle i.fa-tag {
+            font-size: 20px;
+          
+        }
+
+        body .detalle p {
+           
+            font-size: 20px;
+        }
+
+        body .detalle img {
+            width: 200px;
+            height: 200px;
+        
+            margin-left: 25%;
+        }
+
+        body .detalle {
+            
+            margin-left: 8%;
+            height: 400px;
+            width: 400px;
+        }
+
+        body .detalle button[type="submit"] {
+            margin-left: 180%;
+           
+       
+            font-size: 30px;
+        }
+        }
+
+
             
             @media (min-width: 700px) and (max-width: 900px){
                 header img.logo {
@@ -474,7 +579,7 @@ body .imabajo{
                 body .imabajo img {
                     width: 155px;
                     height: 200px;
-                    margin-right: 5%;
+              
                 }
 
                 body .detalle {
@@ -508,6 +613,7 @@ body .imabajo{
                    
                     font-size: 35px;
                 }
+               
             }
               
 /*--------------------------------------------------------- 
@@ -669,6 +775,7 @@ DISEÑO DETALLE
 
 .opcionesItem{
     display: flex;
+    flex-direction: column;
     padding: 0px;
     justify-content: space-around;
 }
