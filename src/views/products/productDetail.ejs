@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head', {title: "Home"}) %>
+<body>
+
+<!-----------------------------------------------------------------------
+ Esto es el header
+-------------------------------------------------------------------------->
+<%- include('partials/header') %>
+
+<!-----------------------------------------------------------------------
+Esto es el cuerpo
+-------------------------------------------------------------------------->
+    
+
+<div class="contenedor">
+ <div class="detalle">
+    <img class="logo" src="imagenes/remera.jpg" alt="logo">
+    
+   <div class="lineaarriba">
+    <p>NOMBRE DEL PRODUCTO</p>
+    <small>Descripcion breve del producto</small>
+</div>
+
+    <div class="lineaabajo">
+    <P>PRECIO</P>
+    <i class="fas fa-tag"></i>
+
+    <button type="submit"><i class="fas fa-shopping-cart"></i></button>
+    </div>
+
+ </div>
+ 
+ <!-----------------------------------------------------------------------
+ Esto es el footer
+-------------------------------------------------------------------------->
+ 
+<%- include('partials/footer') %>
+</div>
+</body>
+</html>

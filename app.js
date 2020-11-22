@@ -2,28 +2,34 @@ const express = require('express');
 const app= express();
 const path = require('path')
 
-app.use( express.static(path.join(__dirname, "./public")))
 
 
-app.get('/home', function(req, res){
-    res.sendFile(path.join(__dirname, ".", "src", "views", "index.html"))
-})
 
-app.get('/detalle', function(req, res){
-    res.sendFile(path.join(__dirname, ".", "src", "views", "products", "productDetail.html"))
-})
 
-app.get('/carrito', function(req, res){
-    res.sendFile(path.join(__dirname, ".", "src", "views", "products", "productCart.html"))
-})
+const mainRouter = require('./routes/main');
+const usersRouter = require('./routes/users');
+const productsRouter = require('./routes/products');
 
-app.get('/login', function(req, res){
-    res.sendFile(path.join(__dirname, ".", "src", "views", "users", "login.html"))
-})
+app.use(express.urlencoded({extended: false}));
+app.use(express.json())
 
-app.get('/register', function(req, res){
-    res.sendFile(path.join(__dirname, ".", "src", "views", "users", "register.html"))
-})
+
+app.set('view engine', 'ejs');
+
+app.set('views', path.join(__dirname, 'views'));
+
+app.use(express.static(path.join(__dirname, '../public')));
+
+app.use('/', mainRouter);
+app.use('/users', usersRouter);
+app.use('/products', productsRouter);
+
+
+
+
+
+
+
 
 app.listen(3000, function() {
     console.log('servidor esta funcionando')

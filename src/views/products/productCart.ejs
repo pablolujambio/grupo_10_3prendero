@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('partials/head', {title: "Home"}) %>
+<!-----------------------------------------------------------------------
+ Esto es el body
+--------------------------------------------------------------------------> 
+
+<body>
+    <%- include('partials/header') %>
+<!-----------------------------------------------------------------------
+ Esto es el header
+-------------------------------------------------------------------------->
+<header>
+           
+    <div class="linea">
+        <img class="logo" src="imagenes/logo.jpg" alt="logo">
+    
+        <ul>
+            <li><a href="#">HOMBRE</a></li>
+            <li><a href="#">MUJER</a></li>
+            <li><a href="#">KIDS</a></li>
+        </ul>
+        <form action="index.html" method="POST">
+        
+                <input type="text" placeholder="Search"><button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+
+    </div>
+    <div class="icons">
+        <button type="submit"><i class="fas fa-shopping-cart"></i></button>
+    <button type="submit"><i class="fas fa-user"></i></button>
+
+    </div>   
+  
+</header>
+
+<!-----------------------------------------------------------------------
+ Esto es el cuerpo
+-------------------------------------------------------------------------->
+
+<div class="contenedor">
+<div class="carritoTop">
+<p><b><u>Carrito (2)</u></b></p>
+<p class="textoAzul">Guardados (0)</p>
+</div>
+<hr>
+
+<form action="validad.php" method="POST"></form>
+
+<div class="itemDetalle">
+<div class="itemImagen">
+<img class="logo" src="imagenes/remera.jpg" alt="logo" width="100px" height="125px">
+</div>
+<div class="caracteristicas">
+<p><b>Nombre de producto a comprar</b></p>
+<p>Detalles de producto</p>
+<p class="textoVerde"><i>Envio Gratis</i></p>
+<div class="opcionesItem">
+    <p><a href="">Eliminar</a></p>
+    <p><a href="">Más Productos del Vendedor</a></p>
+    <p><a href="">Comprar Ahora</a></p>
+    <p><a href="">Guardar para después</a></p>
+</div>
+</div>
+<div class="itemCantidad">
+<p>1</p>
+<p>Unidad</p>
+</div>
+<div class="itemPrecio">
+<p>$ 5.000,00</p>
+</div>
+</div>
+<hr>
+
+<div class="itemDetalle">
+    <div class="itemImagen">
+    <img class="logo" src="imagenes/remera.jpg" alt="logo" width="100px" height="125px">
+    </div>
+    <div class="caracteristicas">
+    <p><b>Nombre de producto a comprar</b></p>
+    <p>Detalles de producto</p>
+    <p class="textoVerde"><i>Envio Gratis</i></p>
+    <div class="opcionesItem">
+        <p><a href="">Eliminar</a></p>
+        <p><a href="">Más Productos del Vendedor</a></p>
+        <p><a href="">Comprar Ahora</a></p>
+        <p><a href="">Guardar para después</a></p>
+    </div>
+    </div>
+    <div class="itemCantidad">
+    <p>1</p>
+    <p>Unidad</p>
+    </div>
+    <div class="itemPrecio">
+    <p>$ 5.000,00</p>
+    </div>
+    </div>
+    <hr>
+
+<div class="pago">
+<p class="textoAzul"><i>Envío a San Lorenzo 2730, Rosario</i></p>
+<p><b>Total con envío</b></p>
+<p><b>$ 10.000,00</b></p>
+
+
+</div>
+<hr>
+<button class="botonCompra" type=“submit”>Continuar con la Compra</button>
+
+<!-----------------------------------------------------------------------
+ Esto es el footer
+-------------------------------------------------------------------------->
+
+<%- include('partials/footer') %>
+</div>
+</form>
+</body>
