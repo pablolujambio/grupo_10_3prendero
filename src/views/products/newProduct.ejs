@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container_log" >
+		
+    <form  action="register" autocomplete="on"> 
+      <div class= "titulos_log"><h1>Agregar nuevo producto</h1> </div>
+      <div> 
+        <label for="type" class="tipo_producto" data-icon="u" > Tipo de producto </label><br>
+        <select name="type">
+
+            <option>Remeras</option>
+            
+            <option>Pantalones</option>
+            <option>Buzos</option>
+            
+            <option>Calzado</option>
+            
+            </select>
+              </div><br>
+  
+  
+             <div>
+               <label for="sexo" class="tipo_producto">Sexo</label><br>
+               <input type="radio" name="sexo" value="tiempocompleto"> Mujer<br>
+
+               <input type="radio" name="sexo" value="mediodia"> Hombre<br>
+           
+               <input type="radio" name="sexo" value="sinempleo"> Unisex</div>   <br>
+               
+        <div>
+          <label for="descripcion" class="tipo_producto" data-icon="p">Descripcion</label><br>
+          <textarea name="descripcion" ></textarea></div>      
+      <div> 
+        <label for="talles" class="tipo_producto" data-icon="p"> Talle </label><br>
+        <select name="talles">
+
+            <option>XL</option>
+            
+            <option>L</option>
+            <option>M</option>
+            
+            <option>S</option>
+            <option>XS</option>
+            
+            </select> 
+              </div>
+            
+       <div> 
+        <label for="precio" class="tipo_producto" data-icon="p"> Precio del Producto </label><br>
+        <input type="number" name="precio">
+                      </div>   <br>   
+                          
+                      <div><button class="logButton" type=“submit”>Cargar Producto</button></div><br><br><br><br><br>
+              </label>
+      </form>
+      <article class="imgNewProduct"><img src="imagenes/newproduct.png" alt="New Product">
+       
+      </article>
+    
+    </div>
+</body>
+</html>
