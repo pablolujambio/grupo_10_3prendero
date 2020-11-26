@@ -31,7 +31,13 @@ Comence con Template Engines. Tengo dudas y estoy repasando los videos de la pla
 Pablo:
 - Qué hizo ayer: trabajamos con Emi en el sitio carrito para que sea responsive 
 - Si se encontró con algún impedimento: se adapto rapidamente porque había armado todo con flexbox así que la adaptación fue simple
-- Qué va a hacer hoy: trabajar en separar las vistas
+- Qué va a hacer hoy: trabajar en separar las vistas.
+
+**21/11/2020**
+Emilio:
+
+Hoy estuve haciendo los ejs y haciendo la carpeta partials, tuve que reever las prácticas y mirar alguna clase  como para orientarme.
+
 
 **23/11/2020**
 Pablo:
@@ -45,4 +51,4 @@ Hoy estuve trabajando con el tema de las rutas y los ejs, porque nos encontramos
 Pude resolver el tema de todos los ejs para que funcionen. Tuve muchos errores y me tuve que ayudar desde google para poder resolver y por ahí ir probando hasta que saliera, me llevo mucho tiempo y es un tema que me cuesta mucho!!!
 
 **26/11/2020**
-Estuvimos haciendo videollamada con pablo para solucionar el tema de las etiquetas del carrito, pudimos solucionar la para que no queden todas pegadas, pero solo lo pudimos solucionar usando como etiqueta p y no li.
+Emilio: Estuvimos haciendo videollamada con pablo para solucionar el tema de las etiquetas del carrito, pudimos solucionar la para que no queden todas pegadas, pero solo lo pudimos solucionar usando como etiqueta p y no li.
