@@ -334,7 +334,11 @@ DISEÑO DETALLE
     justify-content: space-around;
 }
 
-
+.opcionesItem p a{
+margin-right: 15px;
+text-decoration: none;
+color: black;
+}
 
 .itemCantidad, 
 .itemPrecio{
@@ -952,10 +956,11 @@ margin-top: 5%;
         margin-top: 10%;
        
     }
+    .opcionesItem {
+        display: contents;
 
+    }
    
-
-
     }
 
 

@@ -40,3 +40,9 @@ Pablo:
 - Qué va a hacer hoy: colaborar con el template engines 
 Santos:
 Sigo con template engines con la ayuda de mis colegas.
+Emilio:
+Hoy estuve trabajando con el tema de las rutas y los ejs, porque nos encontramos con el problema de que no los podíamos leer. Entonces revisando las prácticas y algunos videos, logre hacer funcionar el home, después los otros ejs no los pude hacer funcionar, tendré que seguir reviendo las prácticas y el material.
+Pude resolver el tema de todos los ejs para que funcionen. Tuve muchos errores y me tuve que ayudar desde google para poder resolver y por ahí ir probando hasta que saliera, me llevo mucho tiempo y es un tema que me cuesta mucho!!!
+
+**26/11/2020**
+Estuvimos haciendo videollamada con pablo para solucionar el tema de las etiquetas del carrito, pudimos solucionar la para que no queden todas pegadas, pero solo lo pudimos solucionar usando como etiqueta p y no li.
