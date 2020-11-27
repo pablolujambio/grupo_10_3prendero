@@ -6,10 +6,11 @@ Santos:
 Comencé con el html de nuevos productos, sin dificultades.
 **17/11/2020**
 Emilio:
-Hoy estuve trabajando con las media-queries de la home, me doy cuenta que me cuesta adaptar la pagina a pantallas mas chicas sobre todo a la del celular, así tuve que volver a reever las practicas y ver un poco mas la teoría. Nuevamente le dedique varias horas, aun así noto que me sigue costando mucho. También empecé a usar flexbox en el detalle de producto.
+Hoy estuve trabajando con las media-queries de la home y del header, me doy cuenta que me cuesta adaptar la pagina a pantallas mas chicas sobre todo a la del celular, así tuve que volver a reever las practicas y ver un poco mas la teoría. Nuevamente le dedique varias horas, aun así noto que me sigue costando mucho. También empecé a usar flexbox en el detalle de producto.
 
 Santos:
 Finalice el html de nuevos productos y comence con el daily track.
+
 **18/11/2020**
 Emilio:
 Hoy seguí con las media-queries del header , home y el detalle de producto tratando de adaptarla a varias pantallas, yo creo de a poquito le voy agarrando la mano, pero me sigue costando y requiere mucho tiempo.
@@ -46,9 +47,17 @@ Pablo:
 - Qué va a hacer hoy: colaborar con el template engines 
 Santos:
 Sigo con template engines con la ayuda de mis colegas.
+
+**25/11/2020**
 Emilio:
 Hoy estuve trabajando con el tema de las rutas y los ejs, porque nos encontramos con el problema de que no los podíamos leer. Entonces revisando las prácticas y algunos videos, logre hacer funcionar el home, después los otros ejs no los pude hacer funcionar, tendré que seguir reviendo las prácticas y el material.
 Pude resolver el tema de todos los ejs para que funcionen. Tuve muchos errores y me tuve que ayudar desde google para poder resolver y por ahí ir probando hasta que saliera, me llevo mucho tiempo y es un tema que me cuesta mucho!!!
 
 **26/11/2020**
-Emilio: Estuvimos haciendo videollamada con pablo para solucionar el tema de las etiquetas del carrito, pudimos solucionar la para que no queden todas pegadas, pero solo lo pudimos solucionar usando como etiqueta p y no li.
+Emilio: Estuvimos haciendo videollamada con pablo para solucionar el tema de las etiquetas del carrito, pudimos solucionar la para que no queden todas pegadas, pero solo lo pudimos solucionar usando como etiqueta p y no li. 
+
+Estuvimos haciendo videollamda con santosp ara modificar algunas cosas de new product.
+
+Me quede haciendo las media queries de new product.
+
+

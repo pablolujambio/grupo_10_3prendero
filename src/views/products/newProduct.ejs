@@ -6,7 +6,10 @@
 <body>
   <%- include('../partials/header') %>
 
-  <div class="container_log" >
+  <div class="contenedor">
+    <article class="imgNewProduct"><img src="../imagenes/newproduct.png" alt="New Product">
+       
+    </article>
 		
     <form  action="register" autocomplete="on"> 
       <div class= "titulos_log"><h1>Agregar nuevo producto</h1> </div>
@@ -49,6 +52,7 @@
             <option>XS</option>
             
             </select> 
+           
               </div>
             
        <div> 
@@ -59,9 +63,8 @@
                       <div><button class="logButton" type=“submit”>Cargar Producto</button></div><br><br><br><br><br>
               </label>
       </form>
-      <article class="imgNewProduct"><img src="../imagenes/newproduct.png" alt="New Product">
-       
-      </article>
+      
+      
       
     <%- include('../partials/footer') %>
     </div>
