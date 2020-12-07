@@ -161,41 +161,13 @@ body .linea2{
     margin-top: 5%;
 }
 
-.caja{
-      background-color: rgba(255, 145, 55, 0.7);
-    display: inline-block;
- 
-    width: 275px;
-    height: 200px;
-    border-radius: 6px;
-    margin-bottom: 10%;
- 
-    }
 
-    .caja ul li a{
-        text-decoration: none;
-        color: black;
-        font-size: 16px;
-        font-weight: bold;
-    }
-
-    .caja ul li{
-        margin-top: 30px;
-        list-style: none;
-    }
-
-    .caja ul{
-      /* padding-top: 0px; */
-      padding-bottom: 15px;
-      padding-left: 20px;
-      padding-right: 30px;
-    }
      
 img.centro{
     
     height: 500px;
    
-    width: 85%;
+    width: 100%;
     
 }
 
@@ -703,6 +675,17 @@ margin-top: 5%;
      border-top: 1px solid black;
  }
 
+ footer .contenedor2{
+ 
+margin-top: 3%;
+    border-top: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  
+}
+ 
+
  footer .izq .arriba ul{
     display: flex;
     flex-wrap: wrap;
@@ -736,6 +719,8 @@ margin-top: 5%;
     font-size: 16px;
 
  }
+
+
 
 
  footer .contenedorfooter{
@@ -773,6 +758,49 @@ footer .der .de button[type="submit"]{
 
  
 }
+
+body footer .contenedor2 .derecha ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    }
+
+    body footer .contenedor2 .derecha ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+       
+    }
+
+    body footer .contenedor2 .derecha ul li {
+        list-style: none;
+        margin-bottom: 10px;
+    }
+
+    body footer .contenedor2 .izquierda {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 2%;
+       
+    }
+
+    body footer .contenedor2 .izquierda img{
+        width: 100px;
+        margin-right: 20px;
+    }
+
+    
+    body footer .contenedor2 .izquierda small{
+    font-size: 15px;
+    }
+
+    
+    body footer .contenedor2 .derecha{
+    margin-top: 1%;
+   
+    }
  
 
      /*-------------------------------------------------------------------------- 
@@ -780,7 +808,7 @@ footer .der .de button[type="submit"]{
  ---------------------------------------------------------------------------*/
 
 
-@media (min-width: 430px) and (max-width: 600px){
+@media (max-width: 600px){
 
     .wallpaper {
        
@@ -841,21 +869,7 @@ footer .der .de button[type="submit"]{
           width: 330px;
             
         }
-        .caja {
-            
-            
-            width: 155px;
-            height: 160px;
-            /* padding-bottom: 0px; */
-            margin-right: 0px;
-            margin-bottom: 0px;
-        }
-
-        .caja ul li a {
         
-            font-size: 8px;
-          
-        }
       
 
         header ul li a {
@@ -872,24 +886,14 @@ footer .der .de button[type="submit"]{
             margin-top: 20%;
         }
 
-        .caja ul {
-           
-            padding-left: 20px;
-            padding-right: 20px;
-           
-        }
-
-        .caja ul li {
-            margin-top: 20px;
-           
-        }
+      
 
        
         body img.centro {
             height: 200px;
             /* margin-right: 25%; */
             
-            width: 80%;
+            width: 100%;
     
             margin-left: 0%;
         }
@@ -1071,6 +1075,14 @@ footer .der .de button[type="submit"]{
         margin-top: 5px;
     }
 
+    footer .izq .arriba ul li a {
+      
+        font-size: 13px;
+       
+    }
+
+
+
     footer .der {
         
         display: flex;
@@ -1118,6 +1130,28 @@ footer .der .de button[type="submit"]{
 
     footer {
         margin-top: 17%;
+       
+    }
+
+    body footer .contenedor2 .izquierda {
+       
+        margin-top: 10%;
+        flex-direction: column;
+    }
+
+    body footer .contenedor2 .izquierda img {
+       
+        margin-bottom: 20px;
+    }
+
+    body footer .contenedor2 .izquierda small {
+        font-size: 12px;
+        margin-right: 20px;
+    }
+
+    body footer .contenedor2 .derecha ul li a {
+        
+        font-size: 13px;
        
     }
         
@@ -1204,7 +1238,7 @@ footer .der .de button[type="submit"]{
                     height: 350px;
                     /* margin-right: 25%; */
                     
-                    width: 83%;
+                    width: 100%;
         
                     margin-left: 0%;
                 }
@@ -1351,7 +1385,7 @@ footer .der .de button[type="submit"]{
             height: 350px;
             /* margin-right: 25%; */
             
-            width: 85%;
+            width: 100%;
 
             margin-left: 0%;
         }
@@ -1549,7 +1583,7 @@ footer .der .de button[type="submit"]{
         height: 250px;
         /* margin-right: 25%; */
         
-        width: 75%;
+        width: 100%;
 
         margin-left: 0%;
     }
@@ -1679,6 +1713,21 @@ padding-left: 0%;
         display: contents;
 
     }
+
+    body footer .contenedor2 .izquierda img {
+        width: 80px;
+        
+    }
+
+    body footer .contenedor2 .izquierda small {
+        font-size: 12px;
+    }
+
+    body footer .contenedor2 .derecha ul li a {
+      
+        font-size: 13px;
+        
+    }
    
     }
 
@@ -1786,7 +1835,7 @@ padding-left: 0%;
                 height: 300px;
                 /* margin-right: 25%; */
                 
-                width: 80%;
+                width: 100%;
     
                 margin-left: 0%;
             }
