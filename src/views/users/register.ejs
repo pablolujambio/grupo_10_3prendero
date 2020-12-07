@@ -4,8 +4,15 @@
   <%- include('../partials/head') %>
 
 <body>
-  <div class="container_log" >
-		
+
+  <%- include('../partials/header') %>
+
+  
+  <div class="contenedor" >
+   
+    <article class="wallpaper2"><img src="../imagenes/wallpapaer.jpg" alt="wallpapaer">
+       
+    </article>
     <form  action="register" autocomplete="on"> 
       <div class= "titulos_log"><h1>Regístrate</h1> </div>
       <div> 
@@ -35,11 +42,14 @@
               Ya eres miembro?
               <a class="log_a_reg" href="login">Inicia sesión..</a> </label>
       </form>
-      <article class="wallpaper"><img src="../imagenes/wallpapaer.jpg" alt="wallpapaer">
-       
-      </article>
-    
+     
+
+
+  
+      <%- include('../partials/footer') %>
     </div>
+
+ 
 </body>
 </html>
 

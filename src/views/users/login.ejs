@@ -4,7 +4,14 @@
     <%- include('../partials/head') %>
 
 <body>
-<div class="container_log" >
+
+	<%- include('../partials/header') %>
+
+<div class="contenedor" >
+
+	<article class="wallpaper"><img src="../imagenes/wppmujer.jpg" alt="wallpapaer">
+       
+	</article>
 		
 			<form  action="mysuperscript.php" autocomplete="on"> 
 				<div class= "titulos_log"><h1>Inicia Sesión</h1> </div>
@@ -26,9 +33,9 @@
 					<a href="register" class="log_a_reg">¡Únete a 3-Prendero!</a>
                 </div>  
             </form>
-            <article class="wallpaper"><img src="../imagenes/wppmujer.jpg" alt="wallpapaer">
-       
-            </article>
+           
+			
+			<%- include('../partials/footer') %>
 		</div>
     </body>
     </html>
