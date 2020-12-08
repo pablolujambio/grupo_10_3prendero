@@ -137,6 +137,11 @@ display: inline-block;
  
 }
 
+header .icons button[type="submit"] a{
+    text-decoration: none;
+    color: black;
+}
+
 
 
 /*-------------------------------------------------------------------------- 
@@ -541,6 +546,15 @@ color: black;
         font-weight: inherit;
         font-size: 19px;
         color: #F18805;
+        margin-left: 20%;
+    }
+
+    .name{
+        margin-left: 26%;
+    }
+
+    .pass{
+        margin-left: 26%;
     }
 
     .logButton{
@@ -563,6 +577,15 @@ color: black;
       text-transform: uppercase;
     }
     
+    .inicio{
+        
+    margin-left: 28%;
+
+    }
+
+    .log{
+        margin-left: 26px;git
+    }
     .logButton:hover, .botonCompra:focus {
         box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
           0 4px 5px 0 rgba(0, 0, 0, 0.14),
@@ -570,16 +593,118 @@ color: black;
         background-color: #D95D39;
       }
       
+      .keeplogin{
+        margin-left: 26%;
+      }
       .logButton:active {
         box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
           0 8px 10px 1px rgba(0, 0, 0, 0.14),
           0 3px 14px 2px rgba(0, 0, 0, 0.12);
         background-color: #e45027;
       }
+
+      .principal{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+      }
+
+
+      .redessociales{
+        margin-top: 2%;
+        display: flex;
+      }
+
+      .facebook{
+        padding: 0 16px;
+        float: left;
+      border-radius: 2px;
+      background-color: #0509f1;
+      box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12);
+      color: #fff;
+      transition: background-color 15ms linear,
+        box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+      height: 36px;
+      line-height: 2.25rem;
+      font-family: Roboto, sans-serif;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      
+      }
+
+      .facebook:hover{
+        padding: 0 16px;
+        float: left;
+      border-radius: 2px;
+      background-color: #fff;
+      box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12);
+      color:  #0509f1;
+      transition: background-color 15ms linear,
+        box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+      height: 36px;
+      line-height: 2.25rem;
+      font-family: Roboto, sans-serif;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      
+      }
+
+
+
+      .google{
+          margin-right:20px;
+        padding: 0 16px;
+        float: left;
+      border-radius: 2px;
+      background-color: #f15005;
+      box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12);
+      color: #fff;
+      transition: background-color 15ms linear,
+        box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+      height: 36px;
+      line-height: 2.25rem;
+      font-family: Roboto, sans-serif;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+     
+      }
+
+      
+      .google:hover{
+        padding: 0 16px;
+        float: left;
+      border-radius: 2px;
+      background-color:#fff;
+      box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12);
+      color:  #f15005;
+      transition: background-color 15ms linear,
+        box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+      height: 36px;
+      line-height: 2.25rem;
+      font-family: Roboto, sans-serif;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+     
+      }
+
+
+      
       .wallpaper{
         position: relative;
         float: right;
-        margin-right: 30%;
+   
           }
 
           .wallpaper2{
@@ -591,6 +716,13 @@ color: black;
               color: hsl(22, 94%, 50%);
               text-decoration: underline;
               text-shadow: green;
+          }
+
+          .olvidar{
+            color: hsl(22, 94%, 50%);
+            text-decoration: underline;
+            font-size: 11px;
+            margin-left: 35%;
           }
 
           
@@ -812,7 +944,8 @@ body footer .contenedor2 .derecha ul li a{
 
     .wallpaper {
        
-        margin-right: 4%;
+        margin-right: 10%;
+        width: 100%;
     }
 
     .wallpaper img{
@@ -847,20 +980,18 @@ body footer .contenedor2 .derecha ul li a{
 
     header ul {
         /* justify-content: space-between; */
-        margin-right: 5px;
+        margin-right: 0px;
     }
 
     header ul li {
-        margin-right: 10px;
+        margin-right: 5px;
         /* display: flex; */
         /* flex-direction: row; */
         /* display: inline-block; */
     }
-
     header img.logo {
-     
-        margin-right: 10px;
-        width: 150px;
+        margin-right: 1px;
+        width: 130px;
         height: 100px;
     }
 
@@ -874,12 +1005,24 @@ body footer .contenedor2 .derecha ul li a{
 
         header ul li a {
          
-            font-size: 12px;
+            font-size: 10px;
             
         }
         header form {
-            width: 200px;
+            width: 150px;
             margin-left: 40%;
+        }
+
+        header form input[type="text"] {
+           
+            font-size: 15px;
+            
+        }
+
+        header form button[type="submit"] {
+           
+            font-size: 17px;
+           
         }
         body .linea2 {
             
@@ -921,12 +1064,12 @@ body footer .contenedor2 .derecha ul li a{
         body .linea4 .destacado img.prendas {
             height: 200px;
             width: 170px;
-            margin-left: 90px;
+            margin-left: 40px;
         }
     
         body .linea4 .destacado p {
           font-size: 11px;
-    margin-left: 90px;
+          margin-left: 80px;
         }
     
         body .linea6 {
@@ -944,12 +1087,12 @@ body footer .contenedor2 .derecha ul li a{
         
         }body .linea6 .izq {
             
-            margin-left: 9%;
+            margin-left: 0%;
         }
     
         body .linea6 .der {
             
-            margin-left: 9%;
+            margin-left: 0%;
         }
     
         body .linea6 .der .fila .prenda {
