@@ -1,56 +1,68 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('../partials/head') %>
+
+<%- include('../partials/head') %>
+
+<!-----------------------------------------------------------------------
+ Esto es el body
+--------------------------------------------------------------------------> 
 
 <body>
 
-	<%- include('../partials/header') %>
+<!-----------------------------------------------------------------------
+ Esto es el header
+-------------------------------------------------------------------------->
+
+<%- include('../partials/header') %>
+
+<!-----------------------------------------------------------------------
+ Esto es el cuerpo
+-------------------------------------------------------------------------->
 
 <div class="contenedor" >
-
 	<article class="wallpaper"><img src="../imagenes/wppmujer.jpg" alt="wallpapaer">
-       
-	</article>
+    </article>
 
 	<div class= "principal">
-		
-			<form  action="mysuperscript.php" autocomplete="on"> 
-				<div class= "titulos_log"><h1>Inicia Sesión</h1> </div>
-				<div class="name"> 
-					<label for="username" class="datos_login" data-icon="u" > Nombre de Usuario </label><br>
-					<input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
-                </div><br>
-				<div class="pass" > 
-					
-					<label for="password" class="datos_login" data-icon="p"> Contraseña </label><br>
-					<input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" /> <br>
+		<form  action="mysuperscript.php" autocomplete="on"> 
+			<div class= "titulos_log"><h1>Inicia Sesión</h1> 
+			</div>
+			
+			<div class="name"> 
+				<label for="username" class="datos_login" data-icon="u" > Nombre de Usuario </label><br>
+				<input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
+            </div><br>
+			
+			<div class="pass" > 
+				<label for="password" class="datos_login" data-icon="p"> Contraseña </label><br>
+				<input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" /> <br>
+				<a href="" class="olvidar">Olvidé mi contraseña</a>		
+            </div><br>
+			
+			<div class="keeplogin"> 
+				<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
+                <label for="loginkeeping">Mantenerme Logeado</label><br><br>
+            </div>
+			
+			<div class="inicio"><button class="logButton" type=“submit”>Iniciar Sesión</button>
+			</div><br><br><br><br><br>
+			
+			<div class="log">¿No eres miembro aún?<a href="/users/register" class="log_a_reg">¡Únete a 3-Prendero!</a>
+            </div>  
+		</form>
 
-				
-					<a href="" class="olvidar">Olvidé mi contraseña</a>
-			
-                </div><br>
-				<div class="keeplogin"> 
-					<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
-                    <label for="loginkeeping">Mantenerme Logeado</label><br><br>
-                </div>
-				<div class="inicio"><button class="logButton" type=“submit”>Iniciar Sesión</button></div><br><br><br><br><br>
-				<div class="log">
-					¿No eres miembro aún?
-					<a href="/users/register" class="log_a_reg">¡Únete a 3-Prendero!</a>
-                </div>  
-			</form>
-			<div class="redessociales">
-          
-				<button class="google" type="submit"><i class="fab fa-google"></i> Google</button>
-				<button class="facebook" type="submit"><i class="fab fa-facebook"></i> Facebook</button>
-			   
-		   </div>
+		<div class="redessociales">
+			<button class="google" type="submit"><i class="fab fa-google"></i> Google</button>
+			<button class="facebook" type="submit"><i class="fab fa-facebook"></i> Facebook</button>  
 		</div>
-			 
-           
+	</div>
+</div>
+
+<!-----------------------------------------------------------------------
+ Esto es el footer
+-------------------------------------------------------------------------->         
 			
-			<%- include('../partials/footer') %>
-		</div>
-    </body>
-    </html>
+<%- include('../partials/footer') %>
+	
+</body>

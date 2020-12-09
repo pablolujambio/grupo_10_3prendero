@@ -1,72 +1,83 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <%- include('../partials/head', {title: "Home"}) %>
+
+<%- include('../partials/head', {title: "Home"}) %>
+
+<!-----------------------------------------------------------------------
+ Esto es el body
+--------------------------------------------------------------------------> 
 
 <body>
-  <%- include('../partials/header') %>
 
-  <div class="contenedor">
-    <article class="imgNewProduct"><img src="../imagenes/newproduct.png" alt="New Product">
-       
-    </article>
+<!-----------------------------------------------------------------------
+ Esto es el header
+-------------------------------------------------------------------------->
+
+<%- include('../partials/header') %>
+
+<!-----------------------------------------------------------------------
+ Esto es el cuerpo
+-------------------------------------------------------------------------->
+
+<div class="contenedor">
+  <article class="imgNewProduct"><img src="../imagenes/newproduct.png" alt="New Product">
+  </article>
 		
-    <form  action="register" autocomplete="on"> 
-      <div class= "titulos_log"><h1>Agregar nuevo producto</h1> </div>
-      <div> 
-        <label for="type" class="tipo_producto" data-icon="u" > Tipo de producto </label><br>
-        <select name="type">
-
-            <option>Remeras</option>
-            
-            <option>Pantalones</option>
-            <option>Buzos</option>
-            
-            <option>Calzado</option>
-            
-            </select>
-              </div><br>
-  
-  
-             <div>
-               <label for="sexo" class="tipo_producto">Sexo</label><br>
-               <input type="radio" name="sexo" value="tiempocompleto"> Mujer<br>
-
-               <input type="radio" name="sexo" value="mediodia"> Hombre<br>
-           
-               <input type="radio" name="sexo" value="sinempleo"> Unisex</div>   <br>
-               
-        <div>
-          <label for="descripcion" class="tipo_producto" data-icon="p">Descripcion</label><br>
-          <textarea name="descripcion" ></textarea></div>      
-      <div> 
-        <label for="talles" class="tipo_producto" data-icon="p"> Talle </label><br>
-        <select name="talles">
-
-            <option>XL</option>
-            
-            <option>L</option>
-            <option>M</option>
-            
-            <option>S</option>
-            <option>XS</option>
-            
-            </select> 
-           
-              </div>
-            
-       <div> 
-        <label for="precio" class="tipo_producto" data-icon="p"> Precio del Producto </label><br>
-        <input type="number" name="precio">
-                      </div>   <br>   
-                          
-                      <div><button class="logButton" type=“submit”>Cargar Producto</button></div><br><br><br><br><br>
-              </label>
-      </form>
-      
-      
-      
-    <%- include('../partials/footer') %>
+  <form  action="register" autocomplete="on"> 
+    <div class= "titulos_log"><h1>Agregar nuevo producto</h1> 
     </div>
+
+    <div> 
+      <label for="type" class="tipo_producto" data-icon="u" > Tipo de producto </label><br>
+      <select name="type">
+        <option>Remeras</option>
+        <option>Pantalones</option>
+        <option>Buzos</option>
+        <option>Calzado</option>             
+      </select>
+    </div><br>
+    
+    <div>
+      <label for="sexo" class="tipo_producto">Sexo</label><br>
+      <input type="radio" name="sexo" value="tiempocompleto"> Mujer<br>
+      <input type="radio" name="sexo" value="mediodia"> Hombre<br>
+      <input type="radio" name="sexo" value="sinempleo"> Unisex
+    </div><br>
+    
+    <div>
+      <label for="descripcion" class="tipo_producto" data-icon="p">Descripcion</label><br>
+      <textarea name="descripcion" ></textarea>
+    </div>      
+      
+    <div> 
+      <label for="talles" class="tipo_producto" data-icon="p"> Talle </label><br>
+      <select name="talles">
+        <option>XL</option>         
+        <option>L</option>
+        <option>M</option>
+        <option>S</option>
+        <option>XS</option>  
+      </select> 
+    </div>
+            
+    <div> 
+      <label for="precio" class="tipo_producto" data-icon="p"> Precio del Producto </label><br>
+      <input type="number" name="precio">
+    </div>   <br>   
+                          
+    <div>
+      <button class="logButton" type=“submit”>Cargar Producto</button></div><br><br><br><br><br>
+      </label>
+    
+  </form>
+</div>
+
+<!-----------------------------------------------------------------------
+ Esto es el footer
+-------------------------------------------------------------------------->
+
+<%- include('../partials/footer') %>
+
 </body>
-</html>
+
