@@ -347,75 +347,133 @@ body .linea6 .der .fila2 .prenda p.abajo{
 /*--------------------------------------------------------- 
 DISEÑO DETALLE
  ----------------------------------------------------------------------------*/
-.detalle{
+.detallep{
     display:flex;
-    align-items: center;
-    flex-wrap: wrap;
-    border: solid 4px black;
-    border-radius: 15px;
-    width: 700px;
-    height: 500px;
-    top: 20px;
-    background-color: rgba(255, 145, 55, 0.603);
-    width: 500px;
-    margin-bottom: 40px;
-    margin-left: 33%;
-}
-.detalle img{
-    width: 250px;
-    height: 250px;
-    margin-top: 8%;
-    margin-left: 27%;
-   
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 3%;
+    
 }
 
-.detalle p{
-    font-weight: bold;
-    font-size: 25px;
-}
-
- 
-
-.detalle small{
-    font-style: italic;
-    font-size: 13px;
- 
-}
-
-
-
-
- .detalle button[type="submit"] {
-    margin-left: 160%;
-    /* top: 0px; */
-    /* font-size: 25px; */
- 
-    background: none;
-    border: none;
-    font-size: 45px;
+ .detallep .ladoizquierdo{
+     display:flex
  }
 
-
- .detalle i.fa-tag{
-    font-size: 30px;
-    margin-top: 25%;
-}
-.lineaarriba{
-    margin-left: 10px;
-}
-.lineaabajo {
+ .detallep .ladoizquierdo .izq{
     display: flex;
-    flex-direction: row;
-    align-content: center;
-    margin-left: 10px;
+    flex-direction: column;
+    margin-right: 25%;
+ }
+
+ .detallep .ladoizquierdo .izq img{
+     width: 100px;
+  
+     height: 150px;
+ }
+
+ .detallep .ladoizquierdo .der img{
+     height: 700px;
+ }
+
+ .detallep .ladoderecho{
+     margin-left:20%;
+
+ }
+
+ .detallep .ladoderecho .uno p{
+    font-size: 25px;
+    line-height: 20px;
+    font-weight: 700;
+ }
+
+ .detallep .ladoderecho .dos p{
+    font-size: 18px;
+    line-height: 14px;
+    font-weight: 400;
+ }
+
+ .detallep .ladoderecho .tres p.uno{
+    text-decoration: line-through;
+    font-size: 16px;
+    line-height: 14px;
+    font-weight: 400;
+ }
+
+ .detallep .ladoderecho .tres p{
+   
+    font-size: 25px;
+    line-height: 22px;
+    font-weight: 700;
+    margin-top: -15px;
+ }
+
+ .detallep .ladoderecho .cuatro small{
+    color: hsl(22, 94%, 50%);
+    text-decoration: none;
+    font-size: 15px;
+ }
+ .detallep .ladoderecho .cinco small{
+ font-size: 15px;
+ }
+ .detallep .ladoderecho .seis select{
+ border-radius: 0px;
+
+ width: 100%;
+ height: 30px;
+
 }
 
+.detallep .ladoderecho .seis{
+    margin-bottom: 10%;
+}
 
+.detallep .ladoderecho .siete .añadir{
+    width: 100%;
+ height: 30px;
+ background-color: #f15005de;
+ color: #fff;
+font-size: 15px;
+}
 
+.detallep .ladoderecho .siete .añadir:hover{
+    width: 100%;
+ height: 30px;
+ background-color:#fff ;
+ 
+ color: #f15005de;
+ font-size: 15px;
+}
 
+.abajod{
+    
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    border-top: 1px solid black;
+  
+    border-bottom: 1px solid black;
+  
 
+}
 
+.abajod .segundo{
+    margin-bottom: 5%;
 
+}
+
+.abajod .cajaab{
+    display: flex;
+}
+
+.abajod .cajaab .izq{
+    margin-right: 10%
+
+}
+
+.abajod .cajaab .izq p{
+    font-weight: bold;
+    
+}
 
 
  /*-------------------------------------------------------------------------- 
@@ -523,18 +581,7 @@ color: black;
 /*-------------------------------------------------------------------------- 
  DISEÑO LOGIN
  ----------------------------------------------------------------------------*/
-.container_log{
-    background-color: white;
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
-    padding-left: 30px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-right: 30px;
-    display: flex;
-    
+
 }
 .datos_login {
     font-size: 14px;
@@ -791,6 +838,16 @@ NEW PRODUCT
         color: #F18805;
     }
 
+
+    .titulos_log2{
+       
+            font-family: system-ui;
+            font-weight: inherit;
+            font-size: 19px;
+            color: #F18805;
+            margin-left: 18%;
+       
+    }
     .logButton{
         padding: 0 16px;
         float: left;
@@ -988,6 +1045,8 @@ body footer .contenedor2 .derecha ul li a{
  ---------------------------------------------------------------------------*/
 
 
+
+
 @media (max-width: 600px){
 
     .wallpaper {
@@ -1086,19 +1145,14 @@ body footer .contenedor2 .derecha ul li a{
         body .linea2 {
             
             margin-top: 20%;
+            flex-direction: column;
         }
 
       
 
        
-        body img.centro {
-            height: 200px;
-            /* margin-right: 25%; */
-            
-            width: 100%;
-    
-            margin-left: 0%;
-        }
+        
+        
 
         body .linea3 h2 {
             
@@ -1185,7 +1239,11 @@ body footer .contenedor2 .derecha ul li a{
             margin-top: 6%;
         }
 
-      
+        body img.centro {
+            height: 200px;
+         
+            width: 310px;
+        }
 
         .titulos_log {
           
@@ -1220,6 +1278,9 @@ body footer .contenedor2 .derecha ul li a{
     margin-left: 22%;
    
 }
+.titulos_log2{
+    margin-left: 8%;
+}
       
 .registro {
     margin-left: 20%;
@@ -1235,48 +1296,80 @@ body footer .contenedor2 .derecha ul li a{
     margin-left: 20px;
    
 }
-    .detalle{
-        height: 350px;
-        width: 300px;
-        margin-left: 3%;
+.detallep{
+    margin-top: 0%;
+    padding-left: 5%;
+    padding-right: 0%;
+    flex-direction: column;
     }
 
-    .detalle img {
-        width: 180px;
-        height: 150px;
-        margin-top: 8%;
-        margin-left: 20%;
-        /* top: 60px; */
-    }
-    .detalle p {
-      
-        font-size: 16px;
+    .detallep .ladoderecho .uno p {
+        font-size: 20px
     }
 
-    .detalle small {
-       
+    .detallep .ladoderecho .dos p {
         font-size: 13px;
         
     }
 
-    .lineaarriba{
-        margin-bottom: 10px;
+    .detallep .ladoderecho {
+        margin-left: 5%;
     }
 
-    .detalle i.fa-tag {
-      
-    font-size: 18px;
-    margin-top: 26%;
+    .detallep .ladoizquierdo .der img {
+        height: 300px;
     }
-    
 
-    .detalle button[type="submit"] {
-        margin-left: 140%;
-        /* top: 0px; */
-        /* font-size: 25px; */
-      
-        font-size: 27px;
+    .detallep .ladoizquierdo .izq {
+        
+        margin-right: 15%;
     }
+
+    .detallep .ladoizquierdo .izq img {
+        width: 40px;
+        height: 70px;
+    }
+
+    .detallep .ladoderecho .tres p {
+        font-size: 23px;
+       
+  
+        margin-top: -12px;
+    }
+
+    .detallep .ladoderecho .tres p.uno {
+      
+        font-size: 13px;
+        
+    }
+
+    .abajod .cajaab .izq {
+        margin-left: 8%
+    }
+
+    .abajod {
+
+        margin-top: 15%;
+      
+    }
+
+    .abajod h3{
+
+       font-size: 13px
+      
+    }
+
+    .abajod p{
+        font-size: 14px;
+    }
+
+    .abajod {
+        margin-left: 5%;
+        margin-right: 5%;
+       
+    }
+
+
 
     .contenedor{
         margin-right: 10px;
@@ -1432,7 +1525,9 @@ body footer .contenedor2 .derecha ul li a{
             width: 300px;
         }
 
-
+        .titulos_log2 {
+            margin-left: 18%;
+        }
 
         header img.logo {
             width: 200px;
@@ -1574,8 +1669,38 @@ body footer .contenedor2 .derecha ul li a{
                    
                     margin-top: 6%;
                 }
+
+                .detallep{
+                    padding-left: 5%;
+                    padding-right: 0%;
+                    }
+            
+                    .detallep .ladoderecho .uno p {
+                        font-size: 23px
+                    }
+            
+                    .detallep .ladoderecho .dos p {
+                        font-size: 17px;
+                        
+                    }
                 
+                    .detallep .ladoderecho {
+                        margin-left: 10%;
+                    }
                 
+                    .detallep .ladoizquierdo .der img {
+                        height: 600px;
+                    }
+
+                    .detallep .ladoizquierdo .izq {
+                        
+                        margin-right: 15%;
+                    }
+
+                    .detallep .ladoizquierdo .izq img {
+                        width: 80px;
+                        height: 130px;
+                    }
 
            
                
@@ -1618,6 +1743,11 @@ body footer .contenedor2 .derecha ul li a{
     }
 
     @media (min-width: 1200px) and (max-width: 1500px){
+
+        .titulos_log2 {
+            
+            margin-left: 18%;
+        }
         header ul li {
             margin-right: 40px;
             
@@ -1712,8 +1842,21 @@ body footer .contenedor2 .derecha ul li a{
         .wallpaper2 {
             margin-right: 5%;
         }
-        
 
+
+        .detallep{
+        padding-left: 10%;
+        padding-right: 10%;
+        }
+
+        .detallep .ladoderecho .uno p {
+            font-size: 23px
+        }
+
+        .detallep .ladoderecho .dos p {
+            font-size: 17px;
+            
+        }
 
         body footer .izq .arriba ul li {
             margin-right: 10px;
@@ -1740,6 +1883,11 @@ body footer .contenedor2 .derecha ul li a{
 
     @media (min-width: 600px) and (max-width: 700px){
 
+
+        .titulos_log2{
+          
+    margin-left: 18%
+        }
         body .imgNewProduct {
             padding-right: 0px;
             margin-top: 200px;
@@ -2018,6 +2166,54 @@ padding-left: 0%;
         float: none;
         margin-left: 8%;
     }
+
+    
+
+    .detallep{
+        padding-left: 0%;
+        padding-right: 0%;
+        }
+
+        .detallep .ladoderecho .uno p {
+            font-size: 20px
+        }
+
+        .detallep .ladoderecho .dos p {
+            font-size: 13px;
+            
+        }
+    
+        .detallep .ladoderecho {
+            margin-left: 5%;
+        }
+    
+        .detallep .ladoizquierdo .der img {
+            height: 400px;
+        }
+
+        .detallep .ladoizquierdo .izq {
+            
+            margin-right: 15%;
+        }
+
+        .detallep .ladoizquierdo .izq img {
+            width: 50px;
+            height: 80px;
+        }
+
+        .detallep .ladoderecho .tres p {
+            font-size: 23px;
+           
+      
+            margin-top: -12px;
+        }
+
+        .detallep .ladoderecho .tres p.uno {
+          
+            font-size: 13px;
+            
+        }
+
    
     }
 
@@ -2033,6 +2229,10 @@ padding-left: 0%;
                 width: 250px;
             }
 
+            
+        .titulos_log2 {
+            margin-left: 18%;
+        }
             header img.logo {
                 width: 200px;
                 height: 100px;
@@ -2262,6 +2462,52 @@ padding-left: 0%;
                 margin-top: 10%;
               
             }
+
+
+            .detallep{
+                padding-left: 2%;
+                padding-right: 0%;
+                }
+        
+                .detallep .ladoderecho .uno p {
+                    font-size: 20px
+                }
+        
+                .detallep .ladoderecho .dos p {
+                    font-size: 13px;
+                    
+                }
+            
+                .detallep .ladoderecho {
+                    margin-left: 5%;
+                }
+            
+                .detallep .ladoizquierdo .der img {
+                    height: 500px;
+                }
+
+                .detallep .ladoizquierdo .izq {
+                    
+                    margin-right: 15%;
+                }
+
+                .detallep .ladoizquierdo .izq img {
+                    width: 70px;
+                    height: 110px;
+                }
+
+                .detallep .ladoderecho .tres p {
+                    font-size: 23px;
+                   
+              
+                    margin-top: -12px;
+                }
+
+                .detallep .ladoderecho .tres p.uno {
+                  
+                    font-size: 13px;
+                    
+                }
 
 
            
