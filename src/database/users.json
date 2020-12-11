@@ -1,3 +1,10 @@
 [
-    
+    {
+        "id": 1,
+        "username": "Emilio27",
+        "email": "emiliozuccarelli51@gmail.com",
+        "password": "$2b$12$pULEjMs1u6VkKZmM7SBX4O9/JApNaudywxKbxroA./2EhrrPrkGqK",
+        "repassword": "$2b$12$Q8WE/4.NeqOd6rfz7IWqNOIPEzuW.Wqc/mg4sXngKekoZuBQVYpU6",
+        "date": "2020-12-02"
+    }
 ]

@@ -25,7 +25,7 @@
   </article>
   
   <div class= "principal"> 
-    <form  action="register" autocomplete="on"> 
+    <form  action="" method="post" enctype=""> 
       <div class= "titulos_log"><h1>Regístrate</h1> 
       </div>
 
@@ -36,13 +36,13 @@
   
       <div class="date">
         <label for="date" class="datos_login">Fecha de Nacimiento</label><br>
-        <input id="date" type="date">
+        <input id="date" name="date" type="date">
       </div><br>
          
       <div class="email">
         <label for="email" class="datos_login" data-icon="p">Email</label><br>
-        <input type="email" placeholder="Email" required>
-      </div><br>   nodemo
+        <input id="email" name="email" placeholder="Email" required>
+      </div><br>  
       
       <div class= "pass2"> 
         <label for="password" class="datos_login" data-icon="p"> Contraseña </label><br>
@@ -51,7 +51,7 @@
             
       <div class= "repass"> 
         <label for="password" class="datos_login" data-icon="p"> Confirme Contraseña </label><br>
-        <input id="password" name="password" type="password" placeholder="Re contraseña" required /> 
+        <input id="repassword" name="repassword" type="password" placeholder="Re contraseña" required /> 
       </div><br> 
                       
       <div class="politicas">
