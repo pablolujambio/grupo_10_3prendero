@@ -35,3 +35,22 @@ No siempre nos comentamos las dificultades que nos encontramos, solo vemos el re
 
 5. Dejar de hacer
 Las entregas para el último día (todavía no lo logramos)
+
+---------------------------------------------
+Sprint 3
+---------------------------------------------
+
+1. Comenzar a hacer
+Ver al proyecto como un todo, creemos que al dividirnos el trabajo nos perdemos un poco del "big picture".
+
+2. Hacer más
+Poner más diseño y orden en los códigos. Usar buenas prácticas.
+
+3. Continuar haciendo
+Seguir en contacto y ayudarnos como lo venimos haciendo cuando uno del equipo se atrasa o se complica.
+
+4. Hacer menos
+Reuniones largas, hacerlas más enfocadas.
+
+5. Dejar de hacer
+Seguimos con los deadline al límite. Nos cuesta resolver las entregas con anticipación. Siempre aceleramos los últimos días.
