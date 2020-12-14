@@ -3,14 +3,14 @@ const path = require("path");
 const bcrypt = require("bcrypt")
 const  { validationResult} = require("express-validator")
 
- let usuarios = fs.readFileSync(path.join(__dirname, "../database/usuarios.json"), "utf8");
+ let usuarios = fs.readFileSync(path.join(__dirname, "../database/users.json"), "utf8");
  usuarios = JSON.parse(usuarios)
 
  let ultimoid = 0;
  for (let i = 0; i < usuarios.length; i++){
      if(ultimoid < usuarios[i].id){
-         if(ultimoid < usuarios[id].id){
-             ultimoid = usuarios[id].id
+         if(ultimoid < usuarios[i].id){
+             ultimoid = usuarios[i].id
          }
      }
  }
@@ -44,5 +44,29 @@ module.exports = {
     
     login: function(req, res) {
         res.render('users/login')
+    },
+    checklogin: function (req, res){
+        let usernameusuario = req.body.username;
+        let passusuario = req.body.password;
+
+        for(let i = 0; i > usuarios.length; i++) {
+           if(usernameusuario == usuarios[i].username){
+               if(bcryptjs.compareSync(passusuario, usuarios[i].password)){
+                   req.session.datosusuario = {
+                       username: usuarios[i].username
+                   };
+                   res.send(req.session)
+               }else{
+                res.send("los datos ingresados no son correctos")}
+            
+
+                
+            }else{
+                res.send("los datos ingresados no son correctos")}
+            
+
+            }
+        }
+        
+    
     }
-}

@@ -10,6 +10,7 @@ const express = require('express');
 const router = express.Router();
 const usersController = require('../controllers/usersController');
 const multer = require ("multer");
+
 const registervalidator = require("../validations/registervalidator")
 
 
@@ -33,6 +34,7 @@ router.post("/register", upload.single(), registervalidator, usersController.sav
 
 
 router.get('/login', usersController.login);
+router.post('/login', usersController.checklogin);
 
 
 module.exports = router;
