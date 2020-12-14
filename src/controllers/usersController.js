@@ -3,20 +3,6 @@ const path = require("path");
 const bcrypt = require("bcrypt")
 const  {validationResult} = require("express-validator")
 
-<<<<<<< HEAD
-let usuarios = fs.readFileSync(path.join(__dirname, "../database/usuarios.json"), "utf8");
-usuarios = JSON.parse(usuarios)
-
-let ultimoid = 0;
-for (let i = 0; i < usuarios.length; i++){
-    if(ultimoid < usuarios[i].id){
-        if(ultimoid < usuarios[id].id){
-            ultimoid = usuarios[id].id
-        }
-    }
-}
-
-=======
  let usuarios = fs.readFileSync(path.join(__dirname, "../database/users.json"), "utf8");
  usuarios = JSON.parse(usuarios)
 
@@ -28,7 +14,6 @@ for (let i = 0; i < usuarios.length; i++){
          }
      }
  }
->>>>>>> 4e2e822d85cdf81294340473995d1c76a09563b7
 module.exports = {
     register: function(req, res) {
         res.render('users/register')
