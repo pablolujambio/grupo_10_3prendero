@@ -7,12 +7,9 @@ const app = express();
 const mainRouter = require('./routes/main');
 const usersRouter = require('./routes/users');
 const productsRouter = require('./routes/products');
-<<<<<<< HEAD
 const adminRouter = require('./routes/admin');
-=======
 const session = require("express-session");
 const sesioniniciadamiddle = require("./middlewares/sesioniniciada");
->>>>>>> 4e2e822d85cdf81294340473995d1c76a09563b7
 
 app.use(express.urlencoded({extended: false}));
 app.use(express.json())
