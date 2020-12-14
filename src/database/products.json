@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "type": "Remeras",
+        "sexo": "Hombre",
+        "nombreProducto": "Remera Nike x1",
+        "descripcion": "Remera lisa",
+        "talles": "M",
+        "precio": "1500",
+        "image": "Remera lisa.jpg"
+    },
+    {
+        "id": 2,
+        "type": "Pantalones",
+        "sexo": "Mujer",
+        "nombreProducto": "Short Nike x1",
+        "descripcion": "Short Deportivo",
+        "talles": "S",
+        "precio": "1200",
+        "image": "Short Deportivo.jpg"
+    },
+    {
+        "id": 3,
+        "type": "Buzos",
+        "sexo": "Unisex",
+        "nombreProducto": "Buzo Nike x1",
+        "descripcion": "Buzo Deportivo",
+        "talles": "XL",
+        "precio": "1850",
+        "image": "Buzo Deportivo.jpg"
+    }
+]

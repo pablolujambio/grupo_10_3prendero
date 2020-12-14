@@ -24,7 +24,7 @@
   <article class="imgNewProduct"><img src="../imagenes/newproduct.png" alt="New Product">
   </article>
 		
-  <form  action="register" autocomplete="on"> 
+  <form  action="register" autocomplete="on" method="POST" enctype="multipart/form-data"> 
     <div class= "titulos_log"><h1>Agregar nuevo producto</h1> 
     </div>
 
@@ -40,11 +40,16 @@
     
     <div>
       <label for="sexo" class="tipo_producto">Sexo</label><br>
-      <input type="radio" name="sexo" value="tiempocompleto"> Mujer<br>
-      <input type="radio" name="sexo" value="mediodia"> Hombre<br>
-      <input type="radio" name="sexo" value="sinempleo"> Unisex
+      <input type="radio" name="sexo" value="Mujer"> Mujer<br>
+      <input type="radio" name="sexo" value="Hombre"> Hombre<br>
+      <input type="radio" name="sexo" value="Unisex"> Unisex
     </div><br>
     
+    <div>
+      <label for="descripcion" class="tipo_producto" data-icon="p">Nombre Producto</label><br>
+      <textarea name="nombreProducto" ></textarea>
+    </div>  
+
     <div>
       <label for="descripcion" class="tipo_producto" data-icon="p">Descripcion</label><br>
       <textarea name="descripcion" ></textarea>
@@ -64,8 +69,14 @@
     <div> 
       <label for="precio" class="tipo_producto" data-icon="p"> Precio del Producto </label><br>
       <input type="number" name="precio">
-    </div>   <br>   
-                          
+    </div> <br>
+    
+    <div>
+      <label for="">Imagen</label>
+      <input id="product" type="file" name="image">
+    </div>  <br>
+
+
     <div>
       <button class="logButton" type=“submit”>Cargar Producto</button>
     </div><br><br><br><br><br></label>
