@@ -8,11 +8,11 @@
     }
 
 body{
-    background-color: rgb(223, 219, 219)
+    background-color: rgb(250, 221, 90)
 }
 
 .contenedor {
-    background-color: white;
+    background-color: rgb(254, 255, 176);
     border-radius: 10px;
     margin-left: 30px;
     margin-right: 30px;
@@ -31,7 +31,7 @@ DISEÑO HEADER
  ----------------------------------------------------------------------------*/
  
 header {
-    background-color: rgb(253, 179, 40);
+    background-color: rgb(243, 166, 66);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -173,6 +173,7 @@ img.centro{
     height: 500px;
    
     width: 100%;
+    margin-left: 18%;
     
 }
 
@@ -356,7 +357,8 @@ DISEÑO DETALLE
 }
 
  .detallep .ladoizquierdo{
-     display:flex
+     display:flex;
+     background-color: white;
  }
 
  .detallep .ladoizquierdo .izq{
@@ -1241,8 +1243,8 @@ body footer .contenedor2 .derecha ul li a{
 
         body img.centro {
             height: 200px;
-         
-            width: 310px;
+         margin-left: 0px;
+            width: 280px;
         }
 
         .titulos_log {

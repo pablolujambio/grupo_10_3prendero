@@ -41,22 +41,30 @@ module.exports = {
         res.render('users/login')
     },
     checklogin: function (req, res){
+      
         let usernameusuario = req.body.username;
         let passusuario = req.body.password;
+        console.log(usernameusuario)
+        console.log(usuarios)
 
-        for(let i = 0; i > usuarios.length; i++) {
+        for(let i = 0; i < usuarios.length; i++) {
+            
            if(usernameusuario == usuarios[i].username){
-               if(bcryptjs.compareSync(passusuario, usuarios[i].password)){
+            
+               if(bcrypt.compareSync(passusuario, usuarios[i].password)){
+             
                    req.session.datosusuario = {
                        username: usuarios[i].username
                    };
                    res.send(req.session)
                }else{
+              
                 res.send("los datos ingresados no son correctos")}
             
 
                 
             }else{
+              
                 res.send("los datos ingresados no son correctos")}
             
 
