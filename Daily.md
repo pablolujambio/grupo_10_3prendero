@@ -60,4 +60,82 @@ Estuvimos haciendo videollamda con santosp ara modificar algunas cosas de new pr
 
 Me quede haciendo las media queries de new product.
 
+**4/12/2020**
+Emilio:
+Le puse el header y footer al register y al login y lo acomode para que se adapte, también empecé a modificar el diseño de la página de home que estaba muy básico. Me está costando un poco organizar los elementos y me está llevando tiempo pero de a poco lo voy llevando.
+
+**5/12/2020**
+Emilio:
+Seguí modificándole la organización y el diseño a la home, también agregue algunas cosas al footer para que quede un poco más completo y empecé a hacer las medias queries. También a la par lo iba charlando con los chicos y mostrándoselos para ver que les parecía y si les parecía que tenía que modificar algo. Noto que me lleva mucho tiempo hacerlo, pero bueno capaz que con la práctica se pueda mejorar
+
+**6/12/2020**
+Emilio:
+Termine de hacer el diseño de home y de adaptarlo a las distintas pantallas.
+
+**07/12/2020**
+Pablo:
+- Qué hizo ayer: vinculé github con heroku
+- Si se encontró con algún impedimento: solo seleccionar bien la rama (teníamos main y master)
+- Qué va a hacer hoy: trabajar en unificar las branch del proyecto
+
+Emilio:
+Hicimos videollamada con el grupo y en base a lo que estuvimos discutiendo, estuve modificándole algunas cosas al home y al footer.  Luego lo adapte a las distintas pantallas. También empecé a enlazar los botones para que me redirijan a las distintas vistas. Empecé también a modificar un poco la página de inicio de sesión.
+
+Santos:
+La reunion fue productiva, comence a investigar sobre el BREAD para realizar las rutas en cuestion.
+
+
+**08/12/2020**
+Pablo:
+- Qué hizo ayer: pase como rama default "master" en vez de "main" y armar tablero trello
+- Si se encontró con algún impedimento: solo encontrar bien donde se hace el cambio
+- Qué va a hacer hoy: indentar los ejs que están desordenados
+
+Emilio:
+Seguí modificando el diseño de login y adaptándolo a distintas pantallas y empecé a modificar la página de registro.
+
+
+**09/12/2020**
+Pablo:
+- Qué hizo ayer: indente los ejs y acomodé node_modules para que no se suba en github
+- Si se encontró con algún impedimento: fueron cambios simples, indentar lleva tiempo porque teníamos los archivos muy desordenados
+- Qué va a hacer hoy: escribir la retro y mis daily
+Emilio:
+Empece a modificar el registro y adaptándolo a distintas pantallas y empecé a hacer el detalle de producto, tratando de que quede mejor
+
+Santos: Tuve problemas con el github, lo trate con mis compañeros de equipo.
+
+**10/12/2020**
+Emilio:
+Termine de hacer el detalle de producto y lo adapta a las distintas pantallas
+
+**11/12/2020**
+Pablo:
+- Qué hizo ayer: escribir retro y daily
+- Si se encontró con algún impedimento: sin problemas
+- Qué va a hacer hoy: Analizar productos y json de productos
+
+Emilio.
+Pude hacer el registro del usuario y que quede guardado en el database. También pude hashear la contraseña y hacer las validaciones de los campos, tuve que mirar el material previo para poder orientarme.
+
+Santos: me contacte con un miembro de otro equipo, Flete, y me dio una mano para poder realizar las rutas.
+**13/12/2020**
+Pablo:
+- Qué hizo ayer: Analizar productos y json de productos
+- Si se encontró con algún impedimento: quede bloqueado en las rutas y la posibilidad de poner el admin
+- Qué va a hacer hoy: Analizar seguir analizando
+
+Emilio:
+Empece a hacer lo del login tratar de tomar los datos de la base de datos y poder enviarlo usando sesión. Para eso me puse a ver las clases. Tuve un problema para enviar los datos.
+
+
+**14/12/2020**
+Pablo:
+- Qué hizo ayer: Analizar productos y json de productos
+- Si se encontró con algún impedimento: logré resolver las rutas, poner el admin, ajuste algunos parametros del formulario ejs
+- Qué va a hacer hoy: terminar los daily
+
+Emilio:
+Pude ver los errores que tenía en el código y poder hacer la parte de login, también toque algunas cosas del diseño y sobre todo de los colores de las vistas.
+
 
