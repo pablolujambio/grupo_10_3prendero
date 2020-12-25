@@ -27,7 +27,8 @@ module.exports = {
                     email: req.body.email,
                     password: bcrypt.hashSync(req.body.password, 12),
                     repassword: bcrypt.hashSync(req.body.repassword, 12),
-                    date: req.body.date
+                    date: req.body.date,
+                    image: req.file.filename
                 }
                 usuarios.push(nuevousuario);
                 fs.writeFileSync(path.join(__dirname, "../database/users.json"), JSON.stringify(usuarios, null, 4))

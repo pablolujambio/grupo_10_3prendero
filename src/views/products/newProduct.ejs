@@ -21,14 +21,17 @@
 -------------------------------------------------------------------------->
 
 <div class="contenedor">
-  <article class="imgNewProduct"><img src="../imagenes/newproduct.png" alt="New Product">
+  <article class="imgNewProduct"><img src="../../imagenes/newproduct.png" alt="New Product">
   </article>
-		
+
+
+	<div class= "principal2">
   <form  action="register" autocomplete="on" method="POST" enctype="multipart/form-data"> 
-    <div class= "titulos_log"><h1>Agregar nuevo producto</h1> 
+
+    <div class= "titulos_log2"><h1>Agregar nuevo producto</h1> 
     </div>
 
-    <div> 
+    <div class="tipo"> 
       <label for="type" class="tipo_producto" data-icon="u" > Tipo de producto </label><br>
       <select name="type">
         <option>Remeras</option>
@@ -38,24 +41,24 @@
       </select>
     </div><br>
     
-    <div>
+    <div class= "sexo">
       <label for="sexo" class="tipo_producto">Sexo</label><br>
       <input type="radio" name="sexo" value="Mujer"> Mujer<br>
       <input type="radio" name="sexo" value="Hombre"> Hombre<br>
       <input type="radio" name="sexo" value="Unisex"> Unisex
     </div><br>
     
-    <div>
+    <div class= "nombrep">
       <label for="descripcion" class="tipo_producto" data-icon="p">Nombre Producto</label><br>
       <textarea name="nombreProducto" ></textarea>
     </div>  
 
-    <div>
+    <div class= "descripcion">
       <label for="descripcion" class="tipo_producto" data-icon="p">Descripcion</label><br>
       <textarea name="descripcion" ></textarea>
     </div>      
       
-    <div> 
+    <div class="talles"> 
       <label for="talles" class="tipo_producto" data-icon="p"> Talle </label><br>
       <select name="talles">
         <option>XL</option>         
@@ -66,23 +69,24 @@
       </select> 
     </div>
             
-    <div> 
+    <div class= "precio"> 
       <label for="precio" class="tipo_producto" data-icon="p"> Precio del Producto </label><br>
       <input type="number" name="precio">
     </div> <br>
     
-    <div>
+    <div class= "imagen2">
       <label for="">Imagen</label>
       <input id="product" type="file" name="image">
     </div>  <br>
 
 
-    <div>
+    <div class="carga">
       <button class="logButton" type=“submit”>Cargar Producto</button>
-    </div><br><br><br><br><br></label>
+    </div><br><br><br><br><br>
     
   </form>
-  
+</div>
+
 
 <!-----------------------------------------------------------------------
  Esto es el footer

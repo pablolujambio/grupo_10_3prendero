@@ -3,8 +3,9 @@
         "id": 1,
         "username": "Emilio27",
         "email": "emiliozuccarelli51@gmail.com",
-        "password": "$2b$12$VRu2krv9WZRnYzU4.c1P6ezyc31VMziA1t1o4iZt/HOWuGgZSMNNi",
-        "repassword": "$2b$12$84LUP9kk4QZ6CqDn62WG9O7IQ6Jv8R8TmQazll76KXHSw09q8snWa",
-        "date": "2020-12-01"
+        "password": "$2b$12$lYVHL29Fi7v1ShPFIYeNW.snMNLrK1nnU58J2tgopg1eC3WqCmzWi",
+        "repassword": "$2b$12$x35Y8Hn1stUBB1nT.ZQCd.8OsEnkWiAkhmXO51tpJYs/P14tPZMVe",
+        "date": "2020-12-08",
+        "image": "emiliozuccarelli51@gmail.com.PNG"
     }
 ]
