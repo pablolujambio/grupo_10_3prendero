@@ -1,7 +1,8 @@
 const fs =require("fs");
 const path = require("path");
 const bcrypt = require("bcrypt")
-const  {validationResult} = require("express-validator")
+const  {validationResult} = require("express-validator");
+const session = require("express-session");
 
  let usuarios = fs.readFileSync(path.join(__dirname, "../database/users.json"), "utf8");
  usuarios = JSON.parse(usuarios)
@@ -41,12 +42,17 @@ module.exports = {
     login: function(req, res) {
         res.render('users/login')
     },
+    logout: function(req ,res) {
+
+        req.session.destroy();
+        res.redirect("/")
+    },
+   
     checklogin: function (req, res){
       
         let usernameusuario = req.body.username;
         let passusuario = req.body.password;
-        console.log(usernameusuario)
-        console.log(usuarios)
+    
 
         for(let i = 0; i < usuarios.length; i++) {
             
@@ -57,7 +63,7 @@ module.exports = {
                    req.session.datosusuario = {
                        username: usuarios[i].username
                    };
-                   res.send(req.session)
+                   res.redirect("/")
                }else{
               
                 res.send("los datos ingresados no son correctos")}
@@ -71,6 +77,9 @@ module.exports = {
 
             }
         }
-        
-    
+
     }
+
+  
+    
+    

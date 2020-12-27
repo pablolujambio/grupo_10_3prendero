@@ -1,4 +1,7 @@
 <header>
+  
+   
+   
     <div class="linea">
         <a href="/" >
             <img class="logo" src="../../imagenes/logo.jpg" alt="logo">
@@ -11,10 +14,38 @@
         <form action="index.html" method="POST">
             <input type="text" placeholder="Search"><button type="submit"><i class="fas fa-search"></i></button>
         </form>
+
+        <% if(typeof hayunusuario != "undefined") { %>
+            <div class= "logeo">
+            <ul>
+                <li>
+                    Bienvenido  <%= hayunusuario.username %>
+                </li>
+                <li><a href="/users/logout">Cerrar sesion</a></li>
+            </ul>
+        </div>
+        <% } else { %>
+        
+    <div class="icons">
+       
+    
+    
+        
+        <button type="submit"><a href="/products/carrito"><i class="fas fa-shopping-cart"></a></i></button>
+       
+        <button type="submit"><a href="/users/login"><i class="fas fa-user"></i></a></button>
+    
+    </div> 
+    
+    <% }   %> 
     </div>
     
-    <div class="icons">
-        <button type="submit"><a href="/products/carrito"><i class="fas fa-shopping-cart"></a></i></button>
-        <button type="submit"><a href="/users/login"><i class="fas fa-user"></i></a></button>
-    </div>   
+
+  
+       
+   
+   
+   
+   
+   
 </header>
