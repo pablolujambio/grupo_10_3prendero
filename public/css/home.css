@@ -1722,10 +1722,13 @@ body footer .contenedor2 .derecha{
          margin-left: 0%;
     }
 
+    
+
+
     header img.logo {
         width: 200px;
         height: 130px;
-        margin-right: 10px;
+        margin-right: 0px;
           
     }
 
@@ -1750,34 +1753,44 @@ body footer .contenedor2 .derecha{
         
     header ul {
         
-        margin-right: 20px;
+        margin-right: 10px;
 
     }
                
 
     header ul li {
-                    
+        margin-right: 15px;        
         display: inline-block;
 
     }
 
     header form {
                     
-        width: 230px;
+        width: 180px;
 
     }
 
     header .icons{
         margin-bottom: 10%;
-        margin-left: 5px;
+        margin-left: 200px;
     }
 
     
     header .logeo {
-        position: fixed;
-        left: 300px;
-        top: 5px;
+        margin-left: 20px;
         
+    }
+
+    header .logeo ul li {
+      
+        font-size: 14px;
+       
+    }
+
+    header .logeo ul li a{
+      
+        font-size: 14px;
+       
     }
 
     img.centro {
@@ -2051,23 +2064,26 @@ body footer .contenedor2 .derecha{
 
         header form {
            
-            width: 300px;
+            width: 200px;
             
          }
          header ul {
        
-            margin-right: 50px;
+            margin-right: 20px;
+        }
+
+        header img.logo {
+        
+            margin-right: 25px;
         }
 
         header .icons{
             margin-bottom: 8%;
-            margin-left: 120px;
+            margin-left: 280px;
         }
 
         header .logeo {
-            position: fixed;
-            left: 600px;
-            top: 5px;
+            margin-left: 40px;
             
         }
 
@@ -2341,7 +2357,7 @@ body footer .contenedor2 .derecha{
 
         header .logeo {
             position: fixed;
-            left: 120px;
+            left: 140px;
             top: 5px;
             
         }
@@ -2690,12 +2706,16 @@ body footer .contenedor2 .derecha{
             header img.logo {
                 width: 200px;
                 height: 100px;
-                margin-right: 10px;
+                margin-right: 0px;
             }
 
             header ul {
-               margin-right: 20px;
+               margin-right: 10px;
             }
+
+            header ul li{
+                margin-right: 10px;
+             }
 
             header ul li a {
                 
@@ -2705,19 +2725,31 @@ body footer .contenedor2 .derecha{
 
             header form {
                
-                width: 160px;
+                width: 120px;
             }
 
             header .icons{
                 margin-bottom: 13%;
-                margin-left: 5px;
+                margin-left: 90px;
             }
 
             header .logeo {
-                position: fixed;
-                left: 200px;
-                top: 5px;
+                margin-left: 10px;
                 
+            }
+
+            header .logeo ul li {
+
+               
+              
+                font-size: 10px;
+               
+            }
+
+            header .logeo ul li a{
+              
+                font-size: 10px;
+               
             }
         
 
@@ -2726,10 +2758,7 @@ body footer .contenedor2 .derecha{
                 margin-right: 25%;
             }
 
-            header ul li {
-                margin-right: 20px;
-               
-            }
+         
 
             body .linea2 {
                
