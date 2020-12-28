@@ -115,8 +115,8 @@ header form input[type="text"] {
 header .icons{
  
     position: relative;
-    bottom: 30%;
-    right: 2%;
+    margin-bottom: 5%;
+    margin-left:520px;
     
 }
 
@@ -133,6 +133,26 @@ header .icons button[type="submit"]  {
 header .icons button[type="submit"] a{
     text-decoration: none;
     color: black;
+}
+
+header .logeo{
+    margin-left:190px;
+}
+
+header .logeo ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+   
+}
+
+header .logeo ul li {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+  
 }
 
 
@@ -1158,7 +1178,16 @@ body footer .contenedor2 .derecha{
         width: 330px;
                 
     }
-            
+
+    
+           
+    header .icons{
+        margin-bottom: 0px;
+       
+        margin-left: 260px;
+        position: relative;
+        bottom: 120px;
+    }
         
 
     header ul li a {
@@ -1167,9 +1196,34 @@ body footer .contenedor2 .derecha{
                 
     }
 
+    header .logeo {
+        position: fixed;
+        right: 35px;
+       
+        top: 5px;
+        
+    }
+
+    header .logeo ul li {
+    
+        font-size: 8px;
+      
+    }
+
+    header .logeo ul li a{
+        
+        font-size: 8px;
+          
+    }
+
+    header .icons button[type="submit"] {
+        
+        font-size: 25px;
+    }
+
     header form {
         width: 150px;
-        margin-left: 40%;
+        margin-left: 32%;
     }
 
     header form input[type="text"] {
@@ -1713,6 +1767,19 @@ body footer .contenedor2 .derecha{
 
     }
 
+    header .icons{
+        margin-bottom: 10%;
+        margin-left: 5px;
+    }
+
+    
+    header .logeo {
+        position: fixed;
+        left: 300px;
+        top: 5px;
+        
+    }
+
     img.centro {
 
         height: 300px;
@@ -1992,6 +2059,18 @@ body footer .contenedor2 .derecha{
             margin-right: 50px;
         }
 
+        header .icons{
+            margin-bottom: 8%;
+            margin-left: 40px;
+        }
+
+        header .logeo {
+            position: fixed;
+            left: 600px;
+            top: 5px;
+            
+        }
+
         img.centro {
             height: 480px;
             margin-left: 10%;
@@ -2249,8 +2328,34 @@ body footer .contenedor2 .derecha{
            
             width: 250px;
             margin-left: 35%;
-            margin-top: 2%;
            
+           
+        }
+
+        header .icons{
+            margin-bottom: 2%;
+            margin-left: 30px;
+            position: relative;
+            bottom: 90px;
+        }
+
+        header .logeo {
+            position: fixed;
+            left: 120px;
+            top: 5px;
+            
+        }
+
+        header .logeo ul li {
+        
+            font-size: 13px;
+          
+        }
+
+        header .logeo ul li a{
+            
+            font-size: 13px;
+              
         }
 
         body .imabajo {
@@ -2602,6 +2707,19 @@ body footer .contenedor2 .derecha{
                
                 width: 160px;
             }
+
+            header .icons{
+                margin-bottom: 13%;
+                margin-left: 5px;
+            }
+
+            header .logeo {
+                position: fixed;
+                left: 200px;
+                top: 5px;
+                
+            }
+        
 
             img.centro {
                 height: 250px;
