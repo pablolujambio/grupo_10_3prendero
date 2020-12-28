@@ -54,3 +54,22 @@ Reuniones largas, hacerlas más enfocadas.
 
 5. Dejar de hacer
 Seguimos con los deadline al límite. Nos cuesta resolver las entregas con anticipación. Siempre aceleramos los últimos días.
+
+---------------------------------------------
+Sprint 4
+---------------------------------------------
+
+1. Comenzar a hacer
+Complementar los aprendizajes mirando vídeos instructivos, especialmente de diseño y de código dinámico. También aprender de otros proyectos.
+
+2. Hacer más
+Poner más diseño y orden en los códigos. Usar buenas prácticas.
+
+3. Continuar haciendo
+La metodología de trabajo, donde hacemos call cada 2/3 días y nos ponemos al día. Solemos dividirnos el trabajo y confiamos mucho en el equipo.
+
+4. Hacer menos
+Tratamos de resolver los problemas solos, como mucho nos consultamos dentro del equipo. Creemos que tenemos que consultar con profesores o también alumnos como resolver temas cuando nos quedamos trabados.
+
+5. Dejar de hacer
+Timeline que incluya los últimos 2 días. Estos días deberíamos dejarlo de back up por cualquier inconveniente.

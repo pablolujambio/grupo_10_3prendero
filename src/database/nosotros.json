@@ -1,0 +1,28 @@
+[
+    {
+        "nombre" : "Pablo",
+        "description": "rosarino actualmente viviendo en Barcelona, contador público apasionado por las finanzas. Esencialmente optimista, me gusta entrenar, viajar y leer un buen libro tomando unos buenos mates",
+        "avatar" : "honguito1.jpg",
+        "gitHub" : "https://github.com/pablolujambio/grupo_10_3prendero.git",
+        "linkedin" : "www.linkedin.com/in/pablo-lujambio-arg",
+        "mail" : "lpablo1983@gmail.com"
+   },
+
+   {
+        "nombre" : "Emi",
+        "description": "nací en la ciudad de 9 de julio (Provincia de Bs.As) y tengo 28 años, estoy terminando la Tecnicatura en análisis de sistemas, es por eso también que elegí este curso para poder ampliar mis conocimientos. Previamente estudié la carrera de Psicología la cual decidí abandonar. Me gusta el cine, me apasiona mucho la música, soy abierto a cualquier tipo de género y practico dibujar retratos",
+        "avatar" : "honguito2.jpg",
+        "gitHub" : "https://github.com/pablolujambio/grupo_10_3prendero.git",
+        "linkedin" : "https://www.linkedin.com/",
+        "mail" : "emiliozuccarelli51@gmail.com"
+   },
+
+   {
+        "nombre" : "Santos",
+        "description": "tengo 19 años, esoy estudiando Economia Empresarial. Me gustan los deportes, prefiero comedias a cualquier otro género y disfruto ver vídeos de animales. Me divierte aprender de culturas distintas y me gustaría aprender muchos idiomas",
+        "avatar" : "honguito3.jpg",
+        "gitHub" : "https://github.com/pablolujambio/grupo_10_3prendero.git",
+        "linkedin" : "https://www.linkedin.com/in/santospetersmalbran/",
+        "mail" : "santospeters19@gmail.com"
+   }
+]

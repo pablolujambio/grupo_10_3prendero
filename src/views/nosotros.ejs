@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('partials/head') %>
+
+<!-----------------------------------------------------------------------
+ Esto es el body
+--------------------------------------------------------------------------> 
+
+<body>
+
+<!-----------------------------------------------------------------------
+ Esto es el header
+-------------------------------------------------------------------------->
+
+<%- include('partials/header') %>
+
+<!-----------------------------------------------------------------------
+ Esto es el cuerpo
+-------------------------------------------------------------------------->
+<div class="contenedor">
+     <section class="nosotros">
+          <div class="titulo">
+               <h1>Sobre Nosotros...</h1>
+          </div>
+          <div class="cards">
+               <% for( let i = 0; i < 3; i++ ) { %>
+               <div class="card <%= [i+1] %>">
+                    <div class="imagen" >
+                         <img src="/uploads/nosotros/<%= nosotros[i].avatar %>" alt="">
+                    </div>
+                    <div class="description">
+                         <h3>
+                              <%= nosotros[i].nombre %> 
+                         </h3>
+                         <figcaption>
+                              <%= nosotros[i].description %>
+                         </figcaption>
+               </div>
+               <div class="contacto">
+                    <a href="<%= nosotros[i].gitHub %>"><i class="fab fa-github"></i></a>
+                    <a href="<%= nosotros[i].linkedin %>"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:<%= nosotros[i].mail %>"><i class="fas fa-envelope"></i></a>
+               </div>
+          </div>
+          <% } %>
+     </section>
+
+<!-----------------------------------------------------------------------
+ Esto es el footer
+-------------------------------------------------------------------------->
+
+<%- include('partials/footer') %>
+ 
+</div>
+
+</body>
