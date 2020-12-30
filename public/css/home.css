@@ -977,6 +977,74 @@ NEW PRODUCT
 .carga{
     margin-left: 9%; 
 }
+
+    
+/*-------------------------------------------------------------------------- 
+PROFILE
+ ----------------------------------------------------------------------------*/
+
+ .profile{
+     padding-left: 22%;
+     padding-right: 22%;
+     padding-top: 5%;
+     padding-bottom: 5%;
+     display:flex
+
+ }
+
+ .profile .der{
+     margin-left:13%
+ }
+
+ .profile .izq .uno p{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+ }
+
+ .profile .izq .dos p{
+    color: black;
+    font-size: 16px;
+ }
+
+ .profile .izq .tres{
+     margin-top: 15%
+ }
+
+ .profile .izq .tres p{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+ }
+
+ .profile .izq .cuatro p{
+    color: black;
+    font-size: 16px;
+ }
+
+ .profile .izq .cinco{
+    margin-top: 15%
+}
+
+.profile .izq .cinco p{
+   color: black;
+   font-size: 18px;
+   font-weight: bold;
+   border-bottom: 1px solid black;
+}
+
+.profile .izq .seis p{
+    color: black;
+    font-size: 16px;
+ }
+
+ .profile .der img.perfil{
+     height: 450px;
+   width:  500px;
+ }
+
           /*-------------------------------------------------------------------------- 
  FOOTER
  ---------------------------------------------------------------------------*/
@@ -1036,7 +1104,7 @@ footer .izq  .medio small{
 
 
  footer .contenedorfooter{
-    margin-left: 15%;
+    margin-left: 9%;
     display: flex;
     justify-content: space-evenly;
  }
@@ -1045,11 +1113,10 @@ footer .izq  .medio small{
 footer .der{
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
-footer .der .de{
-    margin-left: 50px;
-}
+
 
 footer .der .iz p{
     font-size: 17px ;
@@ -1445,6 +1512,61 @@ body footer .contenedor2 .derecha{
 
         margin-left: 45px;
     }
+
+    .profile {
+            padding-left: 3%;
+            padding-right: 3%;
+            flex-direction: column;
+        }
+
+        .profile .der {
+            margin-left: 6%;
+            margin-top: 10%;
+        }
+    
+        .profile .der img.perfil {
+            height: 300px;
+            width: 220px;
+        }
+    
+        .profile .izq .uno p {
+           
+            font-size: 12px;
+           
+        }
+    
+        .profile .izq .tres p {
+            
+            font-size: 12px;
+            
+        }
+    
+        .profile .izq .cinco p {
+            
+            font-size: 12px;
+            
+    
+    
+        }
+    
+        .profile .izq .dos p {
+           
+            font-size: 11px;
+           
+        }
+
+        .profile .izq .cuatro p {
+           
+            font-size: 11px;
+           
+        }
+
+        .profile .izq .seis p {
+           
+            font-size: 11px;
+           
+        }
+
 
     
         
@@ -1999,6 +2121,60 @@ body footer .contenedor2 .derecha{
         margin-left: 14%;
     }
 
+    .profile {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .profile .der img.perfil {
+        height: 400px;
+        width: 350px;
+    }
+
+    .profile .izq .uno p {
+       
+        font-size: 16px;
+       
+    }
+
+    .profile .izq .tres p {
+        
+        font-size: 16px;
+        
+    }
+
+    .profile .izq .cinco p {
+        
+        font-size: 16px;
+        
+
+
+    }
+
+    .profile .izq .dos p {
+       
+        font-size: 14px;
+       
+    }
+
+    
+    .profile .izq .cuatro p {
+       
+        font-size: 14px;
+       
+    }
+
+    .profile .izq .seis p {
+       
+        font-size: 14px;
+       
+    }
+
+
+
+        
+    
+
 
 
 
@@ -2220,8 +2396,22 @@ body footer .contenedor2 .derecha{
             margin-left: 0%;
         }
         
+        .profile {
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+
+        .profile .der img.perfil {
+            height: 440px;
+            width: 400px;
+            
+        }
         
 
+        footer .contenedorfooter {
+            margin-left: 14%;
+          
+        }
 
         body footer .izq .arriba ul li {
             margin-right: 10px;
@@ -2645,6 +2835,58 @@ body footer .contenedor2 .derecha{
             
         }
 
+        .profile {
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+
+        .profile .der {
+            margin-left: 6%;
+        }
+    
+        .profile .der img.perfil {
+            height: 300px;
+            width: 220px;
+        }
+    
+        .profile .izq .uno p {
+           
+            font-size: 12px;
+           
+        }
+    
+        .profile .izq .tres p {
+            
+            font-size: 12px;
+            
+        }
+    
+        .profile .izq .cinco p {
+            
+            font-size: 12px;
+            
+    
+    
+        }
+    
+        .profile .izq .dos p {
+           
+            font-size: 11px;
+           
+        }
+
+        .profile .izq .cuatro p {
+           
+            font-size: 11px;
+           
+        }
+
+        .profile .izq .seis p {
+           
+            font-size: 11px;
+           
+        }
+
    
     }
 
@@ -2699,6 +2941,59 @@ body footer .contenedor2 .derecha{
             .sexo {
                 margin-left: 30%;
             }
+
+            .profile {
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+
+            .profile .der {
+                margin-left: 8%;
+            }
+        
+            .profile .der img.perfil {
+                height: 350px;
+                width: 250px;
+            }
+        
+            .profile .izq .uno p {
+               
+                font-size: 13px;
+               
+            }
+        
+            .profile .izq .tres p {
+                
+                font-size: 13px;
+                
+            }
+        
+            .profile .izq .cinco p {
+                
+                font-size: 13px;
+                
+        
+        
+            }
+        
+            .profile .izq .dos p {
+               
+                font-size: 12px;
+               
+            }
+
+            .profile .izq .cuatro p {
+               
+                font-size: 12px;
+               
+            }
+
+            .profile .izq .seis p {
+               
+                font-size: 12px;
+               
+            }
+     
 
             
 

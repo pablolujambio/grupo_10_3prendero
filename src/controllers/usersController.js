@@ -47,39 +47,34 @@ module.exports = {
         req.session.destroy();
         res.redirect("/")
     },
-   
-    checklogin: function (req, res){
-      
+    logged: function(req, res){
         let usernameusuario = req.body.username;
         let passusuario = req.body.password;
-    
 
-        for(let i = 0; i < usuarios.length; i++) {
-            
-           if(usernameusuario == usuarios[i].username){
-            
-               if(bcrypt.compareSync(passusuario, usuarios[i].password)){
-             
-                   req.session.datosusuario = {
-                       username: usuarios[i].username
-                   };
-                   res.redirect("/")
-               }else{
-              
-                res.send("los datos ingresados no son correctos")}
-            
-
+        for (let i = 0; i < usuarios.length; i++) {
+            if(usernameusuario == usuarios[i].username){
+                if (bcrypt.compareSync(passusuario, usuarios[i].password)){
+                    req.session.datosusuario = {
+                        username: usuarios[i].username
+                    };
+                    res.redirect("/users/profile")
+                }else{
+                    res.send("datos incorrectos")
                 
+                }
             }else{
-              
-                res.send("los datos ingresados no son correctos")}
-            
-
+                res.send("datos incorrectos")
+            }
             }
         }
-
+    ,
+    profile: function (req, res) {
+        return res.render('users/profile');
     }
 
-  
+}
+   
     
+
+  
     

@@ -1,6 +1,8 @@
 const path = require('path');
 const express = require('express');
+const cookieParser = require('cookie-parser');
 const methodOverride = require('method-override');
+
 
 const app = express();
 
@@ -11,18 +13,24 @@ const adminRouter = require('./routes/admin');
 const session = require("express-session");
 const sesioniniciadamiddle = require("./middlewares/sesioniniciada");
 
+app.use(session({secret: "hola"}));
+app.use(sesioniniciadamiddle);
 app.use(express.urlencoded({extended: false}));
-app.use(express.json())
+app.use(express.json());
+app.use(cookieParser());
 app.use(methodOverride('_method'));
+
+
+
+
+
+app.use(express.static(path.join(__dirname, '../public')));
 
 // Cuchame, Express... Vas a usar de motor de vista EJS...
 app.set('view engine', 'ejs');
 // Cuchame, Express.. Hay una carpeta que tiene todas las vistas. Es esta...
 app.set('views', path.join(__dirname, 'views'));
 
-app.use(express.static(path.join(__dirname, '../public')));
-app.use(session({secret: "hola"}));
-app.use(sesioniniciadamiddle);
 
 app.use('/', mainRouter);
 app.use('/users', usersRouter);
