@@ -55,7 +55,7 @@ module.exports = {
         return res.render('products/productDetail')    
     },
     carrito: function(req, res) {
-        return res.render('products/productCart')
+        res.render('products/productCart')
     },
     nuevo: function(req, res) {  
         return res.render('products/newProduct')
