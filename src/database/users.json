@@ -7,5 +7,14 @@
         "repassword": "$2b$12$x35Y8Hn1stUBB1nT.ZQCd.8OsEnkWiAkhmXO51tpJYs/P14tPZMVe",
         "date": "2020-12-08",
         "image": "emiliozuccarelli51@gmail.com.PNG"
+    },
+    {
+        "id": 2,
+        "username": "pabloluj",
+        "email": "pablolujambio@hotmail.com",
+        "password": "$2b$12$QsR7E7oT7EX02fNDVpvW/emJBfXyHVspT0/waxsEUFNItirwoabOy",
+        "repassword": "$2b$12$SplTGqDt/zNd4AduFEvKQunM8HyCwfLfoU9TD67pceW.8NeCn/jqe",
+        "date": "1983-04-08",
+        "image": "pablolujambio@hotmail.com.jpg"
     }
 ]
