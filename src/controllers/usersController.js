@@ -51,21 +51,24 @@ module.exports = {
         let usernameusuario = req.body.username;
         let passusuario = req.body.password;
 
-        for (let i = 0; i < usuarios.length; i++) {
-            if(usernameusuario == usuarios[i].username){
-                if (bcrypt.compareSync(passusuario, usuarios[i].password)){
-                    req.session.datosusuario = {
-                        username: usuarios[i].username
-                    };
-                    res.redirect("/users/profile")
-                }else{
-                    res.send("datos incorrectos")
-                
-                }
-            }else{
-                res.send("datos incorrectos")
+        let usuarioALoguearse;
+
+        usuarios.forEach(user => {
+            if (user.username === usernameusuario && bcrypt.compareSync(passusuario, user.password)) {
+                 usuarioALoguearse = user;
             }
-            }
+        });
+
+        if (usuarioALoguearse == undefined) {
+            return res.send('Datos incorrectos');
+        } 
+
+        req.session.datosusuario = usuarioALoguearse;
+
+     
+        return res.redirect('/users/profile');
+
+      
         }
     ,
     profile: function (req, res) {
