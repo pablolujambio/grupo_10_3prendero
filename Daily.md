@@ -138,4 +138,71 @@ Pablo:
 Emilio:
 Pude ver los errores que tenía en el código y poder hacer la parte de login, también toque algunas cosas del diseño y sobre todo de los colores de las vistas.
 
+**15/12/2020**
+Pablo:
+- Qué hizo ayer: armé database para que tome nosotros.ejs y también los avatars de nosotros
+- Si se encontró con algún impedimento: todavía no funciona ok
+- Qué va a hacer hoy: armar tablero, retro, etc
+
+
+**19/12/2020**
+Pablo:
+- Qué hizo ayer: armé el tablero de trello, la retro
+- Si se encontró con algún impedimento: ninguno
+- Qué va a hacer hoy: terminar nosotros
+
+**20/12/2020**
+Pablo:
+- Qué hizo ayer: armé el controller, las rutas y el css
+- Si se encontró con algún impedimento: sigue sin tomar los datos en forma dinámica
+- Qué va a hacer hoy: intentar resolver
+
+**23/12/2020**
+Pablo:
+- Qué hizo ayer: resolver nosotros
+- Si se encontró con algún impedimento: tenía un problema en el controller
+- Qué va a hacer hoy: reunión de seguimiento con Emi
+
+**24/12/2020**
+Emilio:
+Hoy estuve modificando algunas cosas de diseño y puse para que cargue una imagen en el registro y la guarda en la base de datos.
+
+**25/12/2020**
+Emilio:
+Estuve identando el css y modificando el ejs de new product y también estuve modificando el diseño y haciendo que se adapte a distintas pantallas.
+
+**26/12/2020**
+Emilio:
+Pude hacer que un usuario puedo logearse y después pueda cerrar sesión, mire los videos de playground para ver cómo hacer los middleware y las rutas.
+
+**27/12/2020**
+Emilio:
+Modifique el header para que cuando un usuario se logea aparezca otro diseño y lo que aparece cuando esta logeado se adapte a distintas pantallas
+
+**28/12/2020**
+Emilio:
+Estuve tratando de hacer los middlewares para cuando estas logeado y cuando no estas logeado, tengo que seguir mirando el material para entenderlo mejor y las clases.
+
+**29/12/2020**
+Emilio:
+Cree una  vista de profile y puse middlewares para que cuando no este logeado no me deje entrar al perfil y me rediriga al login y cuando este logeado no me deje deje entrar a login y register y me redirige a el perfil. A medida que iba resolviendo todo esto, me contactaba con pablo para ir verificando 
+
+**31/12/2020**
+Emilio:
+Estuve modificando el header para que cuando el usuario inicie sesión le aparezca el carrito
+
+**01/12/2021**
+Emilio:
+Hice el middleware para que cuando el usuario no este logeado no pueda acceder al carrito y si cuando este logeado
+
+**03/01/2021**
+Emilio:
+Realice cambios en el controlador de usuarios para que  me pueda tomar más de un usuario en la base de datos
+
+
+
+
+
+
+
 
