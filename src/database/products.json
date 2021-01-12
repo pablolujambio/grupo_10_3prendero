@@ -3,30 +3,102 @@
         "id": 1,
         "type": "Remeras",
         "sexo": "Hombre",
-        "nombreProducto": "Remera Nike x1",
-        "descripcion": "Remera lisa",
-        "talles": "M",
-        "precio": "1500",
-        "image": "Remera lisa.jpg"
+        "nombreProducto": "Levis",
+        "descripcion": "Remera levis rosa hombre",
+        "talles": "XL",
+        "precio": "700",
+        "image": "Remera%20levis%20blanca%20rosa.jpg"
     },
     {
         "id": 2,
-        "type": "Pantalones",
-        "sexo": "Mujer",
-        "nombreProducto": "Short Nike x1",
-        "descripcion": "Short Deportivo",
-        "talles": "S",
-        "precio": "1200",
-        "image": "Short Deportivo.jpg"
+        "type": "Remeras",
+        "sexo": "Hombre",
+        "nombreProducto": "Remera verde",
+        "descripcion": "Remera verde de hombre terra",
+        "talles": "XL",
+        "precio": "820",
+        "image": "Remera%20verde%20de%20hombre%20terra.jpg"
     },
     {
         "id": 3,
-        "type": "Buzos",
-        "sexo": "Unisex",
-        "nombreProducto": "Buzo Nike x1",
-        "descripcion": "Buzo Deportivo",
+        "type": "Remeras",
+        "sexo": "Hombre",
+        "nombreProducto": "Camisa Mistral",
+        "descripcion": "Camisa blanca de hombre mistral",
         "talles": "XL",
-        "precio": "1850",
-        "image": "Buzo Deportivo.jpg"
+        "precio": "2100",
+        "image": "Camisa%20blanca%20de%20hombre%20mistral.jpg"
+    },
+    {
+        "id": 4,
+        "type": "Remeras",
+        "sexo": "Hombre",
+        "nombreProducto": "Campera Fincas",
+        "descripcion": "Campera negra de  hombre fincas",
+        "talles": "XL",
+        "precio": "2400",
+        "image": "Campera%20negra%20de%20%20hombre%20fincas.jpg"
+    },
+    {
+        "id": 5,
+        "type": "Calzado",
+        "sexo": "Hombre",
+        "nombreProducto": "Zapatillas Topper",
+        "descripcion": "Zapatilla negra para hombre Topper",
+        "talles": "XL",
+        "precio": "1300",
+        "image": "Zapatilla%20negra%20para%20hombre%20Topper.jpg"
     }
+    ,
+    {
+        "id": 6,
+        "type": "Remeras",
+        "sexo": "Hombre",
+        "nombreProducto": "Lacoste Remera",
+        "descripcion": "Remera blanca Lacoste para hombre",
+        "talles": "XL",
+        "precio": "850",
+        "image": "Remera%20blanca%20Lacoste%20para%20hombre.jpg"
+    },
+    {
+        "id": 7,
+        "type": "Calzado",
+        "sexo": "Hombre",
+        "nombreProducto": "Zapatilla Reebok",
+        "descripcion": "Zapatilla negra Reebok para hombre",
+        "talles": "XL",
+        "precio": "2500",
+        "image": "Zapatilla%20negra%20Reebok%20para%20hombre.jpg"
+    },
+    {
+        "id": 8,
+        "type": "Remeras",
+        "sexo": "Hombre",
+        "nombreProducto": "Remera Old School",
+        "descripcion": "Remera gris Old School para hombre",
+        "talles": "XL",
+        "precio": "600",
+        "image": "Remera%20gris%20Old%20School%20para%20hombre.jpg"
+    },
+    {
+        "id": 9,
+        "type": "Pantalones",
+        "sexo": "Hombre",
+        "nombreProducto": "Levis Jean",
+        "descripcion": "Jean Levis azul para hombre",
+        "talles": "XL",
+        "precio": "1600",
+        "image": "Jean%20Levis%20azul%20para%20hombre.jpg"
+    },
+    {
+        "id": 10,
+        "type": "Pantalones",
+        "sexo": "Hombre",
+        "nombreProducto": "Bermuda",
+        "descripcion": "Bermuda para hombre",
+        "talles": "XL",
+        "precio": "1530",
+        "image": "Bermuda%20para%20hombre.jpg"
+    }
+ 
 ]

@@ -22,28 +22,24 @@ Esto es el cuerpo
 <div class="contenedor">
     <section class="detallep">
         <div class="ladoizquierdo">
-            <div class= "izq">
-                <img class="left" src="../imagenes/1.jpg" alt="logo"> 
-                <img class="left" src="../imagenes/2.JPG" alt="logo">
-                <img class="left" src="../imagenes/3.JPG" alt="logo">
-            </div>
             
-            <div class= "der">
-                <img class="right" src="../imagenes/3.JPG" alt="logo">  
-            </div>
+            
+            
+                <img class="right" src=<%= `/../uploads/products/${producto.image}` %>   alt="<%= producto.image %>"> 
+           
         </div>
 
         <div class="ladoderecho">
             <div class= "uno">
-                <p>Levis</p>
+                <p><%= producto.nombreProducto %></p>
             </div>
         
             <div class= "dos">
-                <p>Jean Azul Levis Skinny</p>
+                <p><%= producto.descripcion %></p>
             </div><br><br>
 
             <div class= "tres">
-                <p class="uno">$ 6620</p><p>$ 3320</p>
+                <p class="uno">$ 6620</p><p>$ <%= producto.precio %></p>
             </div>
 
             <div class= "cuatro">

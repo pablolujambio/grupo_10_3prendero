@@ -16,12 +16,7 @@ module.exports = {
     root: (req, res) => {
         return res.render('products/index', { productos });
     },
-    //detail: (req, res) => {
-    //    let producto = productos.find((producto) => {
-    //        return producto.id == req.params.id;
-    //    })
-    //    return res.send(producto);
-    //},
+   
     create: (req, res) => {
         return res.render('products/newProduct');
     },
@@ -43,20 +38,24 @@ module.exports = {
         }
         return res.send(productos);
     },
-    //adminDetail: (req, res) => {
-    //    let producto = productos.find((producto) => {
-    //        return producto.id == req.params.id;
-    //    })
-    //    return res.render('products/detail', {producto});
-    //}
-
-
-    detalle: function(req, res) {      
-        return res.render('products/productDetail')    
-    },
     carrito: function(req, res) {
-        res.render('products/productCart')
+    console.log("hola")
+        return res.render('products/productCart');
     },
+
+    detalle: function(req, res) { 
+        for (let i = 0; i < productos.length; i++) {
+            if(req.params.id == productos[i].id){     
+                return res.render('products/productDetail', { producto : productos[i]});
+            }
+        }  
+    },
+
+    all: function(req, res) {
+        return res.render('products/Allproducts', { productos : productos})
+    },
+
+   
     nuevo: function(req, res) {  
         return res.render('products/newProduct')
     }

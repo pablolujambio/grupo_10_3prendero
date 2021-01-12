@@ -194,6 +194,27 @@ body .menu button[type="submit"] {
     
 }
 
+.ver{
+    margin-left: 43%;
+}
+
+
+.llamar{
+    border: none;
+    border-radius: 20px;
+    background-color: #fcb75e;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.llamar a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 body .linea2{
     display: flex;
     justify-content: space-between;
@@ -389,22 +410,15 @@ DISEÑO DETALLE
 
  .detallep .ladoizquierdo{
      display:flex;
-     background-color: white;
+     margin-left:15%;
+    
  }
 
- .detallep .ladoizquierdo .izq{
-    display: flex;
-    flex-direction: column;
-    margin-right: 25%;
- }
+ 
 
- .detallep .ladoizquierdo .izq img{
-     width: 100px;
-     height: 150px;
- }
-
- .detallep .ladoizquierdo .der img{
-     height: 700px;
+ .detallep .ladoizquierdo img{
+     height: 500px;
+     width: 400px;
  }
 
  .detallep .ladoderecho{
@@ -1003,7 +1017,57 @@ NEW PRODUCT
     margin-left: 9%; 
 }
 
+/*-------------------------------------------------------------------------- 
+ALL PRODUCTS
+ ----------------------------------------------------------------------------*/
+ .cajaprincipal{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+
+
+ .cajaprod{
+    width: 250px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    border-radius: 10px;
+   
+    margin: 25px;
     
+  
+
+ }
+
+ .cajaprod .imagen{
+    height: 60%;
+    position: relative;
+ }
+
+ .cajaprod .imagen img{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+
+ .cajaprod .detalle{
+    height: 50%;
+    padding: 20px;
+ }
+
+ .cajaprod .detalle .nombre{
+    text-align: center;
+ }
+
+ .cajaprod .detalle p{
+    color: black;
+    font-weight: bold;
+    font-size: 20px
+ }
+
+ .cajaprod .detalle .precio{
+    text-align: center;
+    margin-right: 20px
+ }
 /*-------------------------------------------------------------------------- 
 PROFILE
  ----------------------------------------------------------------------------*/
@@ -1211,6 +1275,21 @@ body footer .contenedor2 .derecha{
 
 @media (max-width: 600px){
 
+    .ver {
+        margin-left: 24%;
+    }
+
+    .llamar {
+      
+        padding: 10px 15px;
+      
+    }
+
+    .llamar a {
+        
+        font-size: 15px;
+        
+    }
     .wallpaper {
         float: none;
         width: 100%;
@@ -1608,7 +1687,10 @@ body footer .contenedor2 .derecha{
         }
 
 
-    
+        .detallep .ladoizquierdo {
+        
+            margin-left: 5%;
+        }
         
 
     .detallep{
@@ -1631,19 +1713,13 @@ body footer .contenedor2 .derecha{
         margin-left: 5%;
     }
 
-    .detallep .ladoizquierdo .der img {
+    .detallep .ladoizquierdo img {
         height: 300px;
+        width: 200px;
     }
 
-    .detallep .ladoizquierdo .izq {
-            
-        margin-right: 15%;
-    }
+    
 
-    .detallep .ladoizquierdo .izq img {
-        width: 40px;
-        height: 70px;
-    }
 
     .detallep .ladoderecho .tres p {
         
@@ -1868,6 +1944,934 @@ body footer .contenedor2 .derecha{
         
     }
         
+}
+
+@media (min-width: 600px) and (max-width: 700px){
+
+
+        
+    .titulos_log2{
+      
+        margin-left: 0%
+
+    }
+
+    .principal2{
+        margin-left: 5%;
+    }
+
+    .tipo {
+        margin-left: 33%;
+    }
+
+    .nombrep {
+        margin-left: 28%;
+    }
+
+    .descripcion {
+        margin-left: 28%;
+    }
+
+    .talles {
+        margin-left: 40%;
+    }
+
+    .precio {
+        margin-left: 25%;
+    }
+
+    .imagen {
+        margin-left: 6%;
+    }
+
+    .carga {
+        margin-left: 23%;
+    }
+
+    
+    .sexo {
+        margin-left: 33%;
+    }
+
+
+   
+
+
+    body .imgNewProduct {
+        padding-right: 0px;
+        float:none;
+        margin-left: 35%
+    }
+
+    body .imgNewProduct img{
+        width: 150px;
+    }
+
+    img.centro {
+        height: 200px;
+        width: 300px;
+        margin-left: 5%;
+    }
+
+    header .icons {
+       
+        display: flex;
+   
+    }
+
+    header img.logo {
+        width: 200px;
+        height: 100px;
+        margin-right: 15px;
+    }
+
+    header ul {
+       margin-right: 30px;
+    }
+
+    header ul li {
+        margin-right: 20px;
+    }
+
+    header ul li a {
+        
+        font-size: 16px;
+        
+    }
+
+    header form {
+       
+        width: 250px;
+        margin-left: 35%;
+       
+       
+    }
+
+    header .icons{
+        margin-bottom: 2%;
+        margin-left: 80px;
+      
+        bottom: 90px;
+    }
+
+    header .logeo {
+        position: fixed;
+        left: 50px;
+        top: 5px;
+        
+    }
+
+    .carrito{
+        left: 88%;
+    }
+
+    header .logeo ul li {
+    
+        font-size: 13px;
+      
+    }
+
+    header .logeo ul li a{
+        
+        font-size: 13px;
+          
+    }
+
+    body .imabajo {
+
+        margin-top: 8%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0px;
+        
+    }
+
+    body .imabajo img {
+        width: 130px;
+        height: 250px;
+       
+    }
+
+    .caja ul li a {
+       
+        font-size: 12px;
+       
+     }
+
+    .caja{
+         margin-bottom: 0px;
+    }
+
+    body .detalle i.fa-tag {
+        font-size: 20px;
+  
+    }
+
+    body .detalle p {
+   
+        font-size: 20px;
+    }
+
+    body .detalle img {
+        width: 200px;
+        height: 200px;
+        margin-left: 25%;
+    }
+
+    body .detalle {
+    
+        margin-left: 8%;
+        height: 400px;
+        width: 400px;
+    }
+
+    body .detalle button[type="submit"] {
+        margin-left: 180%;
+        font-size: 30px;
+    }
+
+    .wallpaper {
+        margin-right: 10%;
+    }
+
+    body img.centro {
+        height: 250px;
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    body .linea4{
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+
+    body .linea4 .destacado img.prendas {
+        height: 120px;
+        width: 100px;
+    }
+
+    body .linea4 .destacado p {
+  
+        font-size: 7px;
+    }
+
+    body .linea6 {
+   
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+
+    body .linea6 .izq img.prenda1{
+        height: 320px;
+        width: 200px;
+    }
+
+    body .linea6 .der {
+        margin-left: 6%;
+    }
+
+    body .linea6 .der .fila .prenda {
+        margin-right: 30px;
+    }
+
+    body .linea6 .der .fila .prenda img.prenda2 {
+        height: 120px;
+        width: 100px;
+    }
+
+    body .linea6 .der .fila2 .prenda {
+        margin-right: 30px;
+    }
+
+    body .linea6 .der .fila2 .prenda img.prenda2 {
+        height: 120px;
+        width: 100px;
+    }
+
+    body .linea6 .der .fila .prenda p {
+        font-size: 7px;
+    }
+
+    body .linea6 .der .fila2 .prenda p {
+        font-size: 7px;
+    }
+
+    body .linea6 .der .fila2 {
+   
+        margin-top: 6%;
+    }
+
+
+    footer .izq .arriba ul {
+               
+        flex-direction: column;
+    }
+
+    footer .izq .arriba ul li {
+ 
+        margin-top: 5px;
+    }
+
+    footer .der {
+    
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        margin-top: 7%;
+   
+    }
+
+    footer .der .iz p {
+        font-size: 14px;
+  
+    }   
+
+    footer .der .de {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    footer .der .iz {
+ 
+        margin-top: 20px;
+    }
+
+    footer .der .iz p {
+        font-size: 12px;
+    
+    }
+
+    footer .contenedorfooter {
+        margin-left: 0%;
+    
+    }
+
+    footer .der .de button[type="submit"] {
+    
+        font-size: 28px;
+    }
+
+    footer .der .iz p {
+        font-size: 0px;
+    }
+
+    footer {
+        margin-top: 10%;
+   
+    }
+
+    .opcionesItem {
+        display: contents;
+
+    }
+
+    body footer .contenedor2 .izquierda img {
+        width: 80px;
+    
+    }
+
+    body footer .contenedor2 .izquierda small {
+        font-size: 12px;
+    }
+
+    body footer .contenedor2 .derecha ul li a {
+  
+        font-size: 13px;
+    
+    }
+
+    .wallpaper2 {
+      
+        float: none;
+        margin-right: 1px;
+
+    }
+
+
+    .wallpaper2 img {
+      
+        width: 100%;
+    }
+
+    .wallpaper {
+    
+        float: none;
+        margin-left: 8%;
+
+    }
+
+
+
+    .detallep{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    .detallep .ladoderecho .uno p {
+        font-size: 20px
+    }
+
+    .detallep .ladoderecho .dos p {
+        font-size: 13px;
+        
+    }
+
+    .detallep .ladoderecho {
+        margin-left: 13%;
+    }
+
+    .detallep .ladoizquierdo  img {
+        height: 340px;
+        width: 170px;
+    }
+
+
+    .detallep .ladoderecho .tres p {
+        font-size: 23px;
+        margin-top: -12px;
+    }
+
+    .detallep .ladoderecho .tres p.uno {
+      
+        font-size: 13px;
+        
+    }
+
+    .profile {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .profile .der {
+        margin-left: 6%;
+    }
+
+    .profile .der img.perfil {
+        height: 300px;
+        width: 220px;
+    }
+
+    .profile .izq .uno p {
+       
+        font-size: 12px;
+       
+    }
+
+    .profile .izq .tres p {
+        
+        font-size: 12px;
+        
+    }
+
+    .profile .izq .cinco p {
+        
+        font-size: 12px;
+        
+
+
+    }
+
+    .profile .izq .dos p {
+       
+        font-size: 11px;
+       
+    }
+
+    .profile .izq .cuatro p {
+       
+        font-size: 11px;
+       
+    }
+
+    .profile .izq .seis p {
+       
+        font-size: 11px;
+       
+    }
+
+    .cajaprod .detalle .nombre {
+        text-align: center;
+        margin-right: 50%;
+    }
+
+    .cajaprod .detalle .precio {
+        text-align: center;
+        margin-left: -150px;
+    }
+    
+    .cajaprod {
+        
+        margin-left: 30%;
+    }
+
+    .cajaprod .imagen {
+      
+        margin-right: 20px;
+        
+    }
+
+
+}
+
+
+    
+@media (min-width: 700px) and (max-width: 900px){
+
+        body .imgNewProduct {
+            padding-right: 0%;
+            margin-left: 25%;
+            float:none
+        }
+
+        body .imgNewProduct img{
+            width: 250px;
+        }
+
+        
+        .titulos_log2 {
+            margin-left: 0%;
+        }
+
+        .tipo {
+            margin-left: 30%;
+        }
+
+        .nombrep {
+            margin-left: 25%;
+        }
+
+        .descripcion {
+            margin-left: 25%;
+        }
+
+        .talles {
+            margin-left: 35%;
+        }
+
+        .precio {
+            margin-left: 23%;
+        }
+
+        .imagen {
+            margin-left: 6%;
+        }
+
+        .carga {
+            margin-left: 21%;
+        }
+
+        
+        .sexo {
+            margin-left: 30%;
+        }
+
+        .profile {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        .profile .der {
+            margin-left: 8%;
+        }
+    
+        .profile .der img.perfil {
+            height: 350px;
+            width: 250px;
+        }
+    
+        .profile .izq .uno p {
+           
+            font-size: 13px;
+           
+        }
+    
+        .profile .izq .tres p {
+            
+            font-size: 13px;
+            
+        }
+    
+        .profile .izq .cinco p {
+            
+            font-size: 13px;
+            
+    
+    
+        }
+    
+        .profile .izq .dos p {
+           
+            font-size: 12px;
+           
+        }
+
+        .profile .izq .cuatro p {
+           
+            font-size: 12px;
+           
+        }
+
+        .profile .izq .seis p {
+           
+            font-size: 12px;
+           
+        }
+ 
+      
+        
+        
+        
+                    
+
+
+        header img.logo {
+            width: 200px;
+            height: 100px;
+            margin-right: 0px;
+        }
+
+        header ul {
+           margin-right: 10px;
+        }
+
+        header ul li{
+            margin-right: 10px;
+         }
+
+        header ul li a {
+            
+            font-size: 12px;
+            
+        }
+
+        header form {
+           
+            width: 120px;
+        }
+
+        header .icons{
+            margin-bottom: 13%;
+            margin-left: 140px;
+        }
+
+        header .logeo {
+            margin-left: 10px;
+            
+        }
+
+        header .logeo ul li {
+
+           
+          
+            font-size: 10px;
+           
+        }
+
+        header .logeo ul li a{
+          
+            font-size: 10px;
+           
+        }
+    
+
+        img.centro {
+            height: 250px;
+            margin-right: 25%;
+        }
+
+     
+
+        body .linea2 {
+           
+            margin-top: 12%;
+        }
+
+        .caja ul li a {
+          
+            font-size: 12px;
+        
+        }
+
+        img.centro {
+         
+            height: 200px;
+            margin-left: 10%;
+        }
+
+        .caja {
+            margin-bottom: 0%;
+        }
+
+
+     
+       
+        
+
+        body .detalle {
+            
+            height: 400px;
+    
+            width: 400px;
+           
+            margin-left: 15%;
+        }
+
+        body .detalle img {
+
+            width: 200px;
+
+            height: 200px;
+       
+            margin-left: 25%;
+        }
+
+        body .detalle p {
+         
+            font-size: 20px;
+        }
+
+        .detalle i.fa-tag {
+
+            font-size: 25px;
+       
+        }
+
+        body .detalle button[type="submit"] {
+
+            margin-left: 150%;
+           
+            font-size: 35px;
+        }
+
+        body img.centro {
+
+            height: 300px;
+            width: 100%;
+            margin-left: 0%;
+
+        }
+
+        body .linea4{
+            padding-right: 0%;
+            padding-left: 0%;
+        }
+
+        body .linea4 .destacado img.prendas {
+            height: 150px;
+            width: 120px;
+        }
+
+        body .linea4 .destacado p {
+            font-size: 8px;
+        }
+
+        body .linea6 {
+           
+            padding-right: 0%;
+            padding-left: 0%;
+        }
+
+        body .linea6 .izq img.prenda1{
+            height: 400px;
+            width: 250px;
+        }
+
+        body .linea6 .der {
+            margin-left: 5%;
+        }
+
+        body .linea6 .der .fila .prenda {
+            margin-right: 50px;
+        }
+
+        body .linea6 .der .fila .prenda img.prenda2 {
+            height: 140px;
+            width: 120px;
+        }
+
+        body .linea6 .der .fila2 .prenda {
+            margin-right: 50px;
+        }
+
+        body .linea6 .der .fila2 .prenda img.prenda2 {
+            height: 140px;
+            width: 120px;
+        }
+
+        body .linea6 .der .fila .prenda p {
+            font-size: 9px;
+        }
+
+        body .linea6 .der .fila2 .prenda p {
+            font-size: 9px;
+        }
+
+        body .linea6 .der .fila2 {
+           
+            margin-top: 6%;
+        }
+
+        .ver {
+            margin-left: 33%;
+        }
+
+        .wallpaper {
+       
+            float: none;
+            margin-left: 15%;
+        }
+
+        .wallpaper2 {
+
+            position: relative;
+            float: none;
+            margin-right: 0px;
+
+        }
+      
+        
+        
+        .redessociales {
+          
+            margin-left: 7%;
+        }
+
+        .principal2 {
+            margin-left: 10%;
+        }
+
+        .carrito {
+   
+            left: 90%;
+            
+        }
+
+        footer .izq .arriba ul {
+               
+            flex-direction: column;
+        }
+
+        footer .izq .arriba ul li {
+         
+            margin-top: 5px;
+        }
+
+        footer .der {
+            
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer {
+            margin-top: 7%;
+           
+        }
+
+        footer .der .iz p {
+            font-size: 14px;
+          
+        }
+
+        footer .der .de {
+            margin-left: 0px;
+            margin-top: 20px;
+        }
+
+        footer .der .iz {
+         
+            margin-top: 20px;
+        }
+
+        footer .der .iz p {
+            font-size: 12px;
+            
+        }
+
+        footer .contenedorfooter {
+            margin-left: 4%;
+            
+        }
+        footer {
+            margin-top: 10%;
+          
+        }
+
+
+        .detallep{
+            padding-left: 2%;
+            padding-right: 0%;
+        }
+    
+        .detallep .ladoderecho .uno p {
+            font-size: 20px
+        }
+    
+        .detallep .ladoderecho .dos p {
+
+            font-size: 13px;
+                
+        }
+        
+        .detallep .ladoderecho {
+
+                margin-left: 13%;
+
+        }
+        
+        
+        .detallep .ladoizquierdo  {
+                
+             margin-right: 8%;
+
+        }
+
+        .detallep .ladoizquierdo img {
+
+            
+                height: 340px;
+                width: 190px;
+            
+         }
+
+        .detallep .ladoderecho .tres p {
+
+            font-size: 23px;
+            margin-top: -12px;
+
+        }
+
+        .detallep .ladoderecho .tres p.uno {
+              
+            font-size: 13px;
+                
+        }
+
+        .cajaprod .detalle .nombre {
+            text-align: center;
+            margin-right: 60%;
+        }
+    
+        .cajaprod .detalle .precio {
+            text-align: center;
+            margin-left: -200px;
+        }
+        
+        .cajaprod {
+            
+            margin-left: 30%;
+        }
+
+        
+    .cajaprod .imagen {
+      
+        margin-right: 20px;
+        
+    }
+
+
+       
 }
 
 @media (min-width: 900px) and (max-width: 1200px){
@@ -2128,6 +3132,11 @@ body footer .contenedor2 .derecha{
 
     }
 
+    .detallep .ladoizquierdo img {
+        height: 380px;
+        width: 250px;
+    }
+
     .principal2{
         margin-left: 0%;
     }
@@ -2214,7 +3223,22 @@ body footer .contenedor2 .derecha{
        
     }
 
+    .cajaprod .detalle .nombre {
+        text-align: center;
+        margin-right: 60px;
+    }
 
+    .cajaprod .detalle .precio {
+        text-align: center;
+        margin-right: 80px;
+    }
+
+    
+    .cajaprod .imagen {
+      
+        margin-right: 20px;
+        
+    }
 
         
     
@@ -2391,8 +3415,12 @@ body footer .contenedor2 .derecha{
         }
 
         .detallep .ladoderecho .dos p {
-            font-size: 17px;
+            font-size: 16px;
             
+        }
+        .detallep .ladoizquierdo img {
+            height: 400px;
+            width: 300px;
         }
 
         .principal2{
@@ -2450,6 +3478,16 @@ body footer .contenedor2 .derecha{
             width: 400px;
             
         }
+
+        .cajaprod .detalle .nombre {
+            text-align: center;
+            margin-right: 60px;
+        }
+
+        .cajaprod .detalle .precio {
+            text-align: center;
+            margin-right: 80px;
+        }
         
 
         footer .contenedorfooter {
@@ -2484,900 +3522,7 @@ body footer .contenedor2 .derecha{
 
    
 
-    @media (min-width: 600px) and (max-width: 700px){
-
-
-        
-        .titulos_log2{
-          
-            margin-left: 0%
-
-        }
-
-        .principal2{
-            margin-left: 5%;
-        }
-
-        .tipo {
-            margin-left: 33%;
-        }
-
-        .nombrep {
-            margin-left: 28%;
-        }
-
-        .descripcion {
-            margin-left: 28%;
-        }
-
-        .talles {
-            margin-left: 40%;
-        }
-
-        .precio {
-            margin-left: 25%;
-        }
-
-        .imagen {
-            margin-left: 6%;
-        }
-
-        .carga {
-            margin-left: 23%;
-        }
-
-        
-        .sexo {
-            margin-left: 33%;
-        }
-
-
-       
-
-
-        body .imgNewProduct {
-            padding-right: 0px;
-            float:none;
-            margin-left: 35%
-        }
-
-        body .imgNewProduct img{
-            width: 150px;
-        }
-
-        img.centro {
-            height: 200px;
-            width: 300px;
-            margin-left: 5%;
-        }
-
-        header .icons {
-           
-            display: flex;
-       
-        }
-
-        header img.logo {
-            width: 200px;
-            height: 100px;
-            margin-right: 15px;
-        }
-
-        header ul {
-           margin-right: 30px;
-        }
-
-        header ul li {
-            margin-right: 20px;
-        }
-
-        header ul li a {
-            
-            font-size: 16px;
-            
-        }
-
-        header form {
-           
-            width: 250px;
-            margin-left: 35%;
-           
-           
-        }
-
-        header .icons{
-            margin-bottom: 2%;
-            margin-left: 80px;
-          
-            bottom: 90px;
-        }
-
-        header .logeo {
-            position: fixed;
-            left: 50px;
-            top: 5px;
-            
-        }
-
-        .carrito{
-            left: 88%;
-        }
-
-        header .logeo ul li {
-        
-            font-size: 13px;
-          
-        }
-
-        header .logeo ul li a{
-            
-            font-size: 13px;
-              
-        }
-
-        body .imabajo {
-
-            margin-top: 8%;
-            display: flex;
-            justify-content: space-between;
-            margin-left: 0px;
-            
-        }
-
-        body .imabajo img {
-            width: 130px;
-            height: 250px;
-           
-        }
-
-        .caja ul li a {
-           
-            font-size: 12px;
-           
-         }
-
-        .caja{
-             margin-bottom: 0px;
-        }
-
-        body .detalle i.fa-tag {
-            font-size: 20px;
-      
-        }
-
-        body .detalle p {
-       
-            font-size: 20px;
-        }
-
-        body .detalle img {
-            width: 200px;
-            height: 200px;
-            margin-left: 25%;
-        }
-
-        body .detalle {
-        
-            margin-left: 8%;
-            height: 400px;
-            width: 400px;
-        }
-
-        body .detalle button[type="submit"] {
-            margin-left: 180%;
-            font-size: 30px;
-        }
-
-        .wallpaper {
-            margin-right: 10%;
-        }
-
-        body img.centro {
-            height: 250px;
-            width: 100%;
-            margin-left: 0%;
-        }
-
-        body .linea4{
-            padding-right: 0%;
-            padding-left: 0%;
-        }
-
-        body .linea4 .destacado img.prendas {
-            height: 120px;
-            width: 100px;
-        }
-
-        body .linea4 .destacado p {
-      
-            font-size: 7px;
-        }
-
-        body .linea6 {
-       
-            padding-right: 0%;
-            padding-left: 0%;
-        }
-
-        body .linea6 .izq img.prenda1{
-            height: 320px;
-            width: 200px;
-        }
-
-        body .linea6 .der {
-            margin-left: 6%;
-        }
-
-        body .linea6 .der .fila .prenda {
-            margin-right: 30px;
-        }
-
-        body .linea6 .der .fila .prenda img.prenda2 {
-            height: 120px;
-            width: 100px;
-        }
-
-        body .linea6 .der .fila2 .prenda {
-            margin-right: 30px;
-        }
-
-        body .linea6 .der .fila2 .prenda img.prenda2 {
-            height: 120px;
-            width: 100px;
-        }
-
-        body .linea6 .der .fila .prenda p {
-            font-size: 7px;
-        }
-
-        body .linea6 .der .fila2 .prenda p {
-            font-size: 7px;
-        }
-
-        body .linea6 .der .fila2 {
-       
-            margin-top: 6%;
-        }
     
-   
-        footer .izq .arriba ul {
-                   
-            flex-direction: column;
-        }
-
-        footer .izq .arriba ul li {
-     
-            margin-top: 5px;
-        }
-
-        footer .der {
-        
-            display: flex;
-            flex-direction: column;
-        }
-
-        footer {
-            margin-top: 7%;
-       
-        }
-
-        footer .der .iz p {
-            font-size: 14px;
-      
-        }   
-
-        footer .der .de {
-            margin-left: 0px;
-            margin-top: 20px;
-        }
-
-        footer .der .iz {
-     
-            margin-top: 20px;
-        }
-
-        footer .der .iz p {
-            font-size: 12px;
-        
-        }
-
-        footer .contenedorfooter {
-            margin-left: 0%;
-        
-        }
-
-        footer .der .de button[type="submit"] {
-        
-            font-size: 28px;
-        }
-
-        footer .der .iz p {
-            font-size: 0px;
-        }
-
-        footer {
-            margin-top: 10%;
-       
-        }
-
-        .opcionesItem {
-            display: contents;
-
-        }
-
-        body footer .contenedor2 .izquierda img {
-            width: 80px;
-        
-        }
-
-        body footer .contenedor2 .izquierda small {
-            font-size: 12px;
-        }
-
-        body footer .contenedor2 .derecha ul li a {
-      
-            font-size: 13px;
-        
-        }
-
-        .wallpaper2 {
-          
-            float: none;
-            margin-right: 1px;
-
-        }
-
-    
-        .wallpaper2 img {
-          
-            width: 100%;
-        }
-
-        .wallpaper {
-        
-            float: none;
-            margin-left: 8%;
-
-        }
-
-    
-
-        .detallep{
-            padding-left: 0%;
-            padding-right: 0%;
-        }
-
-        .detallep .ladoderecho .uno p {
-            font-size: 20px
-        }
-
-        .detallep .ladoderecho .dos p {
-            font-size: 13px;
-            
-        }
-    
-        .detallep .ladoderecho {
-            margin-left: 13%;
-        }
-    
-        .detallep .ladoizquierdo .der img {
-            height: 400px;
-            width: 220px;
-        }
-
-        .detallep .ladoizquierdo .izq {
-            
-            margin-right: 15%;
-        }
-
-        .detallep .ladoizquierdo .izq img {
-            width: 50px;
-            height: 80px;
-        }
-
-        .detallep .ladoderecho .tres p {
-            font-size: 23px;
-            margin-top: -12px;
-        }
-
-        .detallep .ladoderecho .tres p.uno {
-          
-            font-size: 13px;
-            
-        }
-
-        .profile {
-            padding-left: 3%;
-            padding-right: 3%;
-        }
-
-        .profile .der {
-            margin-left: 6%;
-        }
-    
-        .profile .der img.perfil {
-            height: 300px;
-            width: 220px;
-        }
-    
-        .profile .izq .uno p {
-           
-            font-size: 12px;
-           
-        }
-    
-        .profile .izq .tres p {
-            
-            font-size: 12px;
-            
-        }
-    
-        .profile .izq .cinco p {
-            
-            font-size: 12px;
-            
-    
-    
-        }
-    
-        .profile .izq .dos p {
-           
-            font-size: 11px;
-           
-        }
-
-        .profile .izq .cuatro p {
-           
-            font-size: 11px;
-           
-        }
-
-        .profile .izq .seis p {
-           
-            font-size: 11px;
-           
-        }
-
-   
-    }
-
-
-        
-    @media (min-width: 700px) and (max-width: 900px){
-
-            body .imgNewProduct {
-                padding-right: 0%;
-                margin-left: 25%;
-                float:none
-            }
-    
-            body .imgNewProduct img{
-                width: 250px;
-            }
-
-            
-            .titulos_log2 {
-                margin-left: 0%;
-            }
-
-            .tipo {
-                margin-left: 30%;
-            }
-
-            .nombrep {
-                margin-left: 25%;
-            }
-
-            .descripcion {
-                margin-left: 25%;
-            }
-
-            .talles {
-                margin-left: 35%;
-            }
-
-            .precio {
-                margin-left: 23%;
-            }
-
-            .imagen {
-                margin-left: 6%;
-            }
-
-            .carga {
-                margin-left: 21%;
-            }
-
-            
-            .sexo {
-                margin-left: 30%;
-            }
-
-            .profile {
-                padding-left: 5%;
-                padding-right: 5%;
-            }
-
-            .profile .der {
-                margin-left: 8%;
-            }
-        
-            .profile .der img.perfil {
-                height: 350px;
-                width: 250px;
-            }
-        
-            .profile .izq .uno p {
-               
-                font-size: 13px;
-               
-            }
-        
-            .profile .izq .tres p {
-                
-                font-size: 13px;
-                
-            }
-        
-            .profile .izq .cinco p {
-                
-                font-size: 13px;
-                
-        
-        
-            }
-        
-            .profile .izq .dos p {
-               
-                font-size: 12px;
-               
-            }
-
-            .profile .izq .cuatro p {
-               
-                font-size: 12px;
-               
-            }
-
-            .profile .izq .seis p {
-               
-                font-size: 12px;
-               
-            }
-     
-          
-            
-            
-            
-                        
-
-
-            header img.logo {
-                width: 200px;
-                height: 100px;
-                margin-right: 0px;
-            }
-
-            header ul {
-               margin-right: 10px;
-            }
-
-            header ul li{
-                margin-right: 10px;
-             }
-
-            header ul li a {
-                
-                font-size: 12px;
-                
-            }
-
-            header form {
-               
-                width: 120px;
-            }
-
-            header .icons{
-                margin-bottom: 13%;
-                margin-left: 140px;
-            }
-
-            header .logeo {
-                margin-left: 10px;
-                
-            }
-
-            header .logeo ul li {
-
-               
-              
-                font-size: 10px;
-               
-            }
-
-            header .logeo ul li a{
-              
-                font-size: 10px;
-               
-            }
-        
-
-            img.centro {
-                height: 250px;
-                margin-right: 25%;
-            }
-
-         
-
-            body .linea2 {
-               
-                margin-top: 12%;
-            }
-
-            .caja ul li a {
-              
-                font-size: 12px;
-            
-            }
-
-            img.centro {
-             
-                height: 200px;
-                margin-left: 10%;
-            }
-
-            .caja {
-                margin-bottom: 0%;
-            }
-
-
-         
-           
-            
-
-            body .detalle {
-                
-                height: 400px;
-        
-                width: 400px;
-               
-                margin-left: 15%;
-            }
-
-            body .detalle img {
-
-                width: 200px;
-
-                height: 200px;
-           
-                margin-left: 25%;
-            }
-
-            body .detalle p {
-             
-                font-size: 20px;
-            }
-
-            .detalle i.fa-tag {
-
-                font-size: 25px;
-           
-            }
-
-            body .detalle button[type="submit"] {
-
-                margin-left: 150%;
-               
-                font-size: 35px;
-            }
-
-            body img.centro {
-
-                height: 300px;
-                width: 100%;
-                margin-left: 0%;
-
-            }
-
-            body .linea4{
-                padding-right: 0%;
-                padding-left: 0%;
-            }
-    
-            body .linea4 .destacado img.prendas {
-                height: 150px;
-                width: 120px;
-            }
-    
-            body .linea4 .destacado p {
-                font-size: 8px;
-            }
-    
-            body .linea6 {
-               
-                padding-right: 0%;
-                padding-left: 0%;
-            }
-    
-            body .linea6 .izq img.prenda1{
-                height: 400px;
-                width: 250px;
-            }
-    
-            body .linea6 .der {
-                margin-left: 5%;
-            }
-    
-            body .linea6 .der .fila .prenda {
-                margin-right: 50px;
-            }
-    
-            body .linea6 .der .fila .prenda img.prenda2 {
-                height: 140px;
-                width: 120px;
-            }
-    
-            body .linea6 .der .fila2 .prenda {
-                margin-right: 50px;
-            }
-    
-            body .linea6 .der .fila2 .prenda img.prenda2 {
-                height: 140px;
-                width: 120px;
-            }
-
-            body .linea6 .der .fila .prenda p {
-                font-size: 9px;
-            }
-
-            body .linea6 .der .fila2 .prenda p {
-                font-size: 9px;
-            }
-
-            body .linea6 .der .fila2 {
-               
-                margin-top: 6%;
-            }
-
-            .wallpaper {
-           
-                float: none;
-                margin-left: 15%;
-            }
-
-            .wallpaper2 {
-
-                position: relative;
-                float: none;
-                margin-right: 0px;
-
-            }
-          
-            
-            
-            .redessociales {
-              
-                margin-left: 7%;
-            }
-
-            .principal2 {
-                margin-left: 10%;
-            }
-
-            .carrito {
-       
-                left: 90%;
-                
-            }
-
-            footer .izq .arriba ul {
-                   
-                flex-direction: column;
-            }
-
-            footer .izq .arriba ul li {
-             
-                margin-top: 5px;
-            }
-
-            footer .der {
-                
-                display: flex;
-                flex-direction: column;
-            }
-
-            footer {
-                margin-top: 7%;
-               
-            }
-
-            footer .der .iz p {
-                font-size: 14px;
-              
-            }
-
-            footer .der .de {
-                margin-left: 0px;
-                margin-top: 20px;
-            }
-
-            footer .der .iz {
-             
-                margin-top: 20px;
-            }
-
-            footer .der .iz p {
-                font-size: 12px;
-                
-            }
-
-            footer .contenedorfooter {
-                margin-left: 4%;
-                
-            }
-            footer {
-                margin-top: 10%;
-              
-            }
-
-
-            .detallep{
-                padding-left: 2%;
-                padding-right: 0%;
-            }
-        
-            .detallep .ladoderecho .uno p {
-                font-size: 20px
-            }
-        
-            .detallep .ladoderecho .dos p {
-
-                font-size: 13px;
-                    
-            }
-            
-            .detallep .ladoderecho {
-
-                    margin-left: 13%;
-
-            }
-            
-            .detallep .ladoizquierdo .der img {
-
-                height: 500px;
-                width: 280px;
-
-            }
-
-            .detallep .ladoizquierdo .izq {
-                    
-                 margin-right: 15%;
-
-            }
-
-            .detallep .ladoizquierdo .izq img {
-
-                width: 70px;
-                height: 110px;
-
-             }
-
-            .detallep .ladoderecho .tres p {
-
-                font-size: 23px;
-                margin-top: -12px;
-
-            }
-
-            .detallep .ladoderecho .tres p.uno {
-                  
-                font-size: 13px;
-                    
-            }
-
-
-           
-    }
 
 
 
