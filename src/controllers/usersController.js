@@ -44,12 +44,21 @@ module.exports = {
     },
     logout: function(req ,res) {
 
-        req.session.destroy();
+        console.log(req.cookies)
+        cookie = req.cookies;
+       for (var prop in cookie) {
+           if (!cookie.hasOwnProperty(prop)) {
+               continue;
+           }    
+           res.cookie(prop, '', {expires: new Date(0)});
+       }
+      
         res.redirect("/")
     },
     logged: function(req, res){
         let usernameusuario = req.body.username;
         let passusuario = req.body.password;
+        let remember = req.body.remember;
 
         let usuarioALoguearse;
 
@@ -65,6 +74,11 @@ module.exports = {
 
         req.session.datosusuario = usuarioALoguearse;
 
+        
+        if (remember != undefined) {
+            res.cookie('remember', usuarioALoguearse.username, { maxAge: 600000000 });
+        }
+        
      
         return res.redirect('/users/profile');
 

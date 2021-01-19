@@ -3,6 +3,8 @@ const express = require('express');
 const cookieParser = require('cookie-parser');
 const methodOverride = require('method-override');
 
+const mantenerselogueado = require ('./middlewares/mantenerselogueado')
+
 
 const app = express();
 
@@ -19,6 +21,7 @@ app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 app.use(cookieParser());
 app.use(methodOverride('_method'));
+app.use(mantenerselogueado);
 
 
 

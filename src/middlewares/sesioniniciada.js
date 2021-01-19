@@ -6,4 +6,6 @@ function sesioniniciada(req, res, next){
     next()
 }
 
+
+
 module.exports = sesioniniciada;
