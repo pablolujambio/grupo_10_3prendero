@@ -1,7 +1,6 @@
-const path = require ('path');
-const fs = require ('fs')
 
-let usuarios = JSON.parse(fs.readFileSync(path.join(__dirname, '../database/users.json'), 'utf8'))
+
+let usuarios = require('../database/models');
 
 function mantenerselogueado( req,res,next){
      if (req.cookies.remember != undefined){

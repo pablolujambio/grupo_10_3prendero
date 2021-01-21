@@ -1,42 +1,34 @@
 const fs =require("fs");
-const path = require("path");
+
 const bcrypt = require("bcrypt")
 const  {validationResult} = require("express-validator");
 const session = require("express-session");
 
- let usuarios = fs.readFileSync(path.join(__dirname, "../database/users.json"), "utf8");
- usuarios = JSON.parse(usuarios)
+ let db = require('../database/models');
 
- let ultimoid = 0;
- for (let i = 0; i < usuarios.length; i++){
-     if(ultimoid < usuarios[i].id){
-         if(ultimoid < usuarios[i].id){
-             ultimoid = usuarios[i].id
-         }
-     }
- }
+ 
 module.exports = {
     register: function(req, res) {
         res.render('users/register')
     },
     save: function(req,res){
-        let errors = validationResult(req);
-        if(errors.isEmpty()){
-                let nuevousuario = {
-                    id: ultimoid + 1,
+    console.log(req.body);
+                 db.usuarios.create ({
+                   
                     username: req.body.username,
                     email: req.body.email,
-                    password: bcrypt.hashSync(req.body.password, 12),
-                    repassword: bcrypt.hashSync(req.body.repassword, 12),
+                    password: req.body.password,
+                    repassword: req.body.repassword,
                     date: req.body.date,
-                    image: req.file.filename
-                }
-                usuarios.push(nuevousuario);
-                fs.writeFileSync(path.join(__dirname, "../database/users.json"), JSON.stringify(usuarios, null, 4))
-                res.redirect("/users/login")
-        }else{
-        res.send(errors).mapped()
-        }
+                    image: req.body.image
+                })
+                
+                .then(function() {
+                    res.redirect("/")
+                })
+                
+        
+        
     },
   
     login: function(req, res) {
