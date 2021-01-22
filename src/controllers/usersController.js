@@ -12,19 +12,18 @@ module.exports = {
         res.render('users/register')
     },
     save: function(req,res){
-    console.log(req.body);
                  db.usuarios.create ({
                    
                     username: req.body.username,
                     email: req.body.email,
-                    password: req.body.password,
+                    password: bcrypt.hashSync(req.body.password, 10),
                     repassword: req.body.repassword,
                     date: req.body.date,
-                    image: req.body.image
+                    image: req.file[0]
                 })
                 
                 .then(function() {
-                    res.redirect("/")
+                    res.redirect("/users/login")
                 })
                 
         
@@ -53,12 +52,18 @@ module.exports = {
         let remember = req.body.remember;
 
         let usuarioALoguearse;
+        
+        db.usuarios.findAll()
+        .then(function(usuarios){
+           for(let i = 0; i < usuarios.length; i++){
+             
 
-        usuarios.forEach(user => {
-            if (user.username === usernameusuario && bcrypt.compareSync(passusuario, user.password)) {
-                 usuarioALoguearse = user;
+            if (usuarios[i].username === usernameusuario && bcrypt.compareSync(passusuario, usuarios[i].password)) {
+                 usuarioALoguearse = usuarios[i];
+                 
             }
-        });
+           }
+       
 
         if (usuarioALoguearse == undefined) {
             return res.send('Datos incorrectos');
@@ -72,13 +77,21 @@ module.exports = {
         }
         
      
-        return res.redirect('/users/profile');
+        return res.redirect('/users/profile');})
 
       
-        }
+    }
+    
     ,
     profile: function (req, res) {
-        return res.render('users/profile');
+        db.usuarios.findAll()
+        .then(function(usuarios) {
+           
+                return res.render('users/profile'), {
+                usuarios: usuarios
+            }
+        })
+   
     }
 
 }
