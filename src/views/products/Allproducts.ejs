@@ -26,8 +26,8 @@
         <div class="cajaprod">
            
             <div class= "imagen">
-                <a href=<%=`/products/${productos[i].id}`%>>
-                <img class="right" src=<%= `/../uploads/products/${productos[i].image}` %>   alt="<%= productos[i].image %>">   </a>
+                <a href="/products/productDetail/<%= productos[i].id %>">
+                <img class="right" src="/uploads/products/<%= productos[i].image %>"   alt="logo">   </a>
             </div>
 
             <div class= "detalle">
@@ -42,12 +42,14 @@
       
     <% } %> 
 </div>
-</div>
+
 
 
 
 
  <%- include('../partials/footer') %>
+
+</div>
 
 </div>
 

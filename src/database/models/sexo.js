@@ -29,7 +29,7 @@ module.exports = function(sequelize, dataTypes) {
     sexo.associate=function(modelos){
         sexo.hasMany(modelos.productos,{
             as:"productos",
-            foreignKey:"sexo_fk"
+            foreignKey:"id_sexo"
         });
     }
 

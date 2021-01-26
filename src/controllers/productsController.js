@@ -59,15 +59,17 @@ module.exports = {
     },
 
     detalle: function(req, res) { 
-        for (let i = 0; i < productos.length; i++) {
-            if(req.params.id == productos[i].id){     
-                return res.render('products/productDetail', { producto : productos[i]});
-            }
-        }  
+        db.productos.findByPk(req.params.id)
+        .then(function(productos) {
+            return res.render('products/productDetail', { productos: productos })
+        })
     },
 
     all: function(req, res) {
+        db.productos.findAll()
+        .then(function(productos){
         return res.render('products/Allproducts', { productos : productos})
+        })
     },
 
    

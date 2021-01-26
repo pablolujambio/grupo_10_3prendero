@@ -86,12 +86,10 @@ module.exports = {
     profile: function (req, res) {
       
         db.usuarios.findByPk(req.params.id)
-        .then(function(usuario) {
-            var bufferBase64 = new Buffer( usuario.image , 'binary' ).toString('base64');
+        .then(function(usuario) { 
             res.render("users/profile", {
                 usuario: usuario,
-                image: bufferBase64
-
+               
             })
         })
    

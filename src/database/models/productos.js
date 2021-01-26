@@ -32,7 +32,7 @@ module.exports = function(sequelize, dataTypes) {
             notNull: true
         },
         image: {
-            type: dataTypes.BLOB,
+            type: dataTypes.STRING,
             notNull: true
         }
         
@@ -53,21 +53,19 @@ module.exports = function(sequelize, dataTypes) {
     const productos = sequelize.define("productos", cols, config);
     productos.associate = function(modelos){
       productos.belongsTo(modelos.tipo, {
-        foreignKey : 'tipo_fk',
+        foreignKey : 'id_tipo',
         as : 'tipos'
       }),
       productos.belongsTo(modelos.sexo, {
-        foreignKey : 'sexo_fk',
+        foreignKey : 'id_sexo',
         as : 'sexo'
       }),
      
-      productos.belongsToMany(modelos.talle, {
-        as:"talles",
-        through:"productos_talle",
-        foreignKey:"producto_fk",
-        otherkey:"talle_fk",
-        timestamps:false
+      productos.belongsTo(modelos.talle, {
+        foreignKey : 'id_talle',
+        as : 'talle'
       })
+     
     }
     return productos;
     

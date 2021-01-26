@@ -25,21 +25,21 @@ Esto es el cuerpo
             
             
             
-                <img class="right" src=<%= `/../uploads/products/${producto.image}` %>   alt="<%= producto.image %>"> 
+                <img class="right" src="/uploads/products/<%= productos.image %>"   alt="logo"> 
            
         </div>
 
         <div class="ladoderecho">
             <div class= "uno">
-                <p><%= producto.nombreProducto %></p>
+                <p><%= productos.nombreProducto %></p>
             </div>
         
             <div class= "dos">
-                <p><%= producto.descripcion %></p>
+                <p><%= productos.descripcion %></p>
             </div><br><br>
 
             <div class= "tres">
-                <p class="uno">$ 6620</p><p>$ <%= producto.precio %></p>
+                <p class="uno">$ 6620</p><p>$ <%= productos.precio %></p>
             </div>
 
             <div class= "cuatro">

@@ -29,7 +29,7 @@ module.exports = function(sequelize, dataTypes) {
     tipo.associate=function(modelos){
         tipo.hasMany(modelos.productos,{
             as:"productos",
-            foreignKey:"tipo_fk"
+            foreignKey:"id_tipo"
         });
     }
   
