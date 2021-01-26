@@ -27,7 +27,7 @@ module.exports = function(sequelize, dataTypes) {
             
         },
         image: {
-            type: dataTypes.BLOB,
+            type: dataTypes.STRING,
             notNull: true
         }
 

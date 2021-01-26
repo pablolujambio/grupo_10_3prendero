@@ -17,7 +17,7 @@ var storage = multer.diskStorage({
 var upload = multer({ storage: storage })
 
 router.get('/products/create', productsController.create);
-router.post('/products/register', upload.any('image'), productsController.store);
+router.post('/products/register', upload.single('image'), productsController.save);
 //router.get('/products/:id', productsController.adminDetail);
 //router.delete('/products/:id', (req, res) => res.send('borraste un producto'))
 

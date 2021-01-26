@@ -33,24 +33,25 @@
 
     <div class="tipo"> 
       <label for="type" class="tipo_producto" data-icon="u" > Tipo de producto </label><br>
-      <select name="type">
-        <option>Remeras</option>
-        <option>Pantalones</option>
-        <option>Buzos</option>
-        <option>Calzado</option>             
+      <select name="id_tipo">
+        <%for(let i=0; i<tipo.length;i++) {%>
+          <option value ="<%=tipo[i].id%>">
+            <%=tipo[i].nombre%> </option>  
+            <% } %>       
       </select>
     </div><br>
     
     <div class= "sexo">
       <label for="sexo" class="tipo_producto">Sexo</label><br>
-      <input type="radio" name="sexo" value="Mujer"> Mujer<br>
-      <input type="radio" name="sexo" value="Hombre"> Hombre<br>
-      <input type="radio" name="sexo" value="Unisex"> Unisex
+      <%for(let i=0; i<sexo.length;i++) {%>
+      <input type="radio" name="id_sexo" value="<%=sexo[i].id%>"> <%=sexo[i].nombre%><br>
+     
+      <% } %>       
     </div><br>
     
     <div class= "nombrep">
       <label for="descripcion" class="tipo_producto" data-icon="p">Nombre Producto</label><br>
-      <textarea name="nombreProducto" ></textarea>
+      <textarea name="nombre_producto" ></textarea>
     </div>  
 
     <div class= "descripcion">
@@ -60,12 +61,11 @@
       
     <div class="talles"> 
       <label for="talles" class="tipo_producto" data-icon="p"> Talle </label><br>
-      <select name="talles">
-        <option>XL</option>         
-        <option>L</option>
-        <option>M</option>
-        <option>S</option>
-        <option>XS</option>  
+      <select name="id_talle">
+        <%for(let i=0; i<talle.length;i++) {%>
+          <option value ="<%=talle[i].id%>">
+            <%=talle[i].nombre%> </option>  
+            <% } %>     
       </select> 
     </div>
             

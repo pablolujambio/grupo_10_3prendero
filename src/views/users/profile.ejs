@@ -21,15 +21,15 @@
 -------------------------------------------------------------------------->
 
 <div class="contenedor" >
-
+    
     <div class= "profile">
         <div class="izq">
            <div class="uno">
                <p>Información de la cuenta</p>
            </div>
            <div class="dos">
-              <p>Juan Alvarez</p>
-              <p>Jalvarez@gmail.com</p>
+              <p><%= usuario.username %> </p>
+              <p><%= usuario.email %></p>
             </div>
             <div class="tres">
                 <p>Suscripciones</p>
@@ -41,7 +41,7 @@
                 <p>Dirección de facturación por defecto</p>
             </div>
             <div class="seis">
-                <p>Juan Alvarez</p>
+                <p><%= usuario.username %></p>
                 <p>Av. Santa Fe 4815</p>
                 <p>(C1002) Ciudad autonoma de Buenos Aires</p>
                 <p>Buenos Aires</p>
@@ -51,11 +51,11 @@
         </div>
        
         <div class="der">
-            <img class="perfil" src="../imagenes/perfil.jpg" alt="logo">
+            <img class="perfil" src="/uploads/avatars/<%= usuario.image %>" alt="logo">
           
         </div>
     </div>
-
+  
 <!-----------------------------------------------------------------------
  Esto es el footer
 -------------------------------------------------------------------------->         

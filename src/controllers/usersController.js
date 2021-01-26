@@ -19,7 +19,7 @@ module.exports = {
                     password: bcrypt.hashSync(req.body.password, 10),
                     repassword: req.body.repassword,
                     date: req.body.date,
-                    image: req.file[0]
+                    image: req.file.filename
                 })
                 
                 .then(function() {
@@ -46,6 +46,8 @@ module.exports = {
       
         res.redirect("/")
     },
+  
+
     logged: function(req, res){
         let usernameusuario = req.body.username;
         let passusuario = req.body.password;
@@ -77,23 +79,26 @@ module.exports = {
         }
         
      
-        return res.redirect('/users/profile');})
+        return res.redirect("/users/profile/" + usuarioALoguearse.id);})
 
       
-    }
-    
-    ,
+    },
     profile: function (req, res) {
-        db.usuarios.findAll()
-        .then(function(usuarios) {
-           
-                return res.render('users/profile'), {
-                usuarios: usuarios
-            }
+      
+        db.usuarios.findByPk(req.params.id)
+        .then(function(usuario) {
+            var bufferBase64 = new Buffer( usuario.image , 'binary' ).toString('base64');
+            res.render("users/profile", {
+                usuario: usuario,
+                image: bufferBase64
+
+            })
         })
    
     }
-
+    
+    
+ 
 }
    
     

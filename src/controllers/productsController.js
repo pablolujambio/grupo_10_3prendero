@@ -2,15 +2,17 @@ const fs = require('fs');
 const path = require('path');
 const { validationResult } = require('express-validator');
 
-let productos = fs.readFileSync(path.join(__dirname, '../database/products.json'), 'utf8');
-productos = JSON.parse(productos)
+let db = require('../database/models');
 
-let ultimoId = 0;
-for (let i = 0; i < productos.length; i++) {
-    if (ultimoId < productos[i].id) {
-        ultimoId = productos[i].id
-    }
-}
+//let productos = fs.readFileSync(path.join(__dirname, '../database/products.json'), 'utf8');
+//productos = JSON.parse(productos)
+
+//let ultimoId = 0;
+//for (let i = 0; i < productos.length; i++) {
+    //if (ultimoId < productos[i].id) {
+       // ultimoId = productos[i].id
+    //}
+//}
 
 module.exports = {
     root: (req, res) => {
@@ -18,25 +20,38 @@ module.exports = {
     },
    
     create: (req, res) => {
-        return res.render('products/newProduct');
+        db.talle.findAll()
+        .then(function(talle){
+            db.sexo.findAll()
+            .then(function(sexo){
+                db.tipo.findAll()
+                .then(function(tipo){
+
+                    return res.render('products/newProduct', {sexo : sexo,  talle : talle,  tipo : tipo} )
+            })
+        })
+           
+    })
     },
-    store: (req, res) => {
-        let errors = validationResult(req);
-        if (errors.isEmpty()) {
-            let product = {
-                id: ultimoId +1,
-                type: req.body.type,
-                sexo: req.body.sexo,
-                nombreProducto: req.body.nombreProducto,
+    save: (req, res) => {
+        console.log(req.body)
+        
+
+        db.productos.create({
+                id_tipo: req.body.id_tipo,
+                id_sexo: req.body.id_sexo,
+                nombreProducto: req.body.nombre_producto,
                 descripcion: req.body.descripcion,
-                talles: req.body.talles,
+                id_talle: req.body.id_talle,
                 precio: req.body.precio,
-                image: req.files[0].filename
-            }
-            productos.push(product);
-            fs.writeFileSync(path.join(__dirname, '../database/products.json'), JSON.stringify(productos, null, 4))
-        }
-        return res.send(productos);
+                image:  req.file.filename
+               
+            })
+            .then(function() {
+                res.redirect("/")
+            })
+       
+        
     },
     carrito: function(req, res) {
     console.log("hola")
@@ -56,7 +71,8 @@ module.exports = {
     },
 
    
-    nuevo: function(req, res) {  
+    nuevo: function(req, res) { 
+         
         return res.render('products/newProduct')
     }
 }

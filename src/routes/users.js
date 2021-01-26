@@ -18,14 +18,16 @@ var storage = multer.diskStorage({
   }
 })
    
-var upload = multer()
+var upload = multer({ storage: storage })
 
 router.get('/register',guestMiddleware, usersController.register);
 router.post("/register", upload.single('image'),registervalidator, usersController.save)
 router.get('/login', guestMiddleware, usersController.login);
 router.post('/login', loginValidator, usersController.logged);
 router.get("/logout" ,authMiddleware, usersController.logout);
-router.get('/profile', authMiddleware, usersController.profile);
+router.get("/profile/:id", authMiddleware, usersController.profile);
+
+
 
 
 
