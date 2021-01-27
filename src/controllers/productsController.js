@@ -118,5 +118,15 @@ module.exports = {
         res.redirect('/products/all')
 
       
-    }
+    },
+    delete: function(req, res) {
+
+     db.productos.destroy({
+        where:{
+            id: req.body.id
+        }
+    })
+    res.redirect('/products/all');
+    
+}
 }
