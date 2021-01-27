@@ -128,5 +128,26 @@ module.exports = {
     })
     res.redirect('/products/all');
     
-}
+    
+    },
+    search: function(req, res){
+        db.productos.findAll({
+            where:{
+                nombreProducto:{
+                    [db.Sequelize.Op.like]:`%${req.query.search}%`
+                }
+            }
+        })
+        .then(function(resultado){
+            res.render('products/search',{
+                queryString:req.query.search,
+                productos:resultado
+            })
+        })
+            .catch(function(e){
+                console.log(e)
+            
+        })
+
+    }
 }

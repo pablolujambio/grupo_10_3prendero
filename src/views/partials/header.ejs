@@ -11,8 +11,8 @@
             <li><a href="#">MUJER</a></li>
             <li><a href="#">KIDS</a></li>
         </ul>
-        <form action="index.html" method="POST">
-            <input type="text" placeholder="Search"><button type="submit"><i class="fas fa-search"></i></button>
+        <form action="/products/search" method="GET">
+            <input type="text" placeholder="Search" id="search" name="search" value="<%(typeof busqueda=='undefined')? '' :busqueda %>"><button type="submit"><i class="fas fa-search"></i></button>
         </form>
 
         <% if(typeof hayunusuario != "undefined") { %>

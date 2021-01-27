@@ -26,6 +26,7 @@ router.get('/productDetail/:id', productsController.detalle);
 router.get('/EditProduct/:id', productsController.edit);    // Vista del Formulario de edición de productos
 router.post('/EditProduct/:id', upload.single('image'), productsController.update); 
 router.delete('/delete', productsController.delete); 
+router.get('/search',productsController.search);
 
 
 module.exports = router;
