@@ -1068,7 +1068,44 @@ ALL PRODUCTS
     text-align: center;
     margin-right: 20px
  }
-/*-------------------------------------------------------------------------- 
+
+ .cajaprod .detalle .abajo {
+    display: flex;
+  
+    justify-content: space-evenly;
+   margin-top: 20%;
+ 
+
+}
+
+.cajaprod .detalle .abajo button[type="submit"] {
+    border: none;
+    background: none;
+   color: red;
+    font-size: 20px;
+}
+
+.cajaprod .detalle .abajo button[type="submit"]:hover{
+    transform: scale(1.025); 
+    transition: all 0.5s ease;
+}
+
+.cajaprod .detalle .abajo a:hover{
+    transform: scale(1.025); 
+    transition: all 0.5s ease;
+}
+.cajaprod .detalle .abajo a{
+    border: none;
+    background: none;
+   color: green;
+    font-size: 20px; 
+}
+
+
+  
+/*---
+
+----------------------------------------------------------------------- 
 PROFILE
  ----------------------------------------------------------------------------*/
 

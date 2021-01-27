@@ -37,7 +37,16 @@
                 <div class= "precio">
                     <p>$<%= productos[i].precio %></p>
                 </div>
+
+                <div class="abajo">
+                    <a href="/products/EditProduct/<%= productos[i].id %>"><i class="far fa-edit"></i></a>
+                    <form action="delete?_method=DELETE" method="POST">
+                        <input type="hidden" id="id" name="id" value="<%= productos[i].id %>">
+                        <button type="submit" class="delete"><i class="far fa-trash-alt"></i></button>
+                    </form>
+                </div>
             </div>
+           
         </div>
       
     <% } %> 

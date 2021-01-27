@@ -68,7 +68,7 @@ module.exports = {
     all: function(req, res) {
         db.productos.findAll()
         .then(function(productos){
-        return res.render('products/Allproducts', { productos : productos})
+        return res.render("products/Allproducts", { productos : productos})
         })
     },
 
@@ -76,5 +76,47 @@ module.exports = {
     nuevo: function(req, res) { 
          
         return res.render('products/newProduct')
+    },
+
+    edit: function(req, res){
+
+        db.productos.findByPk(req.params.id)
+     
+            .then(function(productos){
+                db.talle.findAll()
+                .then(function(talle){
+                    db.sexo.findAll()
+                    .then(function(sexo){
+                        db.tipo.findAll()
+                        .then(function(tipo){
+        
+                            return res.render('products/EditProduct', {productos:productos, sexo : sexo,  talle : talle,  tipo : tipo} )
+                    })
+                })
+                   
+            })
+        })
+    },
+
+    update: function(req, res) {
+       
+        db.productos.update({
+                id_tipo: req.body.id_tipo,
+                id_sexo: req.body.id_sexo,
+                nombreProducto: req.body.nombre_producto,
+                descripcion: req.body.descripcion,
+                id_talle: req.body.id_talle,
+                precio: req.body.precio,
+                image:  req.file.filename
+               
+        },{
+            where:{
+                id:req.params.id
+            }
+        });
+        
+        res.redirect('/products/all')
+
+      
     }
 }

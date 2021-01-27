@@ -20,6 +20,7 @@ router.get('/products/create', productsController.create);
 router.post('/products/register', upload.single('image'), productsController.save);
 //router.get('/products/:id', productsController.adminDetail);
 //router.delete('/products/:id', (req, res) => res.send('borraste un producto'))
+ 
 
 
 module.exports = router;

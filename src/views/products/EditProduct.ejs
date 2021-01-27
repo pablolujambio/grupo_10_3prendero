@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head', {title: "Home"}) %>
+
+<!-----------------------------------------------------------------------
+ Esto es el body
+--------------------------------------------------------------------------> 
+
+<body>
+
+<!-----------------------------------------------------------------------
+ Esto es el header
+-------------------------------------------------------------------------->
+
+<%- include('../partials/header') %>
+
+<!-----------------------------------------------------------------------
+ Esto es el cuerpo
+-------------------------------------------------------------------------->
+
+<div class="contenedor">
+  <article class="imgNewProduct"><img src="../../imagenes/newproduct.png" alt="New Product">
+  </article>
+
+
+	<div class= "principal2">
+  <form  action="<%=productos.id%>"  autocomplete="on" method="POST" enctype="multipart/form-data"> 
+
+    <div class= "titulos_log2"><h1>Editar producto</h1> 
+    </div>
+
+    <div class="tipo"> 
+      <label for="type" class="tipo_producto" data-icon="u" > Tipo de producto </label><br>
+      <select name="id_tipo">
+        <%for(let i=0; i<tipo.length;i++) {%>
+          <option value ="<%=tipo[i].id%>">
+            <%=tipo[i].nombre%> </option>  
+            <% } %>       
+      </select>
+    </div><br>
+    
+    <div class= "sexo">
+      <label for="sexo" class="tipo_producto">Sexo</label><br>
+      <%for(let i=0; i<sexo.length;i++) {%>
+      <input type="radio" name="id_sexo" value="<%=sexo[i].id%>"> <%=sexo[i].nombre%><br>
+     
+      <% } %>       
+    </div><br>
+    
+    <div class= "nombrep">
+      <label for="descripcion" class="tipo_producto" data-icon="p">Nombre Producto</label><br>
+      <textarea name="nombre_producto" ><%=productos.nombreProducto%></textarea>
+    </div>  
+
+    <div class= "descripcion">
+      <label for="descripcion" class="tipo_producto" data-icon="p">Descripcion</label><br>
+      <textarea name="descripcion" ><%=productos.descripcion%></textarea>
+    </div>      
+      
+    <div class="talles"> 
+      <label for="talles" class="tipo_producto" data-icon="p"> Talle </label><br>
+      <select name="id_talle">
+        <%for(let i=0; i<talle.length;i++) {%>
+          <option value ="<%=talle[i].id%>">
+            <%=talle[i].nombre%> </option>  
+            <% } %>     
+      </select> 
+    </div>
+            
+    <div class= "precio"> 
+      <label for="precio" class="tipo_producto" data-icon="p"> Precio del Producto </label><br>
+      <input type="number" name="precio" value="<%=productos.precio%>">
+    </div> <br>
+    
+    <div class= "imagen2">
+      <label for="">Imagen</label>
+      <input id="product" type="file" name="image" >
+    </div>  <br>
+
+
+    <div class="carga">
+      <button class="logButton" type=“submit”>Editar Producto</button>
+    </div><br><br><br><br><br>
+    
+  </form>
+</div>
+
+
+<!-----------------------------------------------------------------------
+ Esto es el footer
+-------------------------------------------------------------------------->
+
+<%- include('../partials/footer') %>
+
+</div>
+
+</body>
+
