@@ -645,7 +645,7 @@ DISEÑO DETALLE
     font-weight: inherit;
     font-size: 19px;
     color: #F18805;
-    margin-left: 20%;
+    margin-left: 30%;
 }
 
 .titulos_log3{
@@ -681,19 +681,20 @@ DISEÑO DETALLE
 }
 
 .registro{
-    margin-left: 26%;
+    margin-left: 32%;
     margin-top: 7%
 }
 
 .miembro{
     margin-top: 5%;
-    margin-left: 22%;
+    margin-left: 25%;
 }
 
 .repass{
     margin-left: 23%;  
-    margin-top: 5%  
+  
 }
+
 
 .logButton{
     padding: 0 16px;
@@ -715,8 +716,14 @@ DISEÑO DETALLE
     text-transform: uppercase;
 }
 
+#date{
+    height: 20px;
+    width: 170px;
+}
+
 .politicas{
-    margin-left: 18%;
+    margin-left: 23%;
+    
     width: 60%;
 }
 
@@ -765,7 +772,7 @@ DISEÑO DETALLE
 }
 
 .redessociales2{
-    margin-left: 15%;
+    margin-left: 20%;
     margin-bottom: 6%;
     margin-top: 5%
 }
@@ -889,6 +896,58 @@ DISEÑO DETALLE
     margin-left: 35%;
 }
 
+.principal .arriba{
+    display:flex;
+    margin-right: 75%;
+    margin-bottom: 5%;
+}
+
+.principal .medio{
+    margin-right: 75%;
+    margin-bottom: 5%;
+    
+}
+
+#email{
+    width:370px;
+
+}
+
+.principal .abajo{
+    display:flex;
+    margin-right: 75%;
+    margin-bottom: 8%;
+}
+
+.imagen{
+    margin-left: 10%;
+}
+
+.date2{
+    margin-left:15%;
+    margin-bottom: 5%;
+}
+
+.name3{
+    margin-left:15%;
+    margin-bottom: 5%;
+}
+
+.email2{
+    margin-left:15%;
+    margin-bottom: 5%;
+}
+
+.registro2{
+    margin-left:33%;
+
+}
+
+.imagenR{
+    margin-bottom: 10%;
+}
+
+
           
 /*-------------------------------------------------------------------------- 
 NEW PRODUCT
@@ -918,6 +977,7 @@ NEW PRODUCT
    
        
 }
+
 
 .logButton{
     padding: 0 16px;
@@ -1169,6 +1229,31 @@ PROFILE
  .profile .der img.perfil{
      height: 450px;
    width:  500px;
+ }
+
+ .cargar .editar{
+    padding: 0 16px;
+    float: left;
+    border-radius: 2px;
+    background-color: #F18805;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    color: white;
+    transition: background-color 15ms linear,
+    box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    height: 36px;
+    line-height: 2.25rem;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    border-style: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 28%;
+    margin-top: 15%;
+    
  }
 
           /*-------------------------------------------------------------------------- 
@@ -1578,33 +1663,43 @@ body footer .contenedor2 .derecha{
 
     .carga{
       
-        margin-left: 12%;
+        margin-left: 15%;
       
     }
 
 
     .titulos_log {
-        margin-left: 17%;
+        margin-left: 25%;
     }
 
     .name2 {
-        margin-left: 19%;
+        margin-left: 25%;
     }
 
     .date {
-        margin-left: 23%;
+        margin-left: 25%;
     }
 
     .email {
-        margin-left: 19%;
+        margin-left: 25%;
     }
 
+    #email{
+        width: 175px;
+    }
+
+    .principal .abajo {
+    
+        flex-direction: column;
+       margin-right: 0px;
+    
+    }
     .pass2 {
-        margin-left: 19%;
+        margin-left: 25%;
     }
 
     .repass {
-        margin-left: 19%;
+        margin-left: 25%;
     }   
             
     
@@ -1614,7 +1709,7 @@ body footer .contenedor2 .derecha{
     }
 
     .titulos_log2{
-        margin-left: 0%;
+        margin-left: 20%;
         font-size: 11px;
     }
 
@@ -1652,7 +1747,11 @@ body footer .contenedor2 .derecha{
     }
 
 
-        
+    .principal .medio {
+        margin-right: 0%;
+     
+    }
+
     .registro {
 
         margin-left: 25%;
@@ -1660,13 +1759,20 @@ body footer .contenedor2 .derecha{
     }
 
     .redessociales2{
-        margin-left: 20px;
+        margin-left: 30px;
         margin-bottom: 10%;
     }
 
     .miembro {
 
         margin-left: 45px;
+    }
+
+    .principal .arriba {
+       display: flex;
+       flex-direction: column;
+       margin-right: 0%;
+        margin-bottom: 5%;
     }
 
     .profile {
@@ -1980,6 +2086,23 @@ body footer .contenedor2 .derecha{
         font-size: 13px;
         
     }
+
+    .carga {
+        margin-right: 0%;
+      
+    }
+
+    .name3{
+      margin-left: 23%;  
+    }
+
+    .date2{
+        margin-left: 23%;  
+      }
+
+      .email2{
+        margin-left: 23%;   
+      }
         
 }
 
@@ -2092,7 +2215,7 @@ body footer .contenedor2 .derecha{
     }
 
     header .logeo {
-        position: fixed;
+        position: absolute;
         left: 50px;
         top: 5px;
         
@@ -2448,7 +2571,10 @@ body footer .contenedor2 .derecha{
         margin-right: 20px;
         
     }
-
+    .carga {
+        margin-right: 20%;
+        margin-left: 0%;
+    }
 
 }
 
@@ -2906,7 +3032,10 @@ body footer .contenedor2 .derecha{
         margin-right: 20px;
         
     }
-
+    .carga {
+        margin-right: 20%;
+        margin-left: 0%;
+    }
 
        
 }
@@ -2948,8 +3077,10 @@ body footer .contenedor2 .derecha{
 
     .wallpaper2 {
         margin-right: 0%;
-        margin-top: 18%;
-        width: 55%;
+     
+       
+        float: none;
+        margin-left: 10%;
 
     }
 
@@ -3498,7 +3629,7 @@ body footer .contenedor2 .derecha{
         }
 
         .imagen {
-            margin-left: 0%;
+            margin-left: 13%;
         }
 
         .imagen2{

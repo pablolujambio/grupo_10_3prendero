@@ -32,3 +32,6 @@ https://trello.com/b/T9ckRa9m/sprint-4
 
 Sprint 5:
 https://trello.com/b/Z2aOJ0mY/sprint-5
+
+Sprint 6:
+https://trello.com/b/qnNF35cn/spint-6

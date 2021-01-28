@@ -73,3 +73,22 @@ Tratamos de resolver los problemas solos, como mucho nos consultamos dentro del 
 
 5. Dejar de hacer
 Timeline que incluya los últimos 2 días. Estos días deberíamos dejarlo de back up por cualquier inconveniente.
+
+---------------------------------------------
+Sprint 5
+---------------------------------------------
+
+1. Comenzar a hacer
+Hacer reuniones con mayor periodicidad, sobre el final del sprint se bajo Santos del equipo y siendo dos necesitamos tener mayor contacto que antes
+
+2. Hacer más
+Poner más diseño y mejorar la distribución de tareas
+
+3. Continuar haciendo
+Seguir empujando, muchas veces nos encontramos con un volumen de trabajo grande pero fijando prioridades y poniendo foco podemos seguir adelante.
+
+4. Hacer menos
+No enfocarnos en temas no escenciales, siendo dos podemos solo tomar una cantidad determinada de datos.
+
+5. Dejar de hacer
+A veces trabajamos en el mismo archivo más de uno a la vez y tenemos problemas con el merge de archivos.
