@@ -28,34 +28,39 @@
     <form  action="" method="post" enctype="multipart/form-data"> 
       <div class= "titulos_log"><h1>Regístrate</h1> 
       </div>
-
+      
       <div class= "name2"> 
-        <label for="username" class="datos_login" data-icon="u" > Elige Nombre de Usuario </label><br>
-        <input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
+        <i class="fas fa-id-card"></i>
+        <label for="username" class="datos_login" data-icon="u" > Cómo quieres llamarte? </label><br>
+        <input id="username" name="username" required="required" type="text"  placeholder="brucewayne"/>
       </div><br>
   
       <div class="date">
-        <label for="date" class="datos_login">Fecha de Nacimiento</label><br>
+        <i class="far fa-calendar-alt"></i>
+        <label for="date" class="datos_login">Cuando naciste?</label><br>
         <input id="date" name="date" type="date">
       </div><br>
          
       <div class="email">
+        <i class="far fa-envelope"></i>
         <label for="email" class="datos_login" data-icon="p">Email</label><br>
-        <input id="email" name="email" placeholder="Email" required>
+        <input id="email" name="email" placeholder="brucewayne@gmail.com" required>
       </div><br>  
       
       <div class= "pass2"> 
+        <i class="fas fa-lock"></i>
         <label for="password" class="datos_login" data-icon="p"> Contraseña </label><br>
-        <input id="password" name="password" required="required" type="password" placeholder="Escriba aquí su contraseña" /> 
-      </div>
+        <input id="password" name="password" required="required" type="password" placeholder="batman123" /> 
+      </div><br>  
             
       <div class= "repass"> 
-        <label for="password" class="datos_login" data-icon="p"> Confirme Contraseña </label><br>
-        <input id="repassword" name="repassword" type="password" placeholder="Re contraseña" required /> 
+        <i class="fas fa-lock-open"></i>
+        <label for="password" class="datos_login" data-icon="p"> Confirmar ! </label><br>
+        <input id="repassword" name="repassword" type="password" placeholder="batman123" required /> 
       </div><br> 
 
       <div class= "imagen">
-        <label for="">Imagen</label>
+        <label for="">Subí tu selfie !!</label> <br>
         <input id="image" type="file" name="image">
       </div>  <br>
                       
@@ -73,7 +78,7 @@
         <button class="facebook" type="submit"><i class="fab fa-facebook"></i> Facebook</button>            
       </div><br><br>
                      
-      <div class= "miembro">Ya eres miembro?<a class="log_a_reg" href="login">Inicia sesión..</a> </label>
+      <div class= "miembro">Ya eres miembro? <a class="log_a_reg" href="login">Inicia sesión</a> </label>
       </div>
     </form>  
   </div>

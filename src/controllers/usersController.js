@@ -93,9 +93,34 @@ module.exports = {
             })
         })
    
-    }
+    },
+
+    edit: function(req, res){
+
+        db.usuarios.findByPk(req.params.id)
+     
+            .then(function(usuarios){
+                
+                            return res.render('users/RegisterEdit', {usuarios:usuarios} )
+                    })
+ },
+ update: function(req, res) {
+       
+    db.usuarios.update({
+        username: req.body.username,
+        email: req.body.email,
+        date: req.body.date,
+        image: req.file.filename
+    },{
+        where:{
+            id:req.params.id
+        }
+    });
     
-    
+    res.redirect("/users/profile/" + req.params.id)
+
+  
+}
  
 }
    

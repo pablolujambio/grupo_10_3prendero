@@ -26,6 +26,8 @@ router.get('/login', guestMiddleware, usersController.login);
 router.post('/login', loginValidator, usersController.logged);
 router.get("/logout" ,authMiddleware, usersController.logout);
 router.get("/profile/:id", authMiddleware, usersController.profile);
+router.get('/RegisterEdit/:id', authMiddleware, usersController.edit);
+router.post('/RegisterEdit/:id', upload.single('image'), usersController.update);
 
 
 

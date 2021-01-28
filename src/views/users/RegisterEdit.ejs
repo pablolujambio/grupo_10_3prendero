@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head') %>
+
+<!-----------------------------------------------------------------------
+ Esto es el body
+--------------------------------------------------------------------------> 
+
+<body>
+
+<!-----------------------------------------------------------------------
+ Esto es el header
+-------------------------------------------------------------------------->
+
+<%- include('../partials/header') %>
+
+<!-----------------------------------------------------------------------
+ Esto es el cuerpo
+-------------------------------------------------------------------------->
+  
+<div class="contenedor" >   
+  <article class="wallpaper2"><img src="/imagenes/Wallpapaer.jpg" alt="wallpapaer">     
+  </article>
+  
+  <div class= "principal"> 
+    <form  action="<%=usuarios.id%>" method="post" enctype="multipart/form-data"> 
+      <div class= "titulos_log"><h1> Editar Regístro</h1> 
+      </div>
+      
+      <div class= "name2"> 
+        <i class="fas fa-id-card"></i>
+        <label for="username" class="datos_login" data-icon="u" > Cómo quieres llamarte? </label><br>
+        <input id="username" name="username" required="required" value="<%=usuarios.username%>" type="text" placeholder="brucewayne"/>
+      </div><br>
+  
+      <div class="date">
+        <i class="far fa-calendar-alt"></i>
+        <label for="date" class="datos_login">Cuando naciste?</label><br>
+        <input id="date" name="date" type="date" value="<%=usuarios.date%>">
+      </div><br>
+         
+      <div class="email">
+        <i class="far fa-envelope"></i>
+        <label for="email" class="datos_login" data-icon="p">Email</label><br>
+        <input id="email" name="email" value="<%=usuarios.email%>" placeholder="brucewayne@gmail.com" required>
+      </div><br>  
+      
+
+      <div class= "imagen">
+        <label for="">Subí tu selfie !!</label> <br>
+        <input id="image" type="file" name="image" value="<%=usuarios.image%>">
+      </div>  <br>
+                      
+
+                          
+      <div class= "registro"><button class="logButton" type=“submit”>Editar</button>
+      </div><br><br><br>
+
+     
+    </form>  
+  </div>
+
+
+  <!-----------------------------------------------------------------------
+ Esto es el footer
+-------------------------------------------------------------------------->
+
+<%- include('../partials/footer') %>
+
+</div>
+ 
+</body>
+
+
