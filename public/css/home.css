@@ -656,6 +656,18 @@ DISEÑO DETALLE
     margin-left: 20%;
 }
 
+.titulo{
+    font-family: system-ui;
+    font-weight: inherit;
+    font-size: 19px;
+    color: #F18805;
+margin-left: 6%;
+}
+
+.imagen3{
+    margin-left: 10%;
+}
+
 .name{
     margin-left: 26%;
 }
@@ -978,6 +990,16 @@ NEW PRODUCT
        
 }
 
+.titulo2{
+       
+    font-family: system-ui;
+    font-weight: inherit;
+    font-size: 19px;
+    color: #F18805;
+   
+       
+}
+
 
 .logButton{
     padding: 0 16px;
@@ -1134,7 +1156,7 @@ ALL PRODUCTS
   
     justify-content: space-evenly;
    margin-top: 20%;
- 
+   
 
 }
 
@@ -1161,7 +1183,9 @@ ALL PRODUCTS
     font-size: 20px; 
 }
 
-
+.imagen {
+    margin-left: 0%;
+}
   
 /*---
 
@@ -1669,7 +1693,7 @@ body footer .contenedor2 .derecha{
 
 
     .titulos_log {
-        margin-left: 25%;
+        margin-left: 22%;
     }
 
     .name2 {
@@ -1708,9 +1732,9 @@ body footer .contenedor2 .derecha{
         margin-left: 22%;
     }
 
-    .titulos_log2{
-        margin-left: 20%;
-        font-size: 11px;
+    .titulos_log2 {
+        margin-left: 5%;
+        font-size: 10px;
     }
 
     .tipo {
@@ -2103,7 +2127,28 @@ body footer .contenedor2 .derecha{
       .email2{
         margin-left: 23%;   
       }
+
+      .titulo{
+     
+       font-size: 16px;
+        }
+
+        .imagen3{
+            margin-left: 0%;
+        }
+
+        .titulo2 {
+            
+            font-size: 16px;
+            margin-left: 13%;
+          
+        }
         
+        .cajaprod .detalle .abajo {
+         
+            margin-bottom: 50%;
+        }
+       
 }
 
 @media (min-width: 600px) and (max-width: 700px){
@@ -2141,7 +2186,7 @@ body footer .contenedor2 .derecha{
     }
 
     .imagen {
-        margin-left: 6%;
+        margin-left: 0%;
     }
 
     .carga {
@@ -2553,12 +2598,13 @@ body footer .contenedor2 .derecha{
 
     .cajaprod .detalle .nombre {
         text-align: center;
-        margin-right: 50%;
+        margin-right: 55%;
     }
 
     .cajaprod .detalle .precio {
         text-align: center;
-        margin-left: -150px;
+        margin-left: -200px;
+        margin-right: 0px;
     }
     
     .cajaprod {
@@ -2568,7 +2614,7 @@ body footer .contenedor2 .derecha{
 
     .cajaprod .imagen {
       
-        margin-right: 20px;
+        margin-right: 0px;
         
     }
     .carga {
@@ -2576,6 +2622,16 @@ body footer .contenedor2 .derecha{
         margin-left: 0%;
     }
 
+    .cajaprod .detalle .abajo {
+      
+        margin-right: 60%;
+  
+    }
+    .titulo{
+     
+        margin-left: 15%;
+        }
+      
 }
 
 
@@ -2618,7 +2674,7 @@ body footer .contenedor2 .derecha{
         }
 
         .imagen {
-            margin-left: 6%;
+            margin-left: 0%;
         }
 
         .carga {
@@ -3029,7 +3085,7 @@ body footer .contenedor2 .derecha{
         
     .cajaprod .imagen {
       
-        margin-right: 20px;
+        margin-right: 0px;
         
     }
     .carga {
@@ -3037,6 +3093,17 @@ body footer .contenedor2 .derecha{
         margin-left: 0%;
     }
 
+    .cajaprod .detalle .abajo {
+      
+        margin-right: 65%;
+  
+    }
+
+    .titulo{
+     
+        margin-left: 15%;
+        }
+   
        
 }
 
@@ -3053,7 +3120,10 @@ body footer .contenedor2 .derecha{
     .titulos_log2 {
          margin-left: 0%;
     }
-
+    .titulo{
+     
+    margin-left: 8%;
+    }
     
     .carrito {
        
@@ -3335,7 +3405,7 @@ body footer .contenedor2 .derecha{
 
     
     .imagen {
-        margin-left: 6%;
+        margin-left: 0%;
     }
 
     .carga {
@@ -3404,7 +3474,7 @@ body footer .contenedor2 .derecha{
     
     .cajaprod .imagen {
       
-        margin-right: 20px;
+        margin-right: 0px;
         
     }
 
@@ -3459,6 +3529,13 @@ body footer .contenedor2 .derecha{
      margin-top: 20px;
                 
     }
+
+    .cajaprod .detalle .abajo {
+      
+        margin-right: 30%;
+  
+    }
+   
 
 }
 
@@ -3629,12 +3706,10 @@ body footer .contenedor2 .derecha{
         }
 
         .imagen {
-            margin-left: 13%;
-        }
-
-        .imagen2{
             margin-left: 0%;
         }
+
+       
         
         .profile {
             padding-left: 15%;
@@ -3680,7 +3755,11 @@ body footer .contenedor2 .derecha{
         footer .der .iz {
             margin-left: 35px;
         }
-
+        .cajaprod .detalle .abajo {
+      
+            margin-right: 35%;
+      
+        }
        
         }
 
