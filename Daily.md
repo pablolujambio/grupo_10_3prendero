@@ -199,6 +199,65 @@ Hice el middleware para que cuando el usuario no este logeado no pueda acceder a
 Emilio:
 Realice cambios en el controlador de usuarios para que  me pueda tomar más de un usuario en la base de datos
 
+**09/01/2021**
+Emilio:
+Hoy estuve haciendo las rutas de los productos dinámicas, estuve modificando para que cuando acceda al detalle de producto tome los elementos de la base de datos y los presentes en la vista. 
+Tuve que hacer también algunas modificaciones en el diseño.
+
+**10/01/2021**
+Emilio:
+Hoy Estuve modificando el diseño de la vista detalle de producto y adaptándola a otras pantallas
+
+**11/01/2021**
+Emilio:
+Empecé a crear una página que muestre todos los productos de la base de datos, cree el botón desde la home para que se pueda acceder
+
+**12/01/2021**
+Emilio:
+Termine de hacer la página que muestre todos los productos de la base de manera dinámica y los adapta de manera dinámica.
+
+**18/01/2021**
+Emilio:
+Hice la función de recordame
+
+
+**20/01/2021**
+Emilio:
+Logre guardar un usuario en la base de datos
+
+**22/01/2021**
+Emilio:
+Estuve tratando de plantear como voy a guardar un producto en la base y ver como serían las relaciones
+
+**23/01/2021**
+Emilio:
+Estuve tratando de ver cómo hacer la relaciones de la base de datos y tratando de hacer dinámica la vista profile
+
+**24/01/2021**
+Emilio:
+Termine de armar las relaciones , de hacer dinámica la vista profile 
+
+**25/01/2021**
+Emilio:
+Pude crear un producto y hacer dinámicas las rutas de productos
+
+**26/01/2021**
+Emilio:
+Logre editar un producto y eliminarlo de la base, también hice modificaciones al ejs de product/All
+
+
+**27/01/2021**
+Emilio:
+Pude hacer la funcion para que busque los productos
+
+**28/01/2021**
+Emilio:
+Modifique la vista de Registro la cual pablo le agrego iconos, modifique las vistas de perfil y edicion de usuario
+
+
+
+
+
 
 
 
