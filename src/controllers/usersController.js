@@ -4,6 +4,7 @@ const bcrypt = require("bcrypt")
 const  {validationResult} = require("express-validator");
 const session = require("express-session");
 
+
  let db = require('../database/models');
 
  
@@ -12,6 +13,11 @@ module.exports = {
         res.render('users/register')
     },
     save: function(req,res){
+
+        let errors = validationResult(req);                                 
+        if(! errors.isEmpty()) {                                                 
+            return res.render('users/register', { errors: errors.mapped() })    
+        } else {
                  db.usuarios.create ({
                    
                     username: req.body.username,
@@ -26,7 +32,7 @@ module.exports = {
                     res.redirect("/users/login")
                 })
                 
-        
+            }
         
     },
   
@@ -49,6 +55,11 @@ module.exports = {
   
 
     logged: function(req, res){
+       
+        let errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.render('users/login', { erorrs: errors.mapped() })
+        } else{
         let usernameusuario = req.body.username;
         let passusuario = req.body.password;
         let remember = req.body.remember;
@@ -81,7 +92,7 @@ module.exports = {
      
         return res.redirect("/users/profile/" + usuarioALoguearse.id);})
 
-      
+    }
     },
     profile: function (req, res) {
       
