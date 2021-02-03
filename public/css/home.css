@@ -645,7 +645,7 @@ DISEÑO DETALLE
     font-weight: inherit;
     font-size: 19px;
     color: #F18805;
-    margin-left: 30%;
+    margin-left: 35%;
 }
 
 .titulos_log3{
@@ -665,27 +665,21 @@ margin-left: 6%;
 }
 
 .imagen3{
-    margin-left: 10%;
+    margin-left: 25%;
 }
 
 .name{
     margin-left: 26%;
 }
 
-.name2{
-    margin-left: 23%;
-}
 
-.email{
-    margin-left: 23%; 
-}
 
-.pass2{
-    margin-left: 23%;   
-}
+
+
+
 
 .date{
-    margin-left: 26%;   
+    margin-left: 46%;   
 }
     
 .pass{
@@ -693,13 +687,14 @@ margin-left: 6%;
 }
 
 .registro{
-    margin-left: 32%;
+    margin-left: 35%;
     margin-top: 7%
 }
 
 .miembro{
     margin-top: 5%;
-    margin-left: 25%;
+    margin-left: 32%;
+    margin-bottom: 5%;
 }
 
 .repass{
@@ -729,14 +724,14 @@ margin-left: 6%;
 }
 
 #date{
-    height: 20px;
-    width: 170px;
+    height: 35px;
+    width: 200px;
 }
 
 .politicas{
-    margin-left: 23%;
+    margin-left: 18%;
     
-    width: 60%;
+    
 }
 
 .politicas label{
@@ -781,10 +776,20 @@ margin-left: 6%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 5%;
+  
+}
+
+.principal2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5%;
+  
 }
 
 .redessociales2{
-    margin-left: 20%;
+    margin-left: 27%;
     margin-bottom: 6%;
     margin-top: 5%
 }
@@ -891,8 +896,14 @@ margin-left: 6%;
 .wallpaper2{
     position: relative;
     float: right;
-    margin-right: 15%;
+  margin-right: 10%;
     margin-top: 5%;
+    margin-left: 60px;
+   
+ }
+
+ .wallpaper2 img{
+     height: 400px;
  }
 
 .log_a_reg{
@@ -920,9 +931,27 @@ margin-left: 6%;
     
 }
 
-#email{
-    width:370px;
 
+
+#email{
+    width:625px;
+    height: 35px;
+
+}
+
+.principal #username{
+    width:350px;
+    height: 35px;
+}
+
+.principal #password{
+    width:295px;
+    height: 35px;
+}
+
+.principal #repassword{
+    width:295px;
+    height: 35px;
 }
 
 .principal .abajo{
@@ -957,6 +986,32 @@ margin-left: 6%;
 
 .imagenR{
     margin-bottom: 10%;
+}
+
+.principal{
+    background-color: rgb(245, 209, 163);
+
+}
+
+.principal2 #username{
+    height: 32px;
+    width: 180px;
+}
+
+.principal2 #date{
+    height: 32px;
+    width: 180px;
+}
+
+.principal2 #email2{
+    height: 32px;
+    width: 180px;
+}
+
+
+.principal2 #password{
+    height: 32px;
+    width: 180px;
 }
 
 
@@ -1715,7 +1770,7 @@ body footer .contenedor2 .derecha{
     .principal .abajo {
     
         flex-direction: column;
-       margin-right: 0px;
+       margin-right: 25%;
     
     }
     .pass2 {
@@ -1729,7 +1784,7 @@ body footer .contenedor2 .derecha{
     
             
     .politicas {
-        margin-left: 22%;
+        margin-left: 15%;
     }
 
     .titulos_log2 {
@@ -1766,36 +1821,34 @@ body footer .contenedor2 .derecha{
         margin-left: 0%;
     }
 
-    .politicas {
-        margin-left: 25%;
-    }
+  
 
 
     .principal .medio {
-        margin-right: 0%;
+        margin-right: 25%;
      
     }
 
     .registro {
 
-        margin-left: 25%;
+        margin-left: 22%;
     
     }
 
     .redessociales2{
-        margin-left: 30px;
+        margin-left: 20px;
         margin-bottom: 10%;
     }
 
     .miembro {
 
-        margin-left: 45px;
+        margin-left: 25px;
     }
 
     .principal .arriba {
        display: flex;
        flex-direction: column;
-       margin-right: 0%;
+       margin-right: 25%;
         margin-bottom: 5%;
     }
 
@@ -1980,12 +2033,17 @@ body footer .contenedor2 .derecha{
 
     .redessociales {
         margin-top: 10%;
-        display: flex;
+        
         margin-left: 0%;
     }
 
     .google{
         margin-right: 10px;
+        font-size: 12px
+    }
+
+    .facebook{
+        font-size: 12px
     }
 
     .principal2{
@@ -2134,7 +2192,7 @@ body footer .contenedor2 .derecha{
         }
 
         .imagen3{
-            margin-left: 0%;
+            margin-left: 5%;
         }
 
         .titulo2 {
@@ -2148,6 +2206,60 @@ body footer .contenedor2 .derecha{
          
             margin-bottom: 50%;
         }
+
+        .principal #username {
+            width: 180px;
+           
+        }
+
+        #date {
+          
+            width: 180px;
+        }
+
+        #email {
+            width: 180px;
+            
+        }
+
+        .principal #password {
+            width: 180px;
+          
+        }
+
+        .principal #repassword {
+            width: 180px;
+        
+        }
+
+        .wallpaper2 img {
+            height: 300px;
+        }
+
+        .wallpaper2 {
+            position: none;
+            /* float: right; */
+         margin-right: 0%;
+         margin-left: 0%;
+         margin-top: 0%;
+         margin-bottom: 5%;
+           
+        }
+
+        .principal {
+            
+           margin-left: 0px
+        }
+
+        .imagen3 #image{
+            font-size: 10px;
+        }
+
+        .politicas a{
+            font-size: 10px;
+        }
+
+       
        
 }
 
@@ -2490,14 +2602,24 @@ body footer .contenedor2 .derecha{
     .wallpaper2 {
       
         float: none;
-        margin-right: 1px;
+      margin-bottom: 5%;
+
 
     }
 
+    .principal {
+   margin-left: 0%;
+    }
+
+
+    .politicas {
+        margin-left: 4%;
+    }
 
     .wallpaper2 img {
       
         width: 100%;
+        height: 300px;
     }
 
     .wallpaper {
@@ -2563,6 +2685,27 @@ body footer .contenedor2 .derecha{
         font-size: 12px;
        
     }
+
+    .imagen3 {
+        margin-left: 15%;
+    }
+
+    .registro {
+        margin-left: 32%;
+     
+    }
+
+    .redessociales2 {
+        margin-left: 20%;
+       
+    }
+
+    .miembro {
+      
+        margin-left: 26%;
+       
+    }
+    
 
     .profile .izq .tres p {
         
@@ -2630,6 +2773,31 @@ body footer .contenedor2 .derecha{
     .titulo{
      
         margin-left: 15%;
+        }
+
+        .principal #username {
+            width: 225px;
+           
+        }
+
+        #date {
+          
+            width: 155px;
+        }
+
+        #email {
+            width: 432px;
+            
+        }
+
+        .principal #password {
+            width: 203px;
+          
+        }
+
+        .principal #repassword {
+            width: 203px;
+        
         }
       
 }
@@ -2947,9 +3115,63 @@ body footer .contenedor2 .derecha{
             position: relative;
             float: none;
             margin-right: 0px;
+            margin-bottom: 5%;
 
         }
+
+        .principal #username {
+            width: 265px;
+           
+        }
+
+        #date {
+          
+            width: 155px;
+        }
+
+        #email {
+            width: 475px;
+            
+        }
+
+        .principal #password {
+            width: 225px;
+          
+        }
+
+        .principal #repassword {
+            width: 225px;
+        
+        }
+
+        .imagen3 {
+            margin-left: 15%;
+        }
+
+        .politicas {
+            margin-left: 7%;
+        }
+
+        .registro {
+            margin-left: 34%;
+          
+        }
+
+        .redessociales2 {
+            margin-left: 24%;
+          
+        }
       
+        .miembro {
+            
+            margin-left: 30%;
+        
+        }
+
+        .titulos_log {
+      
+            margin-left: 32%;
+        }
         
         
         .redessociales {
@@ -2965,6 +3187,10 @@ body footer .contenedor2 .derecha{
    
             left: 90%;
             
+        }
+
+        .wallpaper2 img {
+            height: 300px;
         }
 
         footer .izq .arriba ul {
@@ -3151,7 +3377,29 @@ body footer .contenedor2 .derecha{
        
         float: none;
         margin-left: 10%;
+        margin-bottom: 5%;
 
+    }
+
+    .registro {
+        margin-left: 37%;
+      
+    }
+
+    .redessociales2 {
+        margin-left: 29%;
+    
+    }
+
+    .miembro {
+        
+        margin-left: 34%;
+        
+    }
+
+    .principal {
+   
+        margin-left: 3%;
     }
 
     .wallpaper2 img{
@@ -3647,6 +3895,45 @@ body footer .contenedor2 .derecha{
 
         .wallpaper2 {
             margin-right: 5%;
+            margin-top: 10%;
+           
+        }
+
+        .wallpaper2 img {
+            height: 400px;
+            width: 400px;
+        }
+
+        .principal #username {
+            width: 255px;
+          
+        }
+
+        #date {
+            
+            width: 160px;
+        }
+
+      
+
+        #email {
+            width: 470px;
+           
+        }
+
+        .principal #password {
+            width: 221px;
+            
+        }
+
+        .principal #repassword {
+            width: 221px;
+            
+        }
+
+        .titulos_log {
+           
+            margin-left: 32%;
         }
 
 
@@ -3759,6 +4046,29 @@ body footer .contenedor2 .derecha{
       
             margin-right: 35%;
       
+        }
+
+        .politicas {
+            margin-left: 9%;
+        }
+
+        .imagen3 {
+            margin-left: 17%;
+        }
+
+        .redessociales2 {
+            margin-left: 23%;
+          
+        }
+
+        .miembro {
+          
+            margin-left: 27%;
+        }
+
+        .registro {
+            margin-left: 33%;
+          
         }
        
         }

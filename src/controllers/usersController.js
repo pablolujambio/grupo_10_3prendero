@@ -15,9 +15,8 @@ module.exports = {
     save: function(req,res){
 
         let errors = validationResult(req);                                 
-        if(! errors.isEmpty()) {                                                 
-            return res.render('users/register', { errors: errors.mapped() })    
-        } else {
+        if(errors.isEmpty()) {                                                 
+       
                  db.usuarios.create ({
                    
                     username: req.body.username,
@@ -32,7 +31,9 @@ module.exports = {
                     res.redirect("/users/login")
                 })
                 
-            }
+             } else {
+            return res.render('users/register', { errors: errors.mapped() })    
+             }
         
     },
   
@@ -57,9 +58,8 @@ module.exports = {
     logged: function(req, res){
        
         let errors = validationResult(req);
-        if (!errors.isEmpty()) {
-            return res.render('users/login', { erorrs: errors.mapped() })
-        } else{
+        if (errors.isEmpty()) {
+        
         let usernameusuario = req.body.username;
         let passusuario = req.body.password;
         let remember = req.body.remember;
@@ -91,7 +91,9 @@ module.exports = {
         
      
         return res.redirect("/users/profile/" + usuarioALoguearse.id);})
-
+    } else{
+        return res.render('users/login', { erorrs: errors.mapped() })
+ 
     }
     },
     profile: function (req, res) {
