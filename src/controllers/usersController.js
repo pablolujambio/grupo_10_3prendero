@@ -18,7 +18,8 @@ module.exports = {
         if(errors.isEmpty()) {                                                 
        
                  db.usuarios.create ({
-                   
+                    nombre: req.body.nombre,
+                    apellido: req.body.apellido,
                     username: req.body.username,
                     email: req.body.email,
                     password: bcrypt.hashSync(req.body.password, 10),
@@ -42,7 +43,7 @@ module.exports = {
     },
     logout: function(req ,res) {
 
-        console.log(req.cookies)
+      
         cookie = req.cookies;
        for (var prop in cookie) {
            if (!cookie.hasOwnProperty(prop)) {
@@ -120,6 +121,8 @@ module.exports = {
  update: function(req, res) {
        
     db.usuarios.update({
+        nombre: req.body.nombre,
+        apellido: req.body.apellido,
         username: req.body.username,
         email: req.body.email,
         date: req.body.date,

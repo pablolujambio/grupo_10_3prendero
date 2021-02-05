@@ -28,5 +28,6 @@ module.exports = [
               throw new Error('Las contraseñas deben ser las mismas') 
             }
         }), 
-  
+    check('politica')
+        .notEmpty().withMessage('Debé aceptar los términos y condiciones')
  ]

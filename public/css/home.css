@@ -702,6 +702,10 @@ margin-left: 6%;
   
 }
 
+.principal .apellidous{
+    margin-left: 23%;  
+}
+
 
 .logButton{
     padding: 0 16px;
@@ -919,6 +923,14 @@ margin-left: 6%;
     margin-left: 35%;
 }
 
+.principal .primero{
+    
+    display:flex;
+    margin-right: 75%;
+    margin-bottom: 5%;
+     
+}
+
 .principal .arriba{
     display:flex;
     margin-right: 75%;
@@ -931,6 +943,15 @@ margin-left: 6%;
     
 }
 
+.principal #nombre{
+    width:295px;
+    height: 35px;
+}
+
+.principal #apellido{
+    width:295px;
+    height: 35px;
+}
 
 
 #email{
@@ -993,6 +1014,16 @@ margin-left: 6%;
 
 }
 
+.principal2 #nombre{
+    height: 32px;
+    width: 180px;
+}
+
+.principal2 #apellido{
+    height: 32px;
+    width: 180px;
+}
+
 .principal2 #username{
     height: 32px;
     width: 180px;
@@ -1006,6 +1037,14 @@ margin-left: 6%;
 .principal2 #email2{
     height: 32px;
     width: 180px;
+}
+
+.principal2 .nombreus{
+margin-left: 15%;
+}
+
+.principal2 .apellidous{
+    margin-left: 15%;
 }
 
 
@@ -2232,6 +2271,14 @@ body footer .contenedor2 .derecha{
         
         }
 
+        .principal2 .nombreus {
+            margin-left: 23%;
+        }
+
+        .principal2 .apellidous {
+            margin-left: 23%;
+        }
+
         .wallpaper2 img {
             height: 300px;
         }
@@ -2259,7 +2306,25 @@ body footer .contenedor2 .derecha{
             font-size: 10px;
         }
 
-       
+        .principal .primero{
+            flex-direction: column;
+        }
+
+        .principal #nombre {
+            width: 180px;
+        }
+
+        .principal #apellido {
+            width: 180px;
+        }
+
+        .principal .nombreus{
+            margin-left: 75%;
+        }
+
+        .principal .apellidous{
+            margin-left: 75%;
+        }
        
 }
 
@@ -2799,6 +2864,15 @@ body footer .contenedor2 .derecha{
             width: 203px;
         
         }
+
+        .principal #nombre {
+            width: 203px;
+        }
+
+        .principal #apellido {
+            width: 203px;
+        }
+   
       
 }
 
@@ -3329,6 +3403,15 @@ body footer .contenedor2 .derecha{
      
         margin-left: 15%;
         }
+
+        .principal #nombre {
+            width: 225px;
+        }
+
+        .principal #apellido {
+            width: 225px;
+        }
+   
    
        
 }
@@ -3859,7 +3942,7 @@ body footer .contenedor2 .derecha{
 
         body .linea6 {
             padding-right: 8%;
-            padding-left: 8%;
+            padding-left: 11%;
         }
 
         body .linea6 .izq img.prenda1{
@@ -3930,6 +4013,15 @@ body footer .contenedor2 .derecha{
             width: 221px;
             
         }
+
+        .principal #nombre {
+            width: 221px;
+        }
+
+        .principal #apellido {
+            width: 221px;
+        }
+
 
         .titulos_log {
            

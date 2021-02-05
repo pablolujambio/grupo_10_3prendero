@@ -28,11 +28,29 @@
     <form  action="" method="post" enctype="multipart/form-data"> 
       <div class= "titulos_log"><h1>Regístrate</h1> 
       </div>
+
+      <div class="primero">
+        <div class= "nombreus"> 
+          <i class="far fa-user"></i>
+          <label for="nombre" class="datos_login" data-icon="u" > Nombre </label><br>
+          <input id="nombre" name="nombre" required="required" type="text"  placeholder="juan"/>
+          <small id= "errornombre"></small>
+        </div><br>
+
+        <div class= "apellidous"> 
+          <i class="far fa-user"></i>
+          <label for="apellido" class="datos_login" data-icon="u" > Apellido </label><br>
+          <input id="apellido" name="apellido" required="required" type="text"  placeholder="lopez"/>
+          <small id= "errorapellido"></small>
+        </div><br>
+      </div>
+
       <div class= "arriba">
       <div class= "name2"> 
         <i class="fas fa-id-card"></i>
         <label for="username" class="datos_login" data-icon="u" > Cómo quieres llamarte? </label><br>
         <input id="username" name="username" required="required" type="text"  placeholder="brucewayne"/>
+        <small id= "erroruser"></small>
       </div><br>
   
       <div class="date">
@@ -97,7 +115,7 @@
 <%- include('../partials/footer') %>
 
 </div>
- 
+ <script>"/JSfront/validarregistro.js"</script>
 </body>
 
 
