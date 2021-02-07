@@ -34,13 +34,15 @@ module.exports = {
     })
     },
     save: (req, res) => {
-        console.log(req.body)
-        
+      
+        let errors = validationResult(req);                                 
+        if(errors.isEmpty()) {                                                 
+       
 
         db.productos.create({
                 id_tipo: req.body.id_tipo,
                 id_sexo: req.body.id_sexo,
-                nombreProducto: req.body.nombre_producto,
+                nombreProducto: req.body.nombrep,
                 descripcion: req.body.descripcion,
                 id_talle: req.body.id_talle,
                 precio: req.body.precio,
@@ -50,8 +52,21 @@ module.exports = {
             .then(function() {
                 res.redirect("/")
             })
-       
-        
+
+        }else{
+            db.talle.findAll()
+            .then(function(talle){
+                db.sexo.findAll()
+                .then(function(sexo){
+                    db.tipo.findAll()
+                    .then(function(tipo){
+    
+                        return res.render('products/newProduct', {sexo : sexo,  talle : talle,  tipo : tipo, errors: errors.mapped() } )
+                })
+            })
+               
+        })
+    }
     },
     carrito: function(req, res) {
     console.log("hola")
@@ -99,11 +114,12 @@ module.exports = {
     },
 
     update: function(req, res) {
-       
+        let errors = validationResult(req);                                 
+        if(errors.isEmpty()) {          
         db.productos.update({
                 id_tipo: req.body.id_tipo,
                 id_sexo: req.body.id_sexo,
-                nombreProducto: req.body.nombre_producto,
+                nombreProducto: req.body.nombrep,
                 descripcion: req.body.descripcion,
                 id_talle: req.body.id_talle,
                 precio: req.body.precio,
@@ -117,7 +133,20 @@ module.exports = {
         
         res.redirect('/products/all')
 
-      
+    }else{
+        db.talle.findAll()
+        .then(function(talle){
+            db.sexo.findAll()
+            .then(function(sexo){
+                db.tipo.findAll()
+                .then(function(tipo){
+
+                    return res.render('EditProduct', {sexo : sexo,  talle : talle,  tipo : tipo, errors: errors.mapped() } )
+            })
+        })
+           
+    })
+}
     },
     delete: function(req, res) {
 

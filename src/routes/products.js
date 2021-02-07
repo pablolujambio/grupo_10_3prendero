@@ -7,6 +7,9 @@ const authMiddleware = require('../middlewares/authMiddleware');
 const guestMiddleware = require('../middlewares/guestMiddleware');
 const multer = require('multer');
 const path = require('path');
+const productvalidator = require("../validations/productValidation");
+
+
 var storage = multer.diskStorage({
     destination: function (req, file, cb) {
         cb(null, path.join(__dirname, '../../public/uploads/products'));
@@ -24,7 +27,7 @@ router.get('/', productsController.root);
 router.get('/all', productsController.all);
 router.get('/productDetail/:id', productsController.detalle);
 router.get('/EditProduct/:id', productsController.edit);    // Vista del Formulario de edición de productos
-router.post('/EditProduct/:id', upload.single('image'), productsController.update); 
+router.post('/EditProduct/:id', upload.single('image'),productvalidator, productsController.update); 
 router.delete('/delete', productsController.delete); 
 router.get('/search',productsController.search);
 

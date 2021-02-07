@@ -5,6 +5,7 @@ let email =document.getElementById('email');
 let contraseña=document.getElementById('password');
 let recontraseña =document.getElementById('repassword');
 let politica =document.getElementById('politica');
+let imagen = document.getElementById('image');
 
 let form = document.querySelector('#form');
 
@@ -15,12 +16,14 @@ let erroremail= document.querySelector('#errormail');
 let errorpassword= document.querySelector('#errorpass');
 let errorrepassword= document.querySelector('#errorrepass');
 let errorpolitica = document.querySelector('#errorpolitica');
+let errorimagen = document.querySelector('#errorimagen');
 
 
 
 form.addEventListener('submit',function(evento){
 
     let emailvalido  = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
+    let extensiones = new RegExp(/.jpg|.jpeg|.png/i);
 
     evento.preventDefault();
     errornombre.innerText = "";
@@ -71,6 +74,8 @@ form.addEventListener('submit',function(evento){
     else if (recontraseña.value.length != contraseña.value.length){
              errorrepassword.innerText = "las contraseñas no coinciden"
              }
+    else if (!extensiones.test(imagen.value)){
+                errorimagen.innerText = "Debe ser una imagen valida";}
     else if(!politica.checked){
         errorpolitica.innerText = "debes aceptar los terminos";
 }

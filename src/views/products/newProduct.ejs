@@ -26,7 +26,7 @@
 
 
 	<div class= "principal2">
-  <form  action="register" autocomplete="on" method="POST" enctype="multipart/form-data"> 
+  <form  action="register" autocomplete="on" id ="form" method="POST" enctype="multipart/form-data"> 
 
     <div class= "titulos_log2"><h1>Agregar nuevo producto</h1> 
     </div>
@@ -51,12 +51,18 @@
     
     <div class= "nombrep">
       <label for="descripcion" class="tipo_producto" data-icon="p">Nombre Producto</label><br>
-      <textarea name="nombre_producto" ></textarea>
+      <textarea name="nombrep" id="nombrep"  ></textarea>
+      <div class="small">
+          <small id= "errornombre"></small>
+          </div>
     </div>  
 
     <div class= "descripcion">
-      <label for="descripcion" class="tipo_producto" data-icon="p">Descripcion</label><br>
-      <textarea name="descripcion" ></textarea>
+      <label for="descripcion" class="tipo_producto"  data-icon="p">Descripcion</label><br>
+      <textarea name="descripcion" id="descripcion" ></textarea>
+        <div class="small">
+          <small id= "errordescripcion"></small>
+          </div>
     </div>      
       
     <div class="talles"> 
@@ -71,12 +77,18 @@
             
     <div class= "precio"> 
       <label for="precio" class="tipo_producto" data-icon="p"> Precio del Producto </label><br>
-      <input type="number" name="precio">
+      <input type="number" name="precio" id="precio">
+      <div class="small">
+        <small id= "errorprecio"></small>
+        </div>
     </div> <br>
     
     <div class= "imagen2">
       <label for="">Imagen</label>
-      <input id="product" type="file" name="image">
+      <input id="image" type="file" name="image">
+      <div class="small">
+        <small id= "errorimagen"></small>
+        </div>
     </div>  <br>
 
 
@@ -95,6 +107,6 @@
 <%- include('../partials/footer') %>
 
 </div>
-
+<script src= "/JSfront/validarproducto.js"></script>
 </body>
 
