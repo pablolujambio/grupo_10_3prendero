@@ -25,29 +25,36 @@
   </article>
   
   <div class= "principal2"> 
-    <form  action="<%=usuarios.id%>" method="post" enctype="multipart/form-data"> 
+    <form  action="<%=usuarios.id%>" id="form" method="post" enctype="multipart/form-data"> 
       <div class= "titulo2"><h1> Editar Regístro</h1> 
       </div>
       
       <div class= "nombreus"> 
         <i class="far fa-user"></i>
         <label for="nombre" class="datos_login" data-icon="u" > Nombre </label><br>
-        <input id="nombre" name="nombre" required="required"  value="<%=usuarios.nombre%>" type="text"  placeholder="juan"/>
-        <small id= "errornombre"></small>
+        <input id="nombre" name="nombre"  value="<%=usuarios.nombre%>" type="text"  />
+        <div class="small">
+          <small id= "errornombre"></small>
+          </div>
       </div><br>
 
       <div class= "apellidous"> 
         <i class="far fa-user"></i>
         <label for="apellido" class="datos_login" data-icon="u" > Apellido </label><br>
-        <input id="apellido" name="apellido" required="required"  value="<%=usuarios.apellido%>" type="text"  placeholder="lopez"/>
-        <small id= "errorapellido"></small>
+        <input id="apellido" name="apellido"   value="<%=usuarios.apellido%>" type="text"  />
+        <div class="small">
+          <small id= "errorapellido"></small>
+        </div>
       </div><br>
    
 
       <div class= "name3"> 
         <i class="fas fa-id-card"></i>
         <label for="username" class="datos_login" data-icon="u" > Cómo quieres llamarte? </label><br>
-        <input id="username" name="username" required="required" value="<%=usuarios.username%>" type="text" placeholder="brucewayne"/>
+        <input id="username" name="username" value="<%=usuarios.username%>" type="text" />
+        <div class="small">
+          <small id= "erroruser"></small>
+        </div>
       </div><br>
   
       <div class="date2">
@@ -59,13 +66,19 @@
       <div class="email2">
         <i class="far fa-envelope"></i>
         <label for="email" class="datos_login" data-icon="p">Email</label><br>
-        <input id="email2" name="email" value="<%=usuarios.email%>" placeholder="brucewayne@gmail.com" required>
+        <input id="email2" name="email" value="<%=usuarios.email%>" >
+        <div class="small">
+          <small id= "errormail"></small>
+          </div>
       </div><br>  
       
 
       <div class= "imagenR">
         <label for="">Subí tu selfie !!</label> <br>
         <input id="image" type="file" name="image" value="<%=usuarios.image%>">
+        <div class="small">
+          <small id= "errorimagen"></small>
+          </div>
       </div>  <br>
                       
 
@@ -85,7 +98,7 @@
 <%- include('../partials/footer') %>
 
 </div>
- 
+<script src= "/JSfront/validarregistroE.js"></script>
 </body>
 
 

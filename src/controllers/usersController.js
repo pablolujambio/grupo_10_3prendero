@@ -119,7 +119,8 @@ module.exports = {
                     })
  },
  update: function(req, res) {
-       
+    let errors = validationResult(req);                                 
+    if(errors.isEmpty()) {             
     db.usuarios.update({
         nombre: req.body.nombre,
         apellido: req.body.apellido,
@@ -134,6 +135,15 @@ module.exports = {
     });
     
     res.redirect("/users/profile/" + req.params.id)
+} else {
+    db.usuarios.findByPk(req.params.id)
+     
+            .then(function(usuarios){
+                
+                            return res.render('users/RegisterEdit', {usuarios:usuarios , errors: errors.mapped()} )
+                    })
+   
+ }
 
   
 }
