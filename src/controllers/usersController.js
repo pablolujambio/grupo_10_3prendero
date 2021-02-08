@@ -93,7 +93,7 @@ module.exports = {
      
         return res.redirect("/users/profile/" + usuarioALoguearse.id);})
     } else{
-        return res.render('users/login', { erorrs: errors.mapped() })
+        return res.render('users/login', { errors: errors.mapped() })
  
     }
     },

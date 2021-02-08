@@ -26,6 +26,7 @@ module.exports = [
         }),
    
     check("password")
+             .notEmpty().withMessage('El campo no puede estar vacío')
         .isLength({min:6, max:15}) 
         .withMessage("la contraseña debe tener un minimo de 6 caracteres y un maximo de 15 caracteres"),
     check("repassword")
