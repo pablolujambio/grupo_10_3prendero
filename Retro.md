@@ -92,3 +92,22 @@ No enfocarnos en temas no escenciales, siendo dos podemos solo tomar una cantida
 
 5. Dejar de hacer
 A veces trabajamos en el mismo archivo más de uno a la vez y tenemos problemas con el merge de archivos.
+
+---------------------------------------------
+Sprint 6
+---------------------------------------------
+
+1. Comenzar a hacer
+Resolver los problemas de merge en github.
+
+2. Hacer más
+Poner más diseño y mejorar la distribución de tareas, hoy Emi toma muchas funciones y sería bueno liberarlo un poco más.
+
+3. Continuar haciendo
+Priorizando y foco.
+
+4. Hacer menos
+Dejar los trabajos para lo último, quedan pocos sprint y venimos cumpliendo con todas las metas de entrega.
+
+5. Dejar de hacer
+A veces trabajamos en el mismo archivo más de uno a la vez y tenemos problemas con el merge de archivos.

@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `productos` (
   CONSTRAINT `id_sexo` FOREIGN KEY (`id_sexo`) REFERENCES `sexos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `id_talle` FOREIGN KEY (`id_talle`) REFERENCES `talles` (`id`),
   CONSTRAINT `id_tipo` FOREIGN KEY (`id_tipo`) REFERENCES `tipos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4;
 
 -- Volcando datos para la tabla 3prendero.productos: ~10 rows (aproximadamente)
 /*!40000 ALTER TABLE `productos` DISABLE KEYS */;
@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS `sexos` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 
--- Volcando datos para la tabla 3prendero.sexos: ~3 rows (aproximadamente)
+-- Volcando datos para la tabla 3prendero.sexos: ~2 rows (aproximadamente)
 /*!40000 ALTER TABLE `sexos` DISABLE KEYS */;
 INSERT INTO `sexos` (`id`, `nombre`) VALUES
 	(1, 'Hombre'),
@@ -105,6 +105,8 @@ INSERT INTO `tipos` (`id`, `nombre`) VALUES
 -- Volcando estructura para tabla 3prendero.usuarios
 CREATE TABLE IF NOT EXISTS `usuarios` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(100) NOT NULL,
+  `apellido` varchar(100) NOT NULL,
   `username` varchar(50) NOT NULL,
   `email` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL,
@@ -114,13 +116,13 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `createdAt` date DEFAULT NULL,
   `updatedAt` date DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8mb4;
 
--- Volcando datos para la tabla 3prendero.usuarios: ~2 rows (aproximadamente)
+-- Volcando datos para la tabla 3prendero.usuarios: ~1 rows (aproximadamente)
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` (`id`, `username`, `email`, `password`, `repassword`, `date`, `image`, `createdAt`, `updatedAt`) VALUES
-	(17, 'pabloluj', 'pablolujambio@gmail.com', '$2b$10$IpS9tHIFWQ8Zhcifa57lB.e7bRQ7Jwmr/3e2Vcz0GRADK3hVAEd1a', '36772843', '2020-12-30', 'pablolujambio@gmail.com.jpg', NULL, NULL),
-	(19, 'Emilio27', 'emiliozuccarelli@gmail.com', '$2b$10$WOUR7Dwp98wVOFOOgMVB..9UjDeXphImxJV3.jn7o87pawB2ATkLC', '36772843', '2021-01-13', 'emiliozuccarelli@gmail.com.png', NULL, NULL);
+INSERT INTO `usuarios` (`id`, `nombre`, `apellido`, `username`, `email`, `password`, `repassword`, `date`, `image`, `createdAt`, `updatedAt`) VALUES
+	(26, 'Emilio', 'Zuccarelli', 'Emilio27', 'emiliozuccarelli@gmail.com', '$2b$10$/6R2dsCKWC4Kn865MIveCenFqS/2S69vgu0vCW74LpX.TsBgHr82a', '123456', '2021-02-10', 'emiliozuccarelli@gmail.com.png', NULL, NULL),
+	(33, 'Pablo', 'Lujambio', 'Pablo22', 'pablolujambio@gmail.com', '$2b$10$iKMjijS3rdXK.f04zRkyBenqXlWMZ/V2u.OeKxKg3yrZTZ5Bbiuve', '12345678', '2021-02-02', 'pablolujambio@gmail.com.jpg', NULL, NULL);
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
