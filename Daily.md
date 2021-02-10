@@ -254,6 +254,27 @@ Pude hacer la funcion para que busque los productos
 Emilio:
 Modifique la vista de Registro la cual pablo le agrego iconos, modifique las vistas de perfil y edicion de usuario
 
+**01/02/2021**
+Emilio:
+Estuve haciendo algunas validaciones del back, de email y password y estuve agregando los validator a las rutas y a los controllers
+
+**03/02/2021**
+Emilio:
+Estuve modificando el diseño de registro y también algunas cosas al de login
+
+**05/02/2021**
+Emilio:
+Estuve agregando validaciones del front, también agregue nombre y apellido al registro y en la base de datos.
+
+**06/02/2021**
+Emilio:
+Agregue las validaciones de producto en el front y en el back
+
+**07/02/2021**
+Emilio:
+Agregue las mismas validaciones de nuevo producto en edit producto tanto en el back como en el front y agregue algunas validaciones en el registro del front como por ejemplo el formato de la foto
+
+
 
 
 
