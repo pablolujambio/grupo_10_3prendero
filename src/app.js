@@ -2,6 +2,7 @@ const path = require('path');
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const methodOverride = require('method-override');
+const cors = require('cors');
 
 const mantenerselogueado = require ('./middlewares/mantenerselogueado')
 
@@ -12,6 +13,7 @@ const mainRouter = require('./routes/main');
 const usersRouter = require('./routes/users');
 const productsRouter = require('./routes/products');
 const adminRouter = require('./routes/admin');
+const ApiRouter = require('./routes/api');
 const session = require("express-session");
 const sesioniniciadamiddle = require("./middlewares/sesioniniciada");
 
@@ -22,6 +24,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(methodOverride('_method'));
 app.use(mantenerselogueado);
+app.use(cors());
 
 
 
@@ -39,6 +42,7 @@ app.use('/', mainRouter);
 app.use('/users', usersRouter);
 app.use('/products', productsRouter);
 app.use('/admin', adminRouter);
+app.use('/api', ApiRouter);
 
 app.listen(process.env.PORT || 3000, function() {
     console.log("El servidor está corriendo en el puerto 3000");

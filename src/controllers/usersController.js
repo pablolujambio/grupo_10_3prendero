@@ -146,8 +146,13 @@ module.exports = {
  }
 
   
+},
+users: function(req, res) {
+    db.usuarios.findAll()
+    .then(function(usuario){
+
+    })
 }
- 
 }
    
     

@@ -25,7 +25,7 @@ router.get('/carrito',authMiddleware, productsController.carrito);
 router.get('/nuevo', productsController.nuevo);
 router.get('/', productsController.root);
 router.get('/all', productsController.all);
-router.get('/productDetail/:id', productsController.detalle);
+router.get('/detail/:id', productsController.detalle);
 router.get('/EditProduct/:id', productsController.edit);    // Vista del Formulario de edición de productos
 router.post('/EditProduct/:id', upload.single('image'),productvalidator, productsController.update); 
 router.delete('/delete', productsController.delete); 
