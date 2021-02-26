@@ -76,6 +76,28 @@ detalle: function(req,res){
     })
 })
 
+},
+  users: function(req,res){
+    db.usuarios.findAll()
+    .then(function(usuarios){
+        let array = []
+        for(let i=0; i<usuarios.length; i++){
+
+         array.push({
+            id: usuarios[i].id,
+            nombre:  usuarios[i].nombre,
+            email:  usuarios[i].email,
+            detalle:  `/users/profile/${usuarios[i].id}`,
+           
+        })
+        }
+        res.status(200).json({
+            cantidad: usuarios.length,
+           
+            usuarios: array
+         })
+    })
+      
 }
 
 
