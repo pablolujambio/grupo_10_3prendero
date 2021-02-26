@@ -40,6 +40,43 @@ module.exports={
    
         
            
+},
+detalle: function(req,res){
+    db.productos.findByPk(req.params.id)
+     
+    .then(function(productos){
+        db.talle.findByPk(req.params.id)
+        .then(function(talle){
+            db.sexo.findByPk(req.params.id)
+            .then(function(sexo){
+                db.tipo.findByPk(req.params.id)
+                .then(function(tipo){
+                    
+                
+                  
+                    let array = []
+
+                     array.push({
+                      
+                        productos: productos,
+                        tipo: tipo,
+                        sexo: sexo,
+                        talle: talle
+
+
+                    })
+                    res.status(200).json({
+                      arrayporrelacion: array,
+                      url:`/public/uploads/products/${productos.image}`
+                     })
+                    
+            })
+        })
+           
+    })
+})
+
 }
+
 
 }
