@@ -41,7 +41,7 @@ module.exports={
         
            
 },
-detalle: function(req,res){
+productdetalle: function(req,res){
     db.productos.findByPk(req.params.id)
      
     .then(function(productos){
@@ -98,6 +98,19 @@ detalle: function(req,res){
          })
     })
       
+},
+usersdetalle: function(req,res){
+    db.usuarios.findByPk(req.params.id)
+    .then(function(usuarios){
+      
+
+        res.status(200).json({
+            usuarios: usuarios,
+            url:`/public/uploads/avatars/${usuarios.image}`
+           })
+    
+    })
+
 }
 
 
