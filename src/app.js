@@ -44,8 +44,8 @@ app.use('/products', productsRouter);
 app.use('/admin', adminRouter);
 app.use('/api', ApiRouter);
 
-app.listen(process.env.PORT || 3000, function() {
-    console.log("El servidor está corriendo en el puerto 3000");
+app.listen(process.env.PORT || 3001, function() {
+    console.log("El servidor está corriendo en el puerto 3001");
     console.log("-------------------");
-    console.log("http://localhost:3000");
+    console.log("http://localhost:3001");
 })

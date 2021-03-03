@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    }
+
+body{
+    background-color: rgb(250, 221, 90)
+}
+
+.contenedor {
+    background-color: rgb(246, 247, 229);
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Roboto:wght@400;700&display=swap');
+
+@import url("https://use.fontawesome.com/releases/v5.15.1/css/all.css");
+
+
+
+/*-------------------------------------------------------------------------- 
+DISEÑO HEADER
+ ----------------------------------------------------------------------------*/
+ 
+header {
+    background-color: rgb(243, 166, 66);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    margin-bottom: 20px;
+    
+ }
+
+ header img.logo {
+    width: 250px;
+    height: 150px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    margin-right: 100px;
+}
+
+header .linea {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+
+
+
+}
+
+header ul{
+
+justify-content: space-between;
+
+   margin-right: 100px;
+
+}
+
+
+header ul li {
+    margin-right: 50px; 
+    display: inline-block;
+    
+}
+
+header ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        
+}
+
+header form{
+    display: inline-block;
+    width: 410px;
+    height: 25px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+ 
+}
+
+
+header  form button[type="submit"] {
+    width: 28%;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: black;
+    padding: 0px;
+    text-align: right;
+    position: relative;
+    bottom: 3px;
+    }
+
+header form input[type="text"] {
+    width: 70%;
+    border: none;
+    font-size: 17px;
+    position: relative;
+    bottom: 3px;
+}
+header .icons{
+ 
+    position: relative;
+    margin-bottom: 5%;
+    margin-left:580px;
+    
+}
+
+
+
+header .carrito button[type="submit"] a{
+    text-decoration: none;
+    color: black;
+}
+
+
+header .carrito button[type="submit"]  {
+  
+    border: none;
+    background: none;
+    display: inline-block;
+    font-size: 30px;
+
+ 
+}
+
+.carrito{
+   position: absolute;
+  left: 96%;
+top: 20px
+}
+
+header .icons button[type="submit"] a{
+    text-decoration: none;
+    color: black;
+}
+
+header .icons button[type="submit"]  {
+  
+    border: none;
+    background: none;
+    display: inline-block;
+    font-size: 30px;
+
+ 
+}
+
+header .logeo{
+    margin-left:190px;
+}
+
+header .logeo ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+   
+}
+
+header .logeo ul li {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+  
+}
+
+
+        /*-------------------------------------------------------------------------- 
+ FOOTER
+ ---------------------------------------------------------------------------*/
+
+ footer{
+    margin-top: 5%;
+    border-top: 1px solid black;
+ }
+
+
+ footer .contenedor2{
+ 
+    margin-top: 3%;
+    border-top: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  
+}
+ 
+
+ footer .izq .arriba ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+ }
+
+ footer .izq  .arriba ul li{
+    margin-right: 15px;
+    list-style: none;
+ }
+
+ footer .izq  .arriba ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+ }
+
+footer .izq  .medio{
+    margin-bottom: 1%;
+}
+
+ 
+footer .izq  .medio small{
+    color: black;
+    font-size: 16px;
+ }
+
+ 
+ footer .izq  .abajo small{
+    color: black;
+    font-size: 16px;
+ }
+
+
+
+
+ footer .contenedorfooter{
+    margin-left: 9%;
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+
+footer .der{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+footer .der .iz p{
+    font-size: 17px ;
+    font-weight: bold;
+}
+
+footer .der .de button[type="submit"]{
+  
+    border: none;
+    background: none;
+    margin-right: 8px;
+    font-size: 30px;
+ 
+}
+
+body footer .contenedor2 .derecha ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+body footer .contenedor2 .derecha ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+       
+}
+
+body footer .contenedor2 .derecha ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+body footer .contenedor2 .izquierda {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2%;
+       
+}
+
+body footer .contenedor2 .izquierda img{
+    width: 100px;
+    margin-right: 20px;
+}
+
+    
+body footer .contenedor2 .izquierda small{
+    font-size: 15px;
+}
+
+    
+body footer .contenedor2 .derecha{
+    margin-top: 1%;
+}
+

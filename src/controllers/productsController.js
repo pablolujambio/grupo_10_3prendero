@@ -76,7 +76,7 @@ module.exports = {
     detalle: function(req, res) { 
         db.productos.findByPk(req.params.id)
         .then(function(productos) {
-            return res.render('products/Detail', { productos: productos })
+            return res.render('products/detail', { productos: productos })
         })
     },
 
