@@ -308,3 +308,47 @@ body footer .contenedor2 .derecha{
     margin-top: 1%;
 }
 
+.lineaarriba{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.lineaarriba .caja{
+    width: 400px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: rgb(245, 166, 92);
+    padding: 20px 20px 20px 20px;
+}
+
+.lineaarriba .caja .contiene .body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.lineaarriba .caja .contiene {
+    padding: 20px 20px 20px 20px;
+    background-color: white;
+}
+
+.lineaarriba .caja .contiene .body p{
+    font-size: 18px;
+    color:rgb(243, 166, 66)
+}
+
+.lineaarriba .caja .contiene .body .der{
+    margin-right: 5%;
+    margin-top: 5%
+}
+
+.lineaarriba .caja .contiene .body .der i{
+    color:rgb(243, 166, 66)
+}
+
+.lineaarriba .caja .contiene .body .izq .dos{
+  margin-left: 70px;
+  
+}
+
