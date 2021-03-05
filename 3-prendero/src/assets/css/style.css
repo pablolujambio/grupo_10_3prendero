@@ -352,3 +352,249 @@ body footer .contenedor2 .derecha{
   
 }
 
+.centro{
+    margin-top: 5%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.centro .caja{
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: rgb(245, 166, 92);
+    padding: 20px 20px 20px 20px
+    
+}
+
+.centro .caja .arriba{
+    background-color: rgba(248, 242, 222, 0.945);
+ 
+    width: 100%;
+    height: 80px;
+    padding: 5px 5px 5px 5px;
+ 
+ 
+   
+}
+
+.centro .caja .arriba .titulo{
+    margin-left: 20%;
+  
+}
+
+.centro .caja .arriba .titulo h6{
+    font-size: 18px;
+    color:rgb(243, 166, 66);
+    margin-top: 20px;
+ 
+   
+}
+
+.centro .caja .arriba .titulo2{
+    margin-left: 25%;
+  
+}
+
+.centro .caja .arriba .titulo2 h6{
+    font-size: 18px;
+    color:rgb(243, 166, 66);
+    margin-top: 20px;
+ 
+   
+}
+
+
+.centro .caja .abajo img{
+    
+    height: 500px;
+    width:100%;
+}
+
+.centro .caja .abajo p{
+    font-size: 20px;
+    color:rgb(235, 230, 224);
+}
+
+.centro .caja .abajo .nombre{
+    margin-left: 38%;
+}
+
+.centro .caja .abajo .precio{
+    margin-left: 45%;
+}
+
+.centro .caja .abajo .descripcion{
+    margin-left: 10%;
+}
+
+.centro .caja .abajo .cajas{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.centro .caja .abajo .cajas .caja{
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    width: 100%;
+    height: 80px;
+    background-color: rgb(243, 221, 125);
+    margin-top: 5%;
+    padding: 5px 5px 5px 5px;
+    
+
+}
+
+.centro .caja .abajo .cajas .caja .categoria{
+    margin-left: 35%;
+        
+    
+}
+
+.centro .caja .abajo .cajas .caja p{
+    font-size: 22px;
+    color:rgb(255, 255, 255);
+}
+
+@media (min-width: 1200px) and (max-width: 1500px){
+
+
+    header ul li {
+
+        margin-right: 40px;
+        
+    }
+
+    header form {
+       
+       width: 200px;
+        
+     }
+     header ul {
+   
+        margin-right: 20px;
+    }
+
+    header img.logo {
+    
+        margin-right: 25px;
+    }
+
+    header .icons{
+        margin-bottom: 8%;
+        margin-left: 350px;
+    }
+
+    header .logeo {
+        margin-left: 40px;
+        
+    }
+
+    
+  
+    
+
+    footer .contenedorfooter {
+        margin-left: 14%;
+      
+    }
+
+    body footer .izq .arriba ul li {
+        margin-right: 10px;
+      
+    }
+
+    body footer .der .iz p {
+        font-size: 15px;
+      
+    }
+
+    footer .der .iz{
+        margin-left: 20px;
+    }
+
+    footer .der .iz {
+        margin-left: 35px;
+    }
+
+    .lineaarriba .caja {
+        width: 300px;
+        
+        padding: 10px 10px 10px 10px;
+    }
+
+    .lineaarriba .caja .contiene {
+        padding: 10px 10px 10px 10px;
+        
+    }
+
+    .lineaarriba .caja .contiene .body p {
+        font-size: 16px;
+     
+    }
+
+    .centro .caja {
+        width: 450px;
+        
+        padding: 10px 10px 10px 10px;
+    }
+
+    .centro .caja .arriba {
+      
+        height: 70px;
+       
+    }
+
+    .centro .caja .arriba .titulo h6 {
+        font-size: 16px;
+       
+    }
+
+    .centro .caja .arriba .titulo2 h6 {
+        font-size: 16px;
+       
+    }
+
+    .centro .caja .abajo img {
+        height: 400px;
+      
+    }
+
+    .centro .caja .abajo p {
+        font-size: 18px;
+    }
+
+    .centro .caja .abajo .cajas .caja {
+        
+        height: 60px;
+       
+    }
+
+    .centro .caja .abajo .cajas .caja p {
+        font-size: 20px;
+        margin-top: 10px;
+     
+    }
+
+
+   
+   
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
