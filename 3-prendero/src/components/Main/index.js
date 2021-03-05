@@ -1,84 +1,40 @@
 import React, {Component} from 'react'
 import Remera from './images/Remera.jpg';
+import Article from './Article';
+import Category from './Article/Category';
+import Card from './Article/Card';
 
 const  Main = () =>  {
     return ( 
         <main>
        <div className="lineaarriba">
      
-						<div className="caja">
-                        <div className="contiene">
-								<div className="body">
-									
-										<div className="izq">
-                                            <div className="uno">
-											<p> Productos en base de datos</p>
-                                            </div>
-                                            <div className="dos">
-											<p> 135</p>
-                                            </div>
-										</div>
-										<div className="der">
-											<i className="fas fa-clipboard-list fa-2x text-gray-300"></i>
-										</div>
-									</div>
-								</div>
-                         </div>
-
-                         <div className="caja">
-                        <div className="contiene">
-								<div className="body">
-									
-										<div className="izq">
-                                            <div className="uno">
-											<p> Categorias en base de datos</p>
-                                            </div>
-                                            <div className="dos">
-											<p> 135</p>
-                                            </div>
-										</div>
-										<div className="der">
-											<i className="fas fa-bars fa-2x text-gray-300"></i>
-										</div>
-									</div>
-								</div>
-                         </div>
-                          
-
-                         <div className="caja">
-                        <div className="contiene">
-								<div className="body">
-									
-										<div className="izq">
-                                            <div className="uno">
-											<p> Usuarios en base de datos</p>
-                                            </div>
-                                            <div className="dos">
-											<p> 135</p>
-                                            </div>
-										</div>
-										<div className="der">
-											<i className="fas fa-user fa-2x text-gray-300"></i>
-										</div>
-									</div>
-								</div>
-                         </div>
-                          
-                          
+       <Card 
+         titulo="Productos en base de datos"
+         cantidad="135"
+         icono="fas fa-clipboard-list fa-2x text-gray-300"
+       />  
+        <Card 
+         titulo="Categorias en base de datos"
+         cantidad="135"
+         icono="fas fa-bars fa-2x text-gray-300"
+       />  
+        <Card 
+         titulo="Usuarios en base de datos"
+         cantidad="135"
+         icono="fas fa-user fa-2x text-gray-300"
+       />  
+                      
 							
 						</div>
 
                         <div class="centro">
 					
-						<div class="caja">
-							
-								<div class="arriba">
-                                    <div class= "titulo">
-									<h6>Ultimo producto en la base de datos</h6>
-                                    </div>
-								</div>
-								<div class="abajo">
-									<div class="imagen">
+						
+                        <Article 
+                        titulo="Ultimo producto en base de datos"
+                        >
+                                    <div class="imagen">
 										<img src={Remera} alt="image" />
 									</div>
 									<div class= "nombre">
@@ -90,79 +46,18 @@ const  Main = () =>  {
                                      <div class= "descripcion">
                                      <p>Remera blanca lisa para hombre ultima moda</p>
                                      </div>
-
-								</div>
-							
-						</div>
-
-                        <div class="caja">
-							
-								<div class="arriba">
-                                    <div class= "titulo2">
-									<h6>Categorias en base de datos</h6>
-                                    </div>
-								</div>
-								<div class="abajo">
-                               
-                                <div class="cajas">
-										
-												<div class="caja">
-                                                <div class="categoria">
-                                                <p>Category 01</p>
-                                                </div>
-												</div>
-											
-										
-										
-										
-												<div class="caja">
-                                                <div class="categoria">
-                                                <p>Category 02</p>
-                                                </div>
-												</div>
-											
-										
-										
-										
-												<div class="caja">
-                                                <div class="categoria">
-                                                <p>Category 03</p>
-                                                </div>
-												</div>
-										
-									
-									
-										
-												<div class="caja">
-                                                <div class="categoria">
-                                                <p>Category 04</p>
-                                                </div>
-												</div>
-										
-									
-										
-										
-												<div class="caja">
-                                                    <div class="categoria">
-                                                <p>Category 05</p>
-                                                </div>
-												</div>
-											
-										
-										
-										
-												<div class="caja">
-                                                <div class="categoria">
-                                                <p>Category 06</p>
-                                                </div>
-												</div>
-										
-										
-							
-
-								</div>
-                                </div>
-						</div>
+                            </Article>
+                        <Article 
+                        titulo="Categorias en base de datos"
+                        >
+                              <Category />  
+                              <Category />  
+                              <Category />  
+                              <Category />  
+                              <Category />  
+                            
+                        </Article>
+                       
                         </div>
        
         </main>
