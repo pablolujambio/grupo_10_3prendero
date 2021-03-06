@@ -457,6 +457,63 @@ body footer .contenedor2 .derecha{
     color:rgb(255, 255, 255);
 }
 
+.abajo{
+    margin-top: 5%;
+}
+
+.lineaabajo{
+    margin-top: 10%;
+}
+
+.contenedortabla{
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: rgb(245, 166, 92);
+    padding: 20px 20px 20px 20px
+}
+
+.contenedortabla .body{
+    background-color: rgba(248, 242, 222, 0.945);
+    padding: 20px 20px 20px 20px;
+}
+
+.contenedortabla .body .tabla {
+   
+    padding: 5px 5px 5px 5px;
+  
+}
+
+
+
+th{
+  
+    padding: 5px 5px 5px 5px;
+    border-top: 3px solid  rgb(245, 166, 92);
+    border-right: 3px solid  rgb(245, 166, 92);
+    font-size: 14px;
+    color:rgb(243, 166, 66);
+    background-color: white;
+}
+
+table{
+    border-left: 3px solid  rgb(245, 166, 92); 
+   
+    border-bottom: 3px solid  rgb(245, 166, 92); ;
+}
+
+h1{
+    color:rgb(243, 166, 66);
+    margin-left: 35%; 
+}
+
+
+
+
+
+
+
+
+
 @media (min-width: 1200px) and (max-width: 1500px){
 
 
@@ -575,6 +632,11 @@ body footer .contenedor2 .derecha{
         font-size: 20px;
         margin-top: 10px;
      
+    }
+
+    h1 {
+       
+        margin-left: 28%;
     }
 
 
