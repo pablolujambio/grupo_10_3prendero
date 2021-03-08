@@ -76,8 +76,8 @@ const  Main = () =>  {
 											<th>Descripcion</th>
 											<th>Precio</th>
 											<th>Categoria</th>
-											<th>talle</th>
-											<th>sexo</th>
+											<th>Talle</th>
+											<th>Sexo</th>
 										</tr>
 									</thead>
                                   

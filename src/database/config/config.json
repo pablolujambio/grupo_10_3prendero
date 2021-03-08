@@ -14,10 +14,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "emilio27",
+    "password": "emi36772843",
+    "database": "emilio27_3prendero",
+    "host": "mysql-emilio27.alwaysdata.net",
     "dialect": "mysql"
   }
 }
