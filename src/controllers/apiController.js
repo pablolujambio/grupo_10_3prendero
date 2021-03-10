@@ -7,13 +7,14 @@ module.exports={
                 all: true
             }
         })
-       
+
     .then(function(productos){
-        db.tipo.findAll()
   
+        db.tipo.findAll()
+          
         .then(function(tipos){
             let productosporcategoria = db.sequelize.query("SELECT tipos.nombre, COUNT(*) AS CANTIDAD FROM tipos INNER JOIN productos ON tipos.id = productos.id_tipo GROUP BY tipos.nombre")
-            .then(function(resultado){
+            .then(function(resultado2){
    
            
         
@@ -29,19 +30,21 @@ module.exports={
                     }
                     res.status(200).json({
                         cantidad: productos.length,
-                        productosporcategoria:resultado[0],
+                        productosporcategoria:resultado2[0],
                         detalle: detalle,
                         productos: productos,
-                        cantidadtipos: tipos.length
+                        cantidadtipos: tipos.length,
+                       
                      })
 
            
                      })
 
+        })
                 })
-
-             })
-   
+            
+          
+            
         
            
 },
@@ -49,35 +52,18 @@ productdetalle: function(req,res){
     db.productos.findByPk(req.params.id)
      
     .then(function(productos){
-        db.talle.findByPk(req.params.id)
-        .then(function(talle){
-            db.sexo.findByPk(req.params.id)
-            .then(function(sexo){
-                db.tipo.findByPk(req.params.id)
-                .then(function(tipo){
+      
                     
-                
-                  
-                    let array = []
-
-                     array.push({
-                      
-                        productos: productos,
-                        tipo: tipo,
-                        sexo: sexo,
-                        talle: talle
 
 
-                    })
+                   
                     res.status(200).json({
-                      arrayporrelacion: array,
-                      url:`/public/uploads/products/${productos.image}`
+                      
+                      url: `http://localhost:3001/uploads/products/${productos.image}`,
+                      productos:productos
                      })
                     
-            })
-        })
-           
-    })
+     
 })
 
 },

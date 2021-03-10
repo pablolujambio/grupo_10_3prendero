@@ -16,6 +16,13 @@ module.exports = {
             method: 'GET',
             url: url + 'products'
         })
+    },
+    productsdetail: ()=>{
+        return axios({
+            ...defaults,
+            method: 'GET',
+            url: url + 'products/10'
+        })
     }
 }
 

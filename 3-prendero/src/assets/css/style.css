@@ -418,15 +418,18 @@ body footer .contenedor2 .derecha{
 }
 
 .centro .caja .abajo .nombre{
-    margin-left: 38%;
+    display: initial;
+    text-align: center;
 }
 
 .centro .caja .abajo .precio{
-    margin-left: 45%;
+    display: initial;
+    text-align: center;
 }
 
 .centro .caja .abajo .descripcion{
-    margin-left: 10%;
+    display: initial;
+    text-align: center;
 }
 
 .centro .caja .abajo .cajas{

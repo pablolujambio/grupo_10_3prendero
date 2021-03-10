@@ -2,6 +2,7 @@ import React from 'react';
 
 const   Category = () => {
     return ( 
+        <div class="abajo">
         <div class="cajas">
         <div class="caja">
     <div class="categoria">
@@ -9,6 +10,7 @@ const   Category = () => {
     </div>
     </div> 
     </div> 
+    </div>
     ) }
 
     export default Category;

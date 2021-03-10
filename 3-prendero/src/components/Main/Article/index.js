@@ -1,6 +1,5 @@
-import React from 'react';
-
-
+import React, { useEffect, useState } from 'react';
+import Resourses from '../../../requests/Resourses';
 
 
 const Article = ({titulo , children}) => {
@@ -12,11 +11,11 @@ const Article = ({titulo , children}) => {
             <h6>{titulo}</h6>
             </div>
         </div>
-        <div class="abajo">
+        
        
        
                 
-        {children}         
+        {children}        
                     
                 
                 
@@ -26,7 +25,7 @@ const Article = ({titulo , children}) => {
 
         
         </div>
-</div>
+
     )
 }
 

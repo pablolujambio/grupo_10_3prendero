@@ -4,6 +4,7 @@ import Article from './Article';
 import Category from './Article/Category';
 import Card from './Article/Card';
 import Table from './Article/Table';
+import Lastproduct from './Article/lastproduct';
 
 const  Main = () =>  {
     return ( 
@@ -22,18 +23,8 @@ const  Main = () =>  {
                         <Article 
                         titulo="Ultimo producto en base de datos"
                         >
-                                    <div class="imagen">
-										<img src={Remera} alt="image" />
-									</div>
-									<div class= "nombre">
-                                        <p>Remera blanca</p>
-                                    </div>
-                                    <div class= "precio">
-                                     <p>$800</p>
-                                     </div>
-                                     <div class= "descripcion">
-                                     <p>Remera blanca lisa para hombre ultima moda</p>
-                                     </div>
+                          <Lastproduct /> 
+                                    
                             </Article>
                         <Article 
                         titulo="Categorias en base de datos"
