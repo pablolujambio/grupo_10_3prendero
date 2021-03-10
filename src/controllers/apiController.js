@@ -2,7 +2,11 @@ let db = require('../database/models');
 
 module.exports={
     products: function(req, res){
-        db.productos.findAll()
+        db.productos.findAll({
+            include: {
+                all: true
+            }
+        })
        
     .then(function(productos){
         db.tipo.findAll()
@@ -14,21 +18,21 @@ module.exports={
            
         
        
-                    let array = []
+                    let detalle = []
                     for(let i=0; i<productos.length; i++){
 
-                     array.push({
-                        id: productos[i].id,
-                        nombreProducto: productos[i].nombreProducto,
-                        description: productos[i].descripcion,
+                     detalle.push({
+                     
                         detalle:  `/products/detail/${productos[i].id}`,
-                        tipos: tipos[i]
+                       
                     })
                     }
                     res.status(200).json({
                         cantidad: productos.length,
                         productosporcategoria:resultado[0],
-                        products: array
+                        detalle: detalle,
+                        productos: productos,
+                        cantidadtipos: tipos.length
                      })
 
            
@@ -105,7 +109,10 @@ usersdetalle: function(req,res){
       
 
         res.status(200).json({
-            usuarios: usuarios,
+            id: usuario.id,
+            nombre: usuario.nombre,
+            apellido: usuario.apellido,
+            email: usuario.email,
             url:`/public/uploads/avatars/${usuarios.image}`
            })
     

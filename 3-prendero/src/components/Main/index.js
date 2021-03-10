@@ -10,21 +10,8 @@ const  Main = () =>  {
         <main>
        <div className="lineaarriba">
      
-       <Card 
-         titulo="Productos en base de datos"
-         cantidad="135"
-         icono="fas fa-shopping-cart fa-2x text-gray-300"
-       />  
-        <Card 
-         titulo="Categorias en base de datos"
-         cantidad="135"
-         icono="fas fa-clipboard-list fa-2x text-gray-300"
-       />  
-        <Card 
-         titulo="Usuarios en base de datos"
-         cantidad="135"
-         icono="fas fa-user fa-2x text-gray-300"
-       />  
+       <Card />  
+    
                       
 							
 						</div>
