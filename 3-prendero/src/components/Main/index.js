@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import Remera from './images/Remera.jpg';
 import Article from './Article';
-import Category from './Article/Category';
+import Categories from './Article/Categories';
 import Card from './Article/Card';
 import Table from './Article/Table';
 import Lastproduct from './Article/lastproduct';
@@ -29,11 +29,8 @@ const  Main = () =>  {
                         <Article 
                         titulo="Categorias en base de datos"
                         >
-                              <Category />  
-                              <Category />  
-                              <Category />  
-                              <Category />  
-                              <Category />  
+                              <Categories />  
+                            
                             
                         </Article>
                        
@@ -60,51 +57,7 @@ const  Main = () =>  {
 									</thead>
                                   
                                    
-                                    <Table 
-                                    Nombre="Remera lisa hombre"
-                                    Descripcion="Remera blanca lisa para hombre ultima moda" 
-                                    Precio= "$800"
-                                    Categoria= "buzo"
-                                    Talle= "XL"
-                                    Sexo= "Hombre"
-
-                                    /> 
-                                      <Table 
-                                    Nombre="Remera lisa hombre"
-                                    Descripcion="Remera blanca lisa para hombre ultima moda" 
-                                    Precio= "$800"
-                                    Categoria= "buzo"
-                                    Talle= "XL"
-                                    Sexo= "Hombre"
-
-                                    /> 
-                                      <Table 
-                                    Nombre="Remera lisa hombre"
-                                    Descripcion="Remera blanca lisa para hombre ultima moda" 
-                                    Precio= "$800"
-                                    Categoria= "buzo"
-                                    Talle= "XL"
-                                    Sexo= "Hombre"
-
-                                    /> 
-                                      <Table 
-                                    Nombre="Remera lisa hombre"
-                                    Descripcion="Remera blanca lisa para hombre ultima moda" 
-                                    Precio= "$800"
-                                    Categoria= "buzo"
-                                    Talle= "XL"
-                                    Sexo= "Hombre"
-
-                                    /> 
-                                      <Table 
-                                    Nombre="Remera lisa hombre"
-                                    Descripcion="Remera blanca lisa para hombre ultima moda" 
-                                    Precio= "$800"
-                                    Categoria= "buzo"
-                                    Talle= "XL"
-                                    Sexo= "Hombre"
-
-                                    /> 
+                                    <Table /> 
 
                                  
  

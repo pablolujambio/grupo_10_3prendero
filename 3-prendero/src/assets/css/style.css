@@ -408,7 +408,7 @@ body footer .contenedor2 .derecha{
 
 .centro .caja .abajo img{
     
-    height: 500px;
+    height: 400px;
     width:100%;
 }
 
@@ -433,7 +433,7 @@ body footer .contenedor2 .derecha{
 }
 
 .centro .caja .abajo .cajas{
-    margin-top: 5%;
+    margin-top: 7%;
     display: flex;
     flex-direction: column;
 }
@@ -450,14 +450,19 @@ body footer .contenedor2 .derecha{
 }
 
 .centro .caja .abajo .cajas .caja .categoria{
-    margin-left: 35%;
-        
+    display: flex;
+    justify-content: space-evenly;
     
 }
+.centro .caja .abajo .cajas .caja .categoria .uno{
+
+}
+
 
 .centro .caja .abajo .cajas .caja p{
     font-size: 22px;
-    color:rgb(255, 255, 255);
+    color:rgb(243, 153, 78);
+    font-weight: bold;
 }
 
 .abajo{
@@ -617,7 +622,7 @@ h1{
     }
 
     .centro .caja .abajo img {
-        height: 400px;
+        height: 320px;
       
     }
 

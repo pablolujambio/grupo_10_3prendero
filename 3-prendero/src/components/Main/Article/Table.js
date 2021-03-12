@@ -1,19 +1,39 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Resourses from '../../../requests/Resourses';
 
-const   Table = ({Nombre, Descripcion, Precio, Categoria, Talle, Sexo}) => {
+function Table (titulo) {
+
+    const [data, setData] = useState({
+       productos : []
+      
+
+       
+    });
+
+    useEffect( () => {
+            
+                Resourses.products().then(function(Productos){
+                    setData({productos: Productos.data.productos})
+                })
+            }, []
+        )
+
+
+
     return ( 
-         
+        data.productos.map((item) =>
+        
         <tbody>
         <tr>
-            <th>{Nombre}</th>
-            <th>{Descripcion}</th>
-            <th>{Precio}</th>
-            <th>{Categoria}</th>
-            <th>{Talle}</th>
-            <th>{Sexo}</th>
+            <th>{item.nombreProducto}</th>
+            <th>{item.descripcion}</th>
+            <th>${item.precio}</th>
+            <th>{item.tipos.nombre}</th>
+            <th>{item.talle.nombre}</th>
+            <th>{item.sexo.nombre}</th>
         </tr>
     </tbody>
-    
+    )
         
     ) }
 

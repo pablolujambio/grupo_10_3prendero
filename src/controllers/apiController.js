@@ -13,7 +13,7 @@ module.exports={
         db.tipo.findAll()
           
         .then(function(tipos){
-            let productosporcategoria = db.sequelize.query("SELECT tipos.nombre, COUNT(*) AS CANTIDAD FROM tipos INNER JOIN productos ON tipos.id = productos.id_tipo GROUP BY tipos.nombre")
+            let productosporcategoria = db.sequelize.query("SELECT tipos.nombre, COUNT(*) AS Cantidad FROM tipos INNER JOIN productos ON tipos.id = productos.id_tipo GROUP BY tipos.nombre")
             .then(function(resultado2){
    
            

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import Resourses from '../../../requests/Resourses';
+import React from 'react';
+
 
 
 const Article = ({titulo , children}) => {
