@@ -515,8 +515,31 @@ h1{
 }
 
 
+.ver{
+    margin-left: 43%;
+    margin-top: 8%;
+}
 
 
+.llamar{
+    border: none;
+    border-radius: 20px;
+    background-color: #fcb75e;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.llamar a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+thead tr th{
+    font-size: 18px;
+}
 
 
 

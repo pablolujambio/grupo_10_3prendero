@@ -64,7 +64,7 @@ module.exports = {
         let usernameusuario = req.body.username;
         let passusuario = req.body.password;
         let remember = req.body.remember;
-
+      
         let usuarioALoguearse;
         
         db.usuarios.findAll()
@@ -82,27 +82,36 @@ module.exports = {
         if (usuarioALoguearse == undefined) {
             return res.send('Datos incorrectos');
         } 
-
+        
         req.session.datosusuario = usuarioALoguearse;
-
         
         if (remember != undefined) {
-            res.cookie('remember', usuarioALoguearse.username, { maxAge: 600000000 });
+            res.cookie('remember', usuarioALoguearse.username,  
+            { maxAge: 600000000 })
+           
+            
         }
         
-     
-        return res.redirect("/users/profile/" + usuarioALoguearse.id);})
+        
+          
+       
+        
+     return res.redirect("/users/profile/" + usuarioALoguearse.id);})
     } else{
+
+        
         return res.render('users/login', { errors: errors.mapped() })
- 
+     
     }
     },
     profile: function (req, res) {
-      
+        
         db.usuarios.findByPk(req.params.id)
         .then(function(usuario) { 
+             
             res.render("users/profile", {
-                usuario: usuario,
+                usuario: usuario 
+                
                
             })
         })

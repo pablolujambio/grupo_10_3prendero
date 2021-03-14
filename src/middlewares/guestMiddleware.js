@@ -6,7 +6,7 @@ module.exports = (req, res, next) => {
 
     } else {
      
-        res.redirect('/users/profile');
+        res.redirect("/users/profile/" + req.session.datosusuario.id);
 
     }
     

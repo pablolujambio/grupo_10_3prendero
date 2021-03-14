@@ -27,7 +27,7 @@ const  Main = () =>  {
                                     
                             </Article>
                         <Article 
-                        titulo="Categorias en base de datos"
+                        titulo="Categoriás en base de datos"
                         >
                               <Categories />  
                             
@@ -48,9 +48,9 @@ const  Main = () =>  {
 									<thead >
 										<tr>
 											<th>Nombre</th>
-											<th>Descripcion</th>
+											<th>Descripción</th>
 											<th>Precio</th>
-											<th>Categoria</th>
+											<th>Categoría</th>
 											<th>Talle</th>
 											<th>Sexo</th>
 										</tr>
@@ -68,7 +68,10 @@ const  Main = () =>  {
 						</div>
 					</div>
 				</div>
-       
+        <div class="ver">
+               
+               <button class="llamar"><a href="http://localhost:3001">3PRENDERO</a></button>
+          </div>
         </main>
  )
 }
