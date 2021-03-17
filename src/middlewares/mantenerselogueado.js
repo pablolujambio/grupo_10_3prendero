@@ -7,7 +7,7 @@ let db = require('../database/models');
  
 function mantenerselogueado( req,res,next){
 
-     console.log(req.cookies.remember, "hola")
+     
 
      if (req.cookies.remember != undefined && req.session.datosusuario == undefined) {
           db.usuarios.findAll()

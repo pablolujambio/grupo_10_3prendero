@@ -38,3 +38,6 @@ https://trello.com/b/qnNF35cn/spint-6
 
 Sprint 7:
 https://trello.com/b/UtCog7RZ/sprint-7
+
+Sprint 8:
+https://trello.com/b/lm0vdeGH/sprint-8

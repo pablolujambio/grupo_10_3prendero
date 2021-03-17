@@ -12,13 +12,13 @@ function   Lastproduct (imagen){
     });
 
     useEffect( () => {
-          
-            Resourses.productsdetail().then(function(Productos){
-             
-                setData({imagen : Productos.data.url,
-                         nombre : Productos.data.productos.nombreProducto,
-                         precio : Productos.data.productos.precio,
-                         descripcion : Productos.data.productos.descripcion
+          let  ultimoProducto
+            Resourses.products().then(function(Productos){
+                ultimoProducto = Productos.data.productos.length -1
+                setData({imagen : `http://localhost:3001/uploads/products/` + Productos.data.productos[ultimoProducto].image,
+                         nombre : Productos.data.productos[ultimoProducto].nombreProducto,
+                         precio : Productos.data.productos[ultimoProducto].precio,
+                         descripcion : Productos.data.productos[ultimoProducto].descripcion
                  } ) 
 
                

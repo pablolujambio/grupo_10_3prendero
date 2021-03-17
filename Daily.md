@@ -276,6 +276,66 @@ Agregue las mismas validaciones de nuevo producto en edit producto tanto en el b
 
 
 
+**24/02/2021**
+Emilio:
+Empecé a hacer la api de products, estoy teniendo dificultades a la hora de contar por categoría y pasar el objeto de la categoria
+
+**25/02/2021**
+Emilio:
+Termina la primera parte de api de products y empece a hacer el detalle de products
+
+**26/02/2021**
+Emilio:
+Hice el detalle de products y también hice la api de usuarios aunque creo q se puede mejorar
+
+**03/03/2021**
+Emilio:
+Empecé a probar hacer el header y footer para el react todavía falta dividirlo en componentes peor es como para ir probando
+
+**04/03/2021**
+Emilio:
+Hice el dashboard de productos, categorías y usuarios estatico en react como para ir teniendo el css
+
+
+
+
+
+**05/03/2021**
+Emilio:
+Hice el dashboard del último producto y el de cantidad de productos por categoría
+
+**06/03/2021**
+Emilio:
+Hice el dashboard de todos los productos pero  todavía sin consumir consumen ninguna API
+
+**08/03/2021**
+Emilio:
+Subí la base de datos a heroku
+
+**09/03/2021**
+Emilio:
+Con el grupo 1 empecé a instalar axios y a tratar de conectar las apis con el dash
+
+
+**10/03/2021**
+Emilio:
+Pude hacer andar los contadores de los primeros paneles conectado a las apis y logre pasar los datos del último producto con el otro panel
+
+
+
+
+
+**12/03/2021**
+Emilio:
+Termine de hacer el panel de cantidad de categorías y el de todos los productos conectado a las apis
+
+**13/03/2021**
+Emilio:
+Estuve resolviendo un problema con el recordame que no me redirigía al perfil
+
+**14/03/2021**
+Emilio:
+Agregue los botones para que uno me redirija al react y otro para que desde el react me vuelva a la página de 3prendero
 
 
 

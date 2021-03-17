@@ -111,3 +111,23 @@ Dejar los trabajos para lo último, quedan pocos sprint y venimos cumpliendo con
 
 5. Dejar de hacer
 A veces trabajamos en el mismo archivo más de uno a la vez y tenemos problemas con el merge de archivos.
+
+
+---------------------------------------------
+Sprint 7
+---------------------------------------------
+
+1. Comenzar a hacer
+Posiblemente tengamos que pedir un soporte al equipo de DH porque en el final son muchas tareas. Pablo está con poco tiempo disponible para ayudar a cerrar el proyecto.
+
+2. Hacer más
+Concentrarnos en llegar a los sprint a tiempo como lo venimos haciendo.
+
+3. Continuar haciendo
+Priorizando y foco.
+
+4. Hacer menos
+Tratar de resolver todo solos, tal vez pedir ayuda a los profes tiene sentido.
+
+5. Dejar de hacer
+Evaluar si llegamos a resolver los opcionales, siendo dos solos en el grupo y con Pablo sin tanto tiempo la mayor carga la tiene Emi. Tal vez los opcionales deberíamos dejarlos de lado.
