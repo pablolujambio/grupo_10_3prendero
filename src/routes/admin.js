@@ -6,6 +6,8 @@ const router = express.Router();
 const productsController = require('../controllers/productsController');
 
 const productvalidator = require("../validations/productValidation");
+const adminMiddleware = require("../middlewares/adminMiddleware");
+const authMiddleware = require('../middlewares/authMiddleware');
 
 var storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -18,7 +20,7 @@ var storage = multer.diskStorage({
 
 var upload = multer({ storage: storage })
 
-router.get('/products/create', productsController.create);
+router.get('/products/create',authMiddleware, adminMiddleware, productsController.create);
 router.post('/products/register', upload.single('image'),productvalidator, productsController.save);
 //router.get('/products/:id', productsController.adminDetail);
 //router.delete('/products/:id', (req, res) => res.send('borraste un producto'))

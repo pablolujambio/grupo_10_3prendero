@@ -21,7 +21,7 @@
 -------------------------------------------------------------------------->
 
 <div class="contenedor" >
-    
+    <% if( hayunusuario.username != "Emilio27") { %> 
     <div class= "profile">
         <div class="izq">
            <div class="uno">
@@ -57,7 +57,46 @@
           
         </div>
     </div>
-  
+    <% } else { %>
+        <div class= "profile">
+            <div class="izq">
+               <div class="uno">
+                   <p>Información de la cuenta</p>
+               </div>
+               <div class="dos">
+                  <p><%= usuario.nombre%> <%= usuario.apellido%> </p>
+                  <p><%= usuario.email %></p>
+                </div>
+                <div class="tres">
+                    <p>Suscripciones</p>
+                </div>
+                <div class="cuatro">
+                    <p>Actualmente esta suscripto a 3Prendero</p>
+                </div>
+                <div class="cinco">
+                    <p>Dirección de facturación por defecto</p>
+                </div>
+                <div class="seis">
+                    <p><%= usuario.nombre%> <%= usuario.apellido%> </p>
+                    <p>Av. Santa Fe 4815</p>
+                    <p>(C1002) Ciudad autonoma de Buenos Aires</p>
+                    <p>Buenos Aires</p>
+                    <p>011-1554635214</p>
+                </div>
+                <div class="cargar">
+                    <a class="editar" href="/users/RegisterEdit/<%= usuario.id %>">Editar</a>
+                  </div>
+                  <div class="cargar2">
+                    <a class="editar" href="/admin/products/create">Crear Producto</a>
+                  </div>
+            </div>
+           
+            <div class="der">
+                <img class="perfil" src="/uploads/avatars/<%= usuario.image %>" alt="logo">
+              
+            </div>
+        </div>
+        <% }   %> 
 <!-----------------------------------------------------------------------
  Esto es el footer
 -------------------------------------------------------------------------->         

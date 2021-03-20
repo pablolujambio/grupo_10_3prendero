@@ -1247,7 +1247,31 @@ ALL PRODUCTS
     margin-right: 20px
  }
 
- .cajaprod .detalle .abajo {
+ 
+
+}
+
+.cajaprod .detalle2{
+    height: 50%;
+    padding: 20px;
+ }
+
+ .cajaprod .detalle2 .nombre{
+    text-align: center;
+ }
+
+ .cajaprod .detalle2 p{
+    color: black;
+    font-weight: bold;
+    font-size: 20px
+ }
+
+ .cajaprod .detalle2 .precio{
+    text-align: center;
+    margin-right: 20px
+ }
+
+ .cajaprod .detalle2 .abajo {
     display: flex;
   
     justify-content: space-evenly;
@@ -1256,23 +1280,23 @@ ALL PRODUCTS
 
 }
 
-.cajaprod .detalle .abajo button[type="submit"] {
+.cajaprod .detalle2 .abajo button[type="submit"] {
     border: none;
     background: none;
    color: red;
     font-size: 20px;
 }
 
-.cajaprod .detalle .abajo button[type="submit"]:hover{
+.cajaprod .detalle2 .abajo button[type="submit"]:hover{
     transform: scale(1.025); 
     transition: all 0.5s ease;
 }
 
-.cajaprod .detalle .abajo a:hover{
+.cajaprod .detalle2 .abajo a:hover{
     transform: scale(1.025); 
     transition: all 0.5s ease;
 }
-.cajaprod .detalle .abajo a{
+.cajaprod .detalle2 .abajo a{
     border: none;
     background: none;
    color: green;
@@ -1375,6 +1399,36 @@ PROFILE
     margin-top: 15%;
     
  }
+
+ .cargar2 .editar{
+    padding: 0 16px;
+    float: left;
+    border-radius: 2px;
+    background-color: #F18805;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    color: white;
+    transition: background-color 15ms linear,
+    box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    height: 36px;
+    width: 240px;
+    line-height: 2.25rem;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    border-style: none;
+    text-transform: uppercase;
+    text-decoration: none;
+  
+  
+    margin-top: 20%;
+    margin-left: 100%;
+ }
+
+
+ 
 
           /*-------------------------------------------------------------------------- 
  FOOTER
@@ -1505,6 +1559,11 @@ body footer .contenedor2 .derecha{
     margin-top: 1%;
    
    
+}
+
+body footer .contenedorfooter .der .de i{
+    text-decoration: none;
+    color: black;
 }
  
 
@@ -1674,6 +1733,11 @@ body footer .contenedor2 .derecha{
                 
         margin-top: 10%;
                 
+    }
+
+    .cargar2 .editar {
+   
+        margin-left: 0px;
     }
         
     body .linea4{
@@ -2875,7 +2939,10 @@ body footer .contenedor2 .derecha{
             width: 203px;
         }
    
-      
+        .cargar2 .editar {
+           
+            margin-left: 50%;
+        }
 }
 
 
@@ -3383,7 +3450,10 @@ body footer .contenedor2 .derecha{
             
             margin-left: 30%;
         }
-
+        .cargar2 .editar {
+   
+            margin-left: 60%;
+        }
         
     .cajaprod .imagen {
       
@@ -3803,7 +3873,10 @@ body footer .contenedor2 .derecha{
         text-align: center;
         margin-right: 80px;
     }
-
+    .cajaprod .detalle2 .precio {
+        text-align: center;
+        margin-right: 40px;
+    }
     
     .cajaprod .imagen {
       
@@ -3919,13 +3992,7 @@ body footer .contenedor2 .derecha{
             margin-right: 5%;
         }
 
-        body .detalle{
-            margin-left: 25%;
-        }
-
-        body .detalle{
-            margin-left: 20%;
-        }
+      
 
         body img.centro {
             height: 350px;
@@ -4105,12 +4172,12 @@ body footer .contenedor2 .derecha{
 
         .cajaprod .detalle .nombre {
             text-align: center;
-            margin-right: 60px;
+            
         }
 
         .cajaprod .detalle .precio {
             text-align: center;
-            margin-right: 80px;
+         
         }
         
 
