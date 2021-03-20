@@ -57,125 +57,26 @@ header .linea {
 
 
 }
-
-header ul{
-
-justify-content: space-between;
-
-   margin-right: 100px;
-
-}
-
-
-header ul li {
-    margin-right: 50px; 
-    display: inline-block;
-    
-}
-
-header ul li a{
-        text-decoration: none;
-        color: black;
-        font-size: 20px;
-        font-weight: bold;
-        
-}
-
-header form{
-    display: inline-block;
-    width: 410px;
-    height: 25px;
-    padding: 5px;
-    background-color: white;
-    border-radius: 10px;
- 
-}
-
-
-header  form button[type="submit"] {
-    width: 28%;
-    background: none;
-    border: none;
-    font-size: 20px;
-    color: black;
-    padding: 0px;
-    text-align: right;
-    position: relative;
-    bottom: 3px;
-    }
-
-header form input[type="text"] {
-    width: 70%;
-    border: none;
-    font-size: 17px;
-    position: relative;
-    bottom: 3px;
-}
-header .icons{
- 
-    position: relative;
-    margin-bottom: 5%;
-    margin-left:580px;
-    
-}
-
-
-
-header .carrito button[type="submit"] a{
-    text-decoration: none;
-    color: black;
-}
-
-
-header .carrito button[type="submit"]  {
+header .contenedortitulo{
   
-    border: none;
-    background: none;
-    display: inline-block;
-    font-size: 30px;
 
- 
-}
-
-.carrito{
-   position: absolute;
-  left: 96%;
-top: 20px
-}
-
-header .icons button[type="submit"] a{
-    text-decoration: none;
-    color: black;
-}
-
-header .icons button[type="submit"]  {
   
-    border: none;
-    background: none;
-    display: inline-block;
-    font-size: 30px;
-
- 
+    
+  
 }
 
-header .logeo{
-    margin-left:190px;
-}
-
-header .logeo ul li a{
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
+header .titulo{
+  
    
-}
+    margin-left: 300px;
 
-header .logeo ul li {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
+
+}
+header .titulo p{
+    color: rgb(250, 221, 90);
+
+    font-size: 100px;
     font-weight: bold;
-  
 }
 
 
@@ -548,6 +449,13 @@ thead tr th{
 @media (min-width: 1200px) and (max-width: 1500px){
 
 
+    header .titulo{
+  
+   
+        margin-left: 100px;
+    
+    
+    }
     header ul li {
 
         margin-right: 40px;

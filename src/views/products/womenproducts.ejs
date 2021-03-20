@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head', {title: "Home"}) %>
+
+<!-----------------------------------------------------------------------
+ Esto es el body
+--------------------------------------------------------------------------> 
+
+<body>
+
+<!-----------------------------------------------------------------------
+ Esto es el header
+-------------------------------------------------------------------------->
+
+<%- include('../partials/header') %>
+
+<!-----------------------------------------------------------------------
+ Esto es el cuerpo
+-------------------------------------------------------------------------->
+
+<div class="contenedor">
+    <div class= "cajaprincipal">
+        
+        
+    <% for (let i = 0; i < productos.length; i++) { %> 
+        <% if(productos[i].id_sexo == "2") { %> 
+       
+        <div class="cajaprod">
+           
+            <div class= "imagen">
+                <a href="/products/detail/<%= productos[i].id %>">
+                <img class="right" src="/uploads/products/<%= productos[i].image %>"   alt="logo">   </a>
+            </div>
+
+            <div class= "detalle">
+                <div class= "nombre">
+                    <p><%= productos[i].nombreProducto %></p>
+                </div>
+                <div class= "precio">
+                    <p>$<%= productos[i].precio %></p>
+                </div>
+
+                <div class="abajo">
+                    <a href="/products/EditProduct/<%= productos[i].id %>"><i class="far fa-edit"></i></a>
+                    <form action="delete?_method=DELETE" method="POST">
+                        <input type="hidden" id="id" name="id" value="<%= productos[i].id %>">
+                        <button type="submit" class="delete"><i class="far fa-trash-alt"></i></button>
+                    </form>
+                </div>
+            </div>
+           
+        </div>
+      
+    
+        <% } %> 
+    <% } %> 
+</div>
+
+
+
+
+
+ <%- include('../partials/footer') %>
+
+</div>
+
+</div>
+
+</body>

@@ -69,7 +69,7 @@ module.exports = {
     }
     },
     carrito: function(req, res) {
-    console.log("hola")
+ 
         return res.render('products/productCart');
     },
 
@@ -86,6 +86,38 @@ module.exports = {
         return res.render("products/Allproducts", { productos : productos})
         })
     },
+
+    men: function(req, res) {
+        db.productos.findAll()
+        .then(function(productos){
+            
+         
+        return res.render("products/menproducts", { productos : productos})
+       
+        })
+  
+    },
+    women: function(req, res) {
+        db.productos.findAll()
+        .then(function(productos){
+            
+        
+        return res.render("products/womenproducts", { productos : productos})
+       
+        })
+  
+    },
+    kids: function(req, res) {
+        db.productos.findAll()
+        .then(function(productos){
+            
+        
+        return res.render("products/kidsproducts", { productos : productos})
+       
+        })
+  
+    },
+
 
    
     nuevo: function(req, res) { 

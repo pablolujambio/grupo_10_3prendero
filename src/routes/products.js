@@ -15,7 +15,7 @@ var storage = multer.diskStorage({
         cb(null, path.join(__dirname, '../../public/uploads/products'));
     },
     filename: function (req, file, cb) {
-        cb(null, req.body.descripcion + path.extname(file.originalname))
+        cb(null, date.now() + path.extname(file.originalname))
     }
 })
 var upload = multer({ storage: storage })
@@ -25,6 +25,9 @@ router.get('/carrito',authMiddleware, productsController.carrito);
 router.get('/nuevo', productsController.nuevo);
 router.get('/', productsController.root);
 router.get('/all', productsController.all);
+router.get('/men', productsController.men);
+router.get('/women', productsController.women);
+router.get('/kids', productsController.kids);
 router.get('/detail/:id', productsController.detalle);
 router.get('/EditProduct/:id', productsController.edit);    // Vista del Formulario de edición de productos
 router.post('/EditProduct/:id', upload.single('image'),productvalidator, productsController.update); 

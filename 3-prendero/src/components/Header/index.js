@@ -12,26 +12,12 @@ const Header = () => {
             <a href="/" >
                 <img class="logo" src={logo} alt="logo"/>
             </a>
-            <ul>
-                <li><a href="#">HOMBRE</a></li>
-                <li><a href="#">MUJER</a></li>
-                <li><a href="#">KIDS</a></li>
-            </ul>
-            <form>
-                <input type="text" placeholder="Search" id="search" name="search" /><button type="submit"><i class="fas fa-search"></i></button>
-             
-            </form>
-    
-           
-            
-        <div class="icons">
-           
+         
         
-
+         <div class="titulo">
+           <p>DASHBOARD</p>
+           </div>
            
-            <button type="submit"><i class="fas fa-user"></i></button>
-        
-        </div> 
     
         </div>
         
