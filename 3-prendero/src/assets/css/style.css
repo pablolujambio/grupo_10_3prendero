@@ -351,10 +351,13 @@ body footer .contenedor2 .derecha{
 }
 
 .centro .caja .abajo .cajas .caja .categoria{
+    justify-content: space-between;
+    padding-right: 25%;
+    padding-left: 25%;
     display: flex;
-    justify-content: space-evenly;
-    
 }
+    
+
 .centro .caja .abajo .cajas .caja .categoria .uno{
 
 }
