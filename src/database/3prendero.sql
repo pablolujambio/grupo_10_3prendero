@@ -36,9 +36,9 @@ CREATE TABLE IF NOT EXISTS `productos` (
   CONSTRAINT `id_sexo` FOREIGN KEY (`id_sexo`) REFERENCES `sexos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `id_talle` FOREIGN KEY (`id_talle`) REFERENCES `talles` (`id`),
   CONSTRAINT `id_tipo` FOREIGN KEY (`id_tipo`) REFERENCES `tipos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=utf8mb4;
 
--- Volcando datos para la tabla 3prendero.productos: ~10 rows (aproximadamente)
+-- Volcando datos para la tabla 3prendero.productos: ~20 rows (aproximadamente)
 /*!40000 ALTER TABLE `productos` DISABLE KEYS */;
 INSERT INTO `productos` (`id`, `id_tipo`, `id_sexo`, `nombre_producto`, `descripcion`, `id_talle`, `precio`, `image`, `Created_at`, `Updated_at`) VALUES
 	(1, 1, 1, 'Levis', 'Remera levis rosa hombre', 1, 700, 'Remera levis rosa hombre.jpg', NULL, NULL),
@@ -50,7 +50,17 @@ INSERT INTO `productos` (`id`, `id_tipo`, `id_sexo`, `nombre_producto`, `descrip
 	(7, 4, 1, 'Zapatilla Reebok', 'Zapatilla negra Reebok para hombre', 1, 2500, 'Zapatilla negra Reebok para hombre.jpg', NULL, NULL),
 	(8, 1, 1, 'Remera Old School', 'Remera gris Old School para hombre', 1, 600, 'Remera gris Old School para hombre.jpg', NULL, NULL),
 	(9, 2, 1, 'Levis Jean', 'Jean Levis azul para hombre', 1, 1600, 'Jean Levis azul para hombre.jpg', NULL, NULL),
-	(10, 2, 1, 'Bermuda', 'Bermuda para hombre', 1, 1530, 'Bermuda para hombre.jpg', NULL, NULL);
+	(10, 1, 1, 'Bermuda', 'Bermuda para hombre ultima edición', 2, 1530, 'Bermuda para hombre ultima edición.jpg', NULL, NULL),
+	(34, 1, 2, 'Remera Topper', 'Remera Topper Squad para mujer', 4, 800, 'Remera Topper Squad para mujer.JPG', NULL, NULL),
+	(35, 1, 2, 'Remera Adidas', 'Remera rosa de adidas ultima temporada ', 3, 630, 'Remera rosa de adidas ultima temporada .JPG', NULL, NULL),
+	(36, 2, 2, 'Pantalon Adidas', 'Pantalon negro de adidas para mujer', 3, 1250, 'Pantalon negro de adidas para mujer.JPG', NULL, NULL),
+	(37, 3, 2, 'Buzo Rosa', 'Buzo Rosa Under Armour para mujer', 2, 2100, 'Buzo Rosa Under Armour para mujer.JPG', NULL, NULL),
+	(38, 3, 2, 'Buzo Adidas', 'Buzo Adidas Nike Air Azul', 2, 2400, '1616197921346.JPG', NULL, NULL),
+	(39, 5, 3, 'Cheeky', 'Campera Azul Cheeky Sky', 2, 500, '1616206438988.JPG', NULL, NULL),
+	(40, 5, 3, 'Remera GAP', 'Remera Celeste Gap para niños', 4, 300, '1616206715200.JPG', NULL, NULL),
+	(41, 5, 3, 'Pantalon Clon', 'Pantalon gris Clon para niños', 4, 800, '1616207573140.JPG', NULL, NULL),
+	(42, 5, 3, 'Campera rosa', 'Campera rosa Cheeky Para niñas', 4, 900, '1616207694384.JPG', NULL, NULL),
+	(43, 5, 3, 'zapatilla rosa', 'zapatilla rosa prowess unicornios', 4, 200, '1616207830840.JPG', NULL, NULL);
 /*!40000 ALTER TABLE `productos` ENABLE KEYS */;
 
 -- Volcando estructura para tabla 3prendero.sexos
@@ -91,15 +101,16 @@ CREATE TABLE IF NOT EXISTS `tipos` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
 
--- Volcando datos para la tabla 3prendero.tipos: ~4 rows (aproximadamente)
+-- Volcando datos para la tabla 3prendero.tipos: ~5 rows (aproximadamente)
 /*!40000 ALTER TABLE `tipos` DISABLE KEYS */;
 INSERT INTO `tipos` (`id`, `nombre`) VALUES
 	(1, 'Remeras'),
 	(2, 'Pantalones'),
 	(3, 'Buzos'),
-	(4, 'Calzados');
+	(4, 'Calzados'),
+	(5, 'Kids');
 /*!40000 ALTER TABLE `tipos` ENABLE KEYS */;
 
 -- Volcando estructura para tabla 3prendero.usuarios
@@ -116,13 +127,14 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `createdAt` date DEFAULT NULL,
   `updatedAt` date DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4;
 
--- Volcando datos para la tabla 3prendero.usuarios: ~1 rows (aproximadamente)
+-- Volcando datos para la tabla 3prendero.usuarios: ~3 rows (aproximadamente)
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
 INSERT INTO `usuarios` (`id`, `nombre`, `apellido`, `username`, `email`, `password`, `repassword`, `date`, `image`, `createdAt`, `updatedAt`) VALUES
-	(26, 'Emilio', 'Zuccarelli', 'Emilio27', 'emiliozuccarelli@gmail.com', '$2b$10$/6R2dsCKWC4Kn865MIveCenFqS/2S69vgu0vCW74LpX.TsBgHr82a', '123456', '2021-02-10', 'emiliozuccarelli@gmail.com.png', NULL, NULL),
-	(33, 'Pablo', 'Lujambio', 'Pablo22', 'pablolujambio@gmail.com', '$2b$10$iKMjijS3rdXK.f04zRkyBenqXlWMZ/V2u.OeKxKg3yrZTZ5Bbiuve', '12345678', '2021-02-02', 'pablolujambio@gmail.com.jpg', NULL, NULL);
+	(26, 'Emilio', 'Zuccarelli', 'Emilio27', 'emiliozuccarelli@gmail.com', '$2b$10$/6R2dsCKWC4Kn865MIveCenFqS/2S69vgu0vCW74LpX.TsBgHr82a', '123456', '2021-02-10', 'emiliozuccarelli@gmail.com.PNG', NULL, NULL),
+	(33, 'Pablo', 'Lujambio', 'Pablo22', 'pablolujambio@gmail.com', '$2b$10$iKMjijS3rdXK.f04zRkyBenqXlWMZ/V2u.OeKxKg3yrZTZ5Bbiuve', '12345678', '2021-02-02', 'pablolujambio@gmail.com.jpg', NULL, NULL),
+	(34, 'bruce', 'Zuccarelli', 'bruce22', 'emiliozucca@gmail.com', '$2b$10$9d4/h14DMxCpujhspqrMsOoDQhkcZb5L7G05bh7u8XPAL8Gx7cX8y', '12345678', '2021-03-02', 'emiliozucca@gmail.com.jpg', NULL, NULL);
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
